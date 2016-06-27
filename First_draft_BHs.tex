@@ -1,0 +1,263 @@
+\documentclass[aps,showpacs,onecolumn,floats,prd,superscriptaddress,nofootinbib]{revtex4} 
+\usepackage{graphicx,amsmath,amssymb,amstext}
+\usepackage{amssymb,amsbsy,amsfonts,amsthm,color}
+
+\usepackage{epsfig}
+%\usepackage{showkeys}
+\usepackage{graphicx}
+\usepackage{subfigure}
+
+\graphicspath{{Figures/}}
+
+
+\begin{document}
+
+\title{On the limitations of using quantum mechanics in a fixed background of a Schwarzschild black hole}
+
+\author{Daniel Baker}
+\email{dbaker@cita.utoronto.ca}
+\affiliation{Canadian Institute of Theoretical Astrophysics, 60 St George St, Toronto, ON M5S 3H8, Canada.}
+\affiliation{University of Toronto, Department of Physics, 60 St George St, Toronto, ON M5S 3H8, Canada.}
+
+\author{Darsh Kodwani}
+\email{dkodwani@physics.utoronto.ca}
+\affiliation{Canadian Institute of Theoretical Astrophysics, 60 St George St, Toronto, ON M5S 3H8, Canada.}
+\affiliation{University of Toronto, Department of Physics, 60 St George St, Toronto, ON M5S 3H8, Canada.}
+
+\author{Ue-Li Pen}
+\email{pen@cita.utoronto.ca}
+\affiliation{Canadian Institute of Theoretical Astrophysics, 60 St George St, Toronto, ON M5S 3H8, Canada.}
+\affiliation{Canadian Institute for Advanced Research, CIFAR program in Gravitation and Cosmology.}
+\affiliation{Dunlap Institute for Astronomy \& Astrophysics, University of Toronto, AB 120-50 St. George Street, Toronto, ON M5S 3H4, Canada.}
+\affiliation{Perimeter Institute of Theoretical Physics, 31 Caroline Street North, Waterloo, ON N2L 2Y5, Canada.}
+
+\author{I-Sheng Yang}
+
+\email{isheng.yang@gmail.com}
+\affiliation{Canadian Institute of Theoretical Astrophysics, 60 St George St, Toronto, ON M5S 3H8, Canada.}
+\affiliation{Perimeter Institute of Theoretical Physics, 31 Caroline Street North, Waterloo, ON N2L 2Y5, Canada.}
+
+\begin{abstract}
+Abstract
+\end{abstract}
+
+\maketitle
+
+
+\section{Introduction}
+
+%Whenever we describe a quantum system, we assume that the system we are describing and the environment around it are separate things. In particular we assume the environment can be described classically and the system we are describing behaves quantum mechanically. There are points where this assumption breaks down and we can see a clear example of this in terms of the interference pattern of a double slit experiment(DESCRIBE THE SITUATION INVOLVING THE DOUBLE SPLIT EXPERIMENT HERE). In this paper we analyse when this description of quantum mechanics in a classical background breaks down in the presence of a BH.
+
+\section{Calculation}
+
+\subsection{Change in proper time due to shells}
+
+\subsubsection{Background metric - no shells}
+
+A black hole of mass $M$ defines a Schwarzschild geometry for the spacetime with the following metric 
+
+\begin{equation}
+	ds^2 = - \left( 1 -\frac{2M}{r} \right) dt^2 + \left( 1 - \frac{2M}{r} \right)^{-1} dr^2 + r^2 d \Omega_2^2	\label{1}
+\end{equation}
+
+where we are working with units in which $G = c = 1$. We know there will be a flux of particles appearing from the horizon of the black hole \cite{Haw74}. Take some coordinate time interval, $\delta \bar{t_e}$, (which will have some corresponding proper time interval $\delta \bar{\tau_e}$) between two consecutive particles being emitted from the same position above the horizon of the black hole. An observer far away will see these particles arrive with some coordinate time interval $\delta \bar{t_0}$. We can follow the trajectory of the particles (assuming they are relativistic) from the position they are emitted, $r_e$, to the observer at $r_0$ by setting $ds = 0$ in Eq (\ref{1}). By confining the motion to be only in the radial direction, i.e $d \Omega_2 = 0$, we get the following geodesic equation
+
+\begin{equation}
+	\bar{t_e}^{(1)} - \bar{t_0}^{(1)} = \bar{r_0} - \bar{r_e} + 2M \ln \left( \frac{\bar{r_0} - 2M}{\bar{r_e} - 2M}  \right)	\label{3}
+\end{equation}
+
+where the superscript represents particle $1$ so $\bar{t_e}^{(1)}$ represents the time at which particle $1$ is emitted, $\bar{t_0}^{(1)}$ is when particle 1 is observed. Analogously for a particle $2$ that is emitted at $\bar{t_e}^{(2)}$ we have
+
+\begin{equation}
+	\bar{t_e}^{(2)} - \bar{t_0}^{(2)} = \bar{r_0} - \bar{r_e} + 2M \ln \left( \frac{\bar{r_0} - 2M}{\bar{r_e} - 2M}  \right).	\label{4}
+\end{equation}
+
+Since the right hand side of Eq (\ref{3}) and (\ref{4}) is the same, we see that
+
+\begin{equation}
+	\bar{t_0}^{(2)} - \bar{t_0}^{(1)} = \bar{t_e}^{(2)} - \bar{t_e}^{(1)} \Rightarrow \delta \bar{t_0} = \delta \bar{t_e}.
+\end{equation}
+
+Therefore the coordinate time interval when the particles are emitted remains the same when it is observed at distance $r_0$ as is shown in the bottom part of figure \ref{fig:1}.
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale = 0.6]{propertime.pdf}
+\caption{The two parts of this diagrams describe two different scenarios. The trajectories of the photon are the lines in orange. The trajectory of the observer and the position from which the photons are emitted are represented by solid blue lines. The bottom part is a general case of two particles coming from a distance $r_e$ from the black hole of mass $M$ and arriving at an observer who is at a distance of $r_0$. The top part shows two particles coming from the same distance $r_e$ from a black hole of mass $M$. Instead of the photons freely propagating through to an observer at $r_0$, they have to cross two shells, represented by blue dotted line, of equal and opposite ADM mass $-\Delta M, \Delta M$ at $r_{1}, r_{2}$ respectively, where $|\Delta M|<<M$. The region $I$ represent a metric with mass $M$ and region $II$ represents a metric with mass $M-\Delta M$.}
+\label{fig:1}
+\end{center}
+\end{figure}
+
+We can convert $\delta\bar{t_0}$ to proper time
+
+\begin{equation}
+	\delta \bar{\tau_0} = \left( 1 -\frac{2M}{r_0} \right)^\frac{1}{2} \delta \bar{t_0}
+\end{equation}
+
+and in the limit that the observer is very far away $\delta \bar{\tau_0} \approx \delta \bar{t_0}$. 
+
+\subsubsection{Perturbed spacetime - double shell}
+
+Now we introduce two shells of matter with equal and opposite ADM mass, $-\Delta M$ and $\Delta M$ where $|\Delta M|<<M$, at a distance of $r_1$ and $r_2$ respectively as shown in the top part of figure \ref{fig:1}. We model these shells as infinitesimally thin and therefore use the Israel Junction Conditions (IJC) \cite{Isr66} with a delta function shell to analyze the effects of the shells. In this case the particle's move through two different spacetime regions. Region $I$ is defined by the black hole of mass $M$ and region $II$ is defined by a Schwarzschild metric of mass $M-\Delta M$ as shown in the top part of figure \ref{fig:1}.
+\\
+\\
+As explained in the previous section, the proper time interval between two particles emitted at $r_e$, $\delta t_e$, is the same as the coordinate time interval at $r_1$, $\delta t_1$. Now we need to find the corresponding coordinate time interval in region $II$, $\delta \hat{t}_1$ (in general we will use hats on top of quantities that are evaluated in region $II$). To do this we simply note that the corresponding proper time at $r_1$, $\delta \tau_1$ must be the same in both regions of spacetime - this is a simple consequence of the IJC. The coordinate time intervals at $r_1$, in the two different regions, are therefore related by
+
+\begin{equation}
+	\delta t_1 = \delta t_0 = \left( \frac{1 - \frac{2(M - \Delta M)}{r_1}}{1 - \frac{2M}{r_1}} \right)^\frac{1}{2} \delta \hat{t}_1.
+\end{equation}
+
+We can propagate the particles through region $II$ from $r_1$ to $r_2$ and we know $\delta \hat{t}_1 = \delta \hat{t}_2$. From the fact that the proper time corresponding to the coordinate time intervals will be the same, we can relate $\delta \hat{t}_2$ back to $\delta t_2$ in region $I$, 
+
+\begin{equation}
+	\delta \hat{t}_2 = \delta \hat{t}_1= \left( \frac{1 - \frac{2M}{r_2}}{1 - \frac{2(M- \Delta M)}{r_2}} \right) \delta t_2.	\label{7}
+\end{equation}
+
+Since $\delta t_2$ is equal to the time interval observed by the observer at $r_0$, $\delta t_0$, we can find the proper time observed by the observer, $\delta \tau_0$ by simply inverting Eq (\ref{7}) and multiplying by $ \left( 1 - \frac{2M}{r_0} \right)^\frac{1}{2}$, 
+
+\begin{eqnarray}
+	\delta \tau_0 & = & \delta t_0 \left( 1 - \frac{2M}{r_0} \right)^\frac{1}{2}, 	\nonumber	\\
+	& =& \delta t_e \left( \left( \frac{r_2 - 2M}{r_1 - 2M} \right) \left( \frac{r_1 - 2(M-\Delta M)}{r_2 - 2(M - \Delta M)} \right) \left( 1 -\frac{2M}{r_0} \right) \right)^\frac{1}{2}. 
+\end{eqnarray}
+
+Since we assume the observer is far away we can neglect the term $\frac{2M}{r_0}$. The difference between the proper time interval in the presence of shells to the value without shells is 
+
+\begin{equation}
+	\delta \tau_0 - \delta \bar{\tau_0} = \delta t_e \left( \left( \frac{r_2 - 2M}{r_1 - 2M} \right)^\frac{1}{2} \left( \frac{r_1 - 2(M -\Delta M)}{r_2 - 2(M- \Delta M)} \right)^\frac{1}{2} - 1\right),
+\end{equation}
+
+since $\delta t_e = \delta \bar{\tau_0}$ when the observer is far away, we can define a dimensionless quantity, 
+
+\begin{equation}
+	\frac{\delta \tau_0 - \delta \bar{\tau_0}}{\delta \bar{\tau_0}} = \left( \left( \frac{r_2 - 2M}{r_1 - 2M} \right)^\frac{1}{2} \left( \frac{r_1 - 2(M-\Delta M)}{r_2 - 2(M-\Delta M)} \right)^\frac{1}{2} - 1\right).	\label{10}
+\end{equation}
+
+This expression is exact in the limit that the observer is far away. In the near horizon limit we expand the distances of the shells as,
+
+\begin{eqnarray}
+	r_1 & = & 2M + \epsilon 	\nonumber	\\
+	 r_2 & = & 2M + \epsilon + \delta \epsilon 	\label{11'}
+\end{eqnarray}
+
+where $\epsilon<<2M, \ \delta \epsilon << \epsilon$. To leading order in small quantities Eq (\ref{10}) becomes, 
+
+\begin{equation}
+	\frac{\delta \tau_0 - \delta \bar{\tau_0}}{\delta \bar{\tau_0}} = - \frac{\Delta M \delta \epsilon}{\epsilon^2}.	\label{11}
+\end{equation}
+
+\subsection{Defining local quantities}
+
+\subsubsection{Energy of shell}
+
+The quantities given on the right hand side of Eq (\ref{11}) are all coordinate dependent. To look at physical effects we must convert them to physical quantities. There is a natural choice of what to replace $\Delta M$ with and that is the $00$ component of the surface stress energy tensor, $S_{ab}$, of the shell as computed by the IJC
+
+\begin{equation}
+	S^a_b =  [K^a_b] - [K]h^a_b
+\end{equation}
+
+where $K_{ab}$ is the extrinsic curvature corresponding to the induced metric we are using, $K = K_{ab} h^{ab}$ is the trace of the extrinsic curvature taken with respect to the induced metric and the notation of square brackets represents the difference in a quantity in two different induced metrics. We can define the induced metrics for constant $r$ values; for region $I$ it is 
+
+\begin{equation}
+	ds_{3M}^2 = - \left( 1 - \frac{2M}{r} \right)^{-1} dt^2 + r^2 d \Omega_2^2.	\label{13}
+\end{equation}
+
+Analogously we have the metric corresponding to mass $M' = M- \Delta M$ in region $II$
+
+\begin{equation}
+	ds_{3M'}^2 = - \left( 1 - \frac{2M'}{r} \right)^{-1} dt'^2 + r^2 d \Omega_2^2.	\label{14}
+\end{equation}
+
+We could rewrite Eq (\ref{13}) and (\ref{14}) in Gaussian normal coordinates (where the coefficient in front of the time component is 1), however the first order junction condition is that the induced metric on both sides of the shell must be the same. Therefore it is easy to find a relation between the two time coordinates
+
+\begin{equation}
+	dt'^2 = \left( \frac{1 - \frac{2M'}{r_1}}{ 1- \frac{2M}{r_1}} \right) dt^2.
+\end{equation}
+
+Using this, we calculate the extrinsic curvature components
+
+\begin{eqnarray}
+	K^t_t^{(M)} & = & \frac{M}{r_1^2} \left( 1 - \frac{2M}{r_1} \right)^{-\frac{1}{2}} 	\nonumber	\\
+	K^\theta_\theta^{(M)} & = & \frac{1}{r_1} \left( 1 - \frac{2M}{r_1} \right)^\frac{1}{2} = K^\phi_\phi^{(M)}	\label{16}
+\end{eqnarray}
+
+where the superscript of $M$ denotes the quantities evaluated in the metric of mass $M$. Analogous expressions hold for the extrinsic curvature components calculated in the metric of mass $M'$ by just replacing $M$ by $M'$ in Eq (\ref{16}). With these ingredients we compute the $00$ component of the surface stress energy tensor 
+
+\begin{equation}
+	S^0_0 = - \frac{1}{4 \pi r_1} \left( \left( 1 - \frac{2M}{r_1} \right)^\frac{1}{2} - \left( 1 - \frac{2M'}{r_1} \right)^\frac{1}{2} \right).
+\end{equation}
+
+This represents the surface energy density, to convert it to the energy of the shell, $\mathcal{E}$, we multiply by the surface area of the shell which is $4 \pi r_1^2$
+
+\begin{equation}
+	\mathcal{E} = - r_1 \left( \left( 1 - \frac{2M}{r_1} \right)^\frac{1}{2} - \left( 1 - \frac{2M'}{r_1} \right)^\frac{1}{2} \right).
+\end{equation}
+
+Substituting in for $r_1 = 2M + \epsilon$, where $\Delta M<<\epsilon<<2M$ and expanding to leading order in small quantities, 
+
+\begin{equation}
+	\mathcal{E} = \left( \frac{2M}{\epsilon} \right)^\frac{1}{2} \Delta M.
+\end{equation} 
+
+\subsubsection{Proper time between shells}
+
+We calculate the proper time between the two shells, $\tau_{12}$, as seen by an observer at the first shell\footnote{One could also calculate the proper length between the shells.}. This is done with a view to replace $\delta \epsilon$ by $\tau_{12}.
+
+\begin{eqnarray}
+	\tau_{12} & = & \int^{t_2}_{t_1} \left( 1 - \frac{2M'}{r_1} \right)^\frac{1}{2} dt	\nonumber	\\
+	& = & \left( 1 - \frac{2M'}{r_1} \right)^\frac{1}{2} (t_2 - t_1)	\nonumber	\\
+	& = & \left( 1 - \frac{2M'}{r_1} \right)^\frac{1}{2} (r_2 - r_1 + 2M' \ln \left( \frac{r_2 - 2M'}{r_1 - 2M'} \right) \right).	
+\end{eqnarray}
+
+We substitute in for $r_1$ and $r_2$ from Eq (\ref{11'}) to give
+
+\begin{equation}
+	\tau_{12} = \delta \epsilon \left( \frac{\epsilon}{2M} \right)^\frac{1}{2} \left( 1 + \frac{2M}{\epsilon} \right).
+\end{equation}
+
+\subsubsection{Proper distance to the shell}
+
+The proper length $l$ between the horizon and shell is calculated to replace $\epsilon$ in Eq (\ref{11}). 
+
+\begin{eqnarray}
+	l & = & \int^{2M + \epsilon}_{2M} \frac{dr}{\left( 1 - \frac{2M}{r} \right)^\frac{1}{2}}	\nonumber	\\
+	& = & (2M \epsilon)^\frac{1}{2}  + M \ln \left( \frac{M + \epsilon + (2M\epsilon)^\frac{1}{2}}{M} \right)
+\end{eqnarray}
+
+to leading order this reduces to 
+
+\begin{equation}
+	l = 2 (2 \epsilon M)^\frac{1}{2}.
+\end{equation}
+
+Using these local quantities to replace the coordinate quantities in Eq (\ref{11}) gives
+
+\begin{equation}
+	\frac{\delta \tau_0 - \delta \bar{\tau_0}}{\delta \bar{\tau_0}} = - \frac{\mathcal{E} \tau_{12}}{l^4} \frac{64 M^2}{1 + \frac{16 M^2}{l^2}}
+\end{equation}
+
+In the limit that $M \rightarrow \infty$ we get a very simple result
+
+\begin{equation}
+	\frac{\delta \tau_0 - \delta \bar{\tau_0}}{\delta \bar{\tau_0}} |_{M \rightarrow \infty} = - \frac{4 \mathcal{E} \tau_{12}}{l^2}.
+\end{equation}
+
+
+\section{Discussion}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\bibliography{all_active}
+
+
+\end{document}
