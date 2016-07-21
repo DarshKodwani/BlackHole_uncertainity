@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  21 JUL 2016 17:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  21 JUL 2016 17:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -450,11 +450,7 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 58.
- [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-
-LaTeX Warning: Reference `sec-dis' on page 2 undefined on input line 119.
-
-[2]
+ [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
 Underfull \hbox (badness 10000) in paragraph at lines 137--140
 
  []
@@ -491,10 +487,10 @@ Overfull \hbox (68.16447pt too wide) in paragraph at lines 287--288
 [5] [6 <./Propertime.pdf>] [7]
 File: Propertime.pdf Graphic file (type pdf)
  <use Propertime.pdf>
-Package pdftex.def Info: Propertime.pdf used on input line 432.
+Package pdftex.def Info: Propertime.pdf used on input line 433.
 (pdftex.def)             Requested size: 578.16447pt x 325.2175pt.
 
-Overfull \hbox (68.16447pt too wide) in paragraph at lines 432--433
+Overfull \hbox (68.16447pt too wide) in paragraph at lines 433--434
  [] 
  []
 
@@ -504,10 +500,10 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [8] [9] <frequency.pdf, id=70, 963.6pt x 542.025pt>
 File: frequency.pdf Graphic file (type pdf)
  <use frequency.pdf>
-Package pdftex.def Info: frequency.pdf used on input line 485.
+Package pdftex.def Info: frequency.pdf used on input line 486.
 (pdftex.def)             Requested size: 578.16447pt x 325.2175pt.
 
-Overfull \hbox (68.16447pt too wide) in paragraph at lines 485--486
+Overfull \hbox (68.16447pt too wide) in paragraph at lines 486--487
  [] 
  []
 
@@ -523,7 +519,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  6093 strings out of 493089
  85103 string characters out of 6134842
- 174265 words of memory out of 5000000
+ 174279 words of memory out of 5000000
  9472 multiletter control sequences out of 15000+600000
  13136 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -550,7 +546,7 @@ t/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2015/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Draft_BH_shells.pdf (12 pages, 343877 bytes).
+Output written on Draft_BH_shells.pdf (12 pages, 343859 bytes).
 PDF statistics:
  166 PDF objects out of 1000 (max. 8388607)
  120 compressed objects within 2 object streams
