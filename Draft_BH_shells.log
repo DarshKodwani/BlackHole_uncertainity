@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  15 JUL 2016 14:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  21 JUL 2016 17:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -442,86 +442,89 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 48.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 112--115
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 112--115
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 112--115
-
- []
-
-[2] [3]
-
-LaTeX Warning: Reference `fig-QFT' on page 4 undefined on input line 203.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 211--213
-
- []
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 229.
+)
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 58.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 229.
- [4]
-<Propertime.pdf, id=32, 963.6pt x 542.025pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 58.
+ [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+LaTeX Warning: Reference `sec-dis' on page 2 undefined on input line 119.
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 137--140
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--140
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--140
+
+ []
+
+[3]
+
+LaTeX Warning: Reference `fig-QFT' on page 4 undefined on input line 228.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--238
+
+ []
+
+[4] <Propertime.pdf, id=31, 963.6pt x 542.025pt>
 File: Propertime.pdf Graphic file (type pdf)
  <use Propertime.pdf>
-Package pdftex.def Info: Propertime.pdf used on input line 262.
+Package pdftex.def Info: Propertime.pdf used on input line 287.
 (pdftex.def)             Requested size: 578.16447pt x 325.2175pt.
 
-Overfull \hbox (68.16447pt too wide) in paragraph at lines 262--263
+Overfull \hbox (68.16447pt too wide) in paragraph at lines 287--288
  [] 
  []
 
-[5 <./Propertime.pdf>] [6]
+[5] [6 <./Propertime.pdf>] [7]
 File: Propertime.pdf Graphic file (type pdf)
  <use Propertime.pdf>
-Package pdftex.def Info: Propertime.pdf used on input line 343.
+Package pdftex.def Info: Propertime.pdf used on input line 432.
 (pdftex.def)             Requested size: 578.16447pt x 325.2175pt.
 
-Overfull \hbox (68.16447pt too wide) in paragraph at lines 343--344
+Overfull \hbox (68.16447pt too wide) in paragraph at lines 432--433
  [] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7] <frequency.pdf, id=64, 963.6pt x 542.025pt>
+[8] [9] <frequency.pdf, id=70, 963.6pt x 542.025pt>
 File: frequency.pdf Graphic file (type pdf)
  <use frequency.pdf>
-Package pdftex.def Info: frequency.pdf used on input line 396.
+Package pdftex.def Info: frequency.pdf used on input line 485.
 (pdftex.def)             Requested size: 578.16447pt x 325.2175pt.
 
-Overfull \hbox (68.16447pt too wide) in paragraph at lines 396--397
+Overfull \hbox (68.16447pt too wide) in paragraph at lines 485--486
  [] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[8] [9 <./frequency.pdf>] [10]
-No file Draft_BH_shells.bbl.
-[11] (./Draft_BH_shells.aux)
+[10] [11 <./frequency.pdf>] (./Draft_BH_shells.bbl) [12] (./Draft_BH_shells.aux
+)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 6022 strings out of 493089
- 84092 string characters out of 6134842
- 172628 words of memory out of 5000000
- 9403 multiletter control sequences out of 15000+600000
+ 6093 strings out of 493089
+ 85103 string characters out of 6134842
+ 174265 words of memory out of 5000000
+ 9472 multiletter control sequences out of 15000+600000
  13136 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,10n,38p,1116b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -547,10 +550,10 @@ t/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2015/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Draft_BH_shells.pdf (11 pages, 323428 bytes).
+Output written on Draft_BH_shells.pdf (12 pages, 343877 bytes).
 PDF statistics:
- 163 PDF objects out of 1000 (max. 8388607)
- 118 compressed objects within 2 object streams
+ 166 PDF objects out of 1000 (max. 8388607)
+ 120 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

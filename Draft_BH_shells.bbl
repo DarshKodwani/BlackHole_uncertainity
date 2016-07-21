@@ -1,0 +1,185 @@
+%merlin.mbs apsrev4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
+%Control: key (0)
+%Control: author (8) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (-1) disabled
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{14}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{http://dx.doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Hawking}(1976)}]{Haw76a}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~W.}\ \bibnamefont
+  {Hawking}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Phys.
+  Rev. D}\ }\textbf {\bibinfo {volume} {14}},\ \bibinfo {pages} {2460}
+  (\bibinfo {year} {1976})}\BibitemShut {NoStop}%
+%%CITATION = PHRVA,D14,2460;%%
+\bibitem [{\citenamefont {Almheiri}\ \emph {et~al.}(2013)\citenamefont
+  {Almheiri}, \citenamefont {Marolf}, \citenamefont {Polchinski},\ and\
+  \citenamefont {Sully}}]{AMPS}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Almheiri}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Marolf}},
+  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Polchinski}}, \ and\
+  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Sully}},\ }\href
+  {\doibase 10.1007/JHEP02(2013)062} {\bibfield  {journal} {\bibinfo  {journal}
+  {JHEP}\ }\textbf {\bibinfo {volume} {1302}},\ \bibinfo {pages} {062}
+  (\bibinfo {year} {2013})},\ \Eprint {http://arxiv.org/abs/1207.3123}
+  {arXiv:1207.3123 [hep-th]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1207.3123;%%
+\bibitem [{\citenamefont {Bekenstein}(1994)}]{Bek94}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~D.}\ \bibnamefont
+  {Bekenstein}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {49}},\ \bibinfo {pages} {1912}
+  (\bibinfo {year} {1994})},\ \Eprint {http://arxiv.org/abs/gr-qc/9307035}
+  {gr-qc/9307035} \BibitemShut {NoStop}%
+%%CITATION = PHRVA,D49,1912;%%
+\bibitem [{\citenamefont {Braunstein}\ \emph {et~al.}(2013)\citenamefont
+  {Braunstein}, \citenamefont {Pirandola},\ and\ \citenamefont
+  {\'{Z}yczkowski}}]{BraPir09}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~L.}\ \bibnamefont
+  {Braunstein}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Pirandola}}, \ and\ \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {\'{Z}yczkowski}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Physical Review Letters 110,}\ }\textbf {\bibinfo {volume} {101301}}
+  (\bibinfo {year} {2013})},\ \Eprint {http://arxiv.org/abs/0907.1190}
+  {arXiv:0907.1190 [quant-ph]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:0907.1190;%%
+\bibitem [{\citenamefont {Maldacena}\ and\ \citenamefont
+  {Susskind}(2013)}]{MalSus13}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Maldacena}}\ and\ \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Susskind}},\ }\href@noop {} {\  (\bibinfo {year} {2013})},\ \Eprint
+  {http://arxiv.org/abs/1306.0533} {arXiv:1306.0533 [hep-th]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1306.0533;%%
+\bibitem [{\citenamefont {Giddings}(2012)}]{Gid12}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~B.}\ \bibnamefont
+  {Giddings}},\ }\href@noop {} {\  (\bibinfo {year} {2012})},\ \Eprint
+  {http://arxiv.org/abs/1211.7070} {arXiv:1211.7070 [hep-th]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1211.7070;%%
+\bibitem [{\citenamefont {Dodelson}\ and\ \citenamefont
+  {Silverstein}(2015)}]{DodSil15}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Dodelson}}\ and\ \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {Silverstein}},\ }\href@noop {} {\  (\bibinfo {year} {2015})},\ \Eprint
+  {http://arxiv.org/abs/1504.05536} {arXiv:1504.05536 [hep-th]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1504.05536;%%
+\bibitem [{\citenamefont {Osuga}\ and\ \citenamefont {Page}(2016)}]{OsuPag16}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Osuga}}\ and\ \bibinfo {author} {\bibfnamefont {D.~N.}\ \bibnamefont
+  {Page}},\ }\href@noop {} {\  (\bibinfo {year} {2016})},\ \Eprint
+  {http://arxiv.org/abs/1607.04642} {arXiv:1607.04642 [hep-th]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1607.04642;%%
+\bibitem [{\citenamefont {Hui}\ and\ \citenamefont {Yang}(2013)}]{HuiYan13}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Hui}}\ and\ \bibinfo {author} {\bibfnamefont {I.-S.}\ \bibnamefont {Yang}},\
+  }\href@noop {} {\  (\bibinfo {year} {2013})},\ \Eprint
+  {http://arxiv.org/abs/1308.6268} {arXiv:1308.6268 [hep-th]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1308.6268;%%
+\bibitem [{\citenamefont {Ilgin}\ and\ \citenamefont {Yang}(2013)}]{IlgYan13}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {I.}~\bibnamefont
+  {Ilgin}}\ and\ \bibinfo {author} {\bibfnamefont {I.-S.}\ \bibnamefont
+  {Yang}},\ }\href@noop {} {\  (\bibinfo {year} {2013})},\ \Eprint
+  {http://arxiv.org/abs/1311.1219} {arXiv:1311.1219 [hep-th]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1311.1219;%%
+\bibitem [{\citenamefont {Lowe}\ and\ \citenamefont
+  {Thorlacius}(2014)}]{LowTho14}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~A.}\ \bibnamefont
+  {Lowe}}\ and\ \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Thorlacius}},\ }\href {\doibase 10.1016/j.physletb.2014.08.062} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Lett.}\ }\textbf {\bibinfo {volume}
+  {B737}},\ \bibinfo {pages} {320} (\bibinfo {year} {2014})},\ \Eprint
+  {http://arxiv.org/abs/1402.4545} {arXiv:1402.4545 [hep-th]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1402.4545;%%
+\bibitem [{\citenamefont {Hawking}\ \emph {et~al.}(2016)\citenamefont
+  {Hawking}, \citenamefont {Perry},\ and\ \citenamefont
+  {Strominger}}]{HawPer16}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~W.}\ \bibnamefont
+  {Hawking}}, \bibinfo {author} {\bibfnamefont {M.~J.}\ \bibnamefont {Perry}},
+  \ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Strominger}},\
+  }\href {\doibase 10.1103/PhysRevLett.116.231301} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {116}},\
+  \bibinfo {pages} {231301} (\bibinfo {year} {2016})},\ \Eprint
+  {http://arxiv.org/abs/1601.00921} {arXiv:1601.00921 [hep-th]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1601.00921;%%
+\bibitem [{\citenamefont {Maldacena}(2016)}]{Mal15}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Maldacena}},\ }\href {\doibase 10.1002/prop.201500097} {\bibfield  {journal}
+  {\bibinfo  {journal} {Fortsch. Phys.}\ }\textbf {\bibinfo {volume} {64}},\
+  \bibinfo {pages} {10} (\bibinfo {year} {2016})},\ \Eprint
+  {http://arxiv.org/abs/1508.01082} {arXiv:1508.01082 [hep-th]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Nomura}\ \emph {et~al.}(2013)\citenamefont {Nomura},
+  \citenamefont {Varela},\ and\ \citenamefont {Weinberg}}]{NomVar12}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Nomura}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Varela}}, \
+  and\ \bibinfo {author} {\bibfnamefont {S.~J.}\ \bibnamefont {Weinberg}},\
+  }\href {\doibase 10.1103/PhysRevD.87.084050} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys.Rev.}\ }\textbf {\bibinfo {volume} {D87}},\ \bibinfo {pages}
+  {084050} (\bibinfo {year} {2013})},\ \Eprint {http://arxiv.org/abs/1210.6348}
+  {arXiv:1210.6348 [hep-th]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1210.6348;%%
+\end{thebibliography}%

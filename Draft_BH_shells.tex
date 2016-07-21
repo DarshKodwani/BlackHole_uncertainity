@@ -11,7 +11,7 @@
 
 \begin{document}
 
-\title{A self-consistency check for the unitary propagation of Hawking quanta}
+\title{A self-consistency check for unitary propagation of Hawking quanta}
 
 \author{Daniel Baker}
 \email{dbaker@cita.utoronto.ca}
@@ -37,12 +37,12 @@
 \affiliation{Perimeter Institute of Theoretical Physics, 31 Caroline Street North, Waterloo, ON N2L 2Y5, Canada.}
 
 \begin{abstract}
-The black hole information paradox presumes that local quantum field theory is valid to provide unitary propagations from near-horizon modes to asymptotic Hawking quanta. 
+The black hole information paradox presumes that local quantum field theory can provide unitary propagations from near-horizon modes to asymptotic Hawking quanta. 
 Instead of invoking unknown quantum-gravity effects to modify such assumption, we propose a self-consistency check.
 We re-examine this assumption by establishing an analogy to Feynman's analysis of a double-slit experiment. 
-Feynmann showed that the assumption of subsystem unitarity in double-slit experiment, namely ignoring the entanglement with the double-slit, becomes arbitrarily reliable when the screen to project the interference pattern goes to infinitely far away.
+Feynman showed that the assumption of subsystem unitarity in double-slit experiment, namely ignoring the entanglement with the double-slit, becomes arbitrarily reliable when the screen to project the interference pattern goes to infinitely far away.
 Analogously, here we ask whether a unitary propagation of Hawking quanta, namely ignoring the entanglement with the geometry, also becomes arbitrarily reliable in the limit of a large black hole. 
-We present strong evidence that the result is negative, and we discuss its implications.
+We present strong evidence that the result is negative, and we discuss how this is related to the information transfer from near-horizon geometry and the soft-hair proposal.
 \end{abstract}
 
 \maketitle
@@ -52,11 +52,37 @@ We present strong evidence that the result is negative, and we discuss its impli
 
 \section{Introduction and Summary}
 
+The black hole information paradox \cite{Haw76a} was sharpened to show a self-inconsistency among the following three widely-believed statements \cite{AMPS}
+\footnote{Different physicists may believe in some of those more strongly than the others, but very few would have argued against any single statement without the explicitly conflict in the information paradox.}:
+\begin{itemize}
+\item {\bf Unitary evaporation:} A black hole will totally evaporate; the formation and evaporation of a black hole is described by an asymptotic observer as a unitary $S$-matrix, whose size is the exponential of the black hole's Bekenstein entropy.
+\item {\bf General relativity:} The collapse-Schwarzschid geometry given by general relativity is a valid description to the spacetime everywhere except for near the singularity.
+Therefore, there is no drama while crossing the horizon.
+\item {\bf Local quantum field theory:} Away from the singularity, we can apply local quantum field theory (QFT) which describes microscopic steps of evaporation. 
+It manifests as a unitary propagation of every near-horizon mode into every asymptotic Hawking quantum.
+\end{itemize}
+
+This conflict has inspired many different proposals to modify one of the above three statements. 
+For example, information loss or remnant \cite{Bek94} {\bf (XXX anyone knows a better reference for remnants?)} modifies the first statement; 
+firewall \cite{BraPir09,AMPS} or ER=EPR \cite{MalSus13} modifies the second statement;
+various proposals of nonlocal effects near the horizon \cite{Gid12,DodSil15,OsuPag16} or causal patch complementarity \cite{HuiYan13,IlgYan13,LowTho14}
+\footnote{Independent of the particular realization, causal-patch complementarity basically claims that QFT breaks down if one applies it to a region that does not fit into any observer's causal patch. 
+Since ``whether there exists a causal patch to fit'' is a highly nonlocal condition, it is effectively a break-down of local QFT.} 
+modifies the last statement.
+Unfortunately, since the paradox only shows a conflict with the three statements combine, it is up to individual taste/bias to modify any one of them. 
+
+In this paper, we will try to sharpen the problem even further. 
+We will try to argue that the last statement on its own is already self-conflicting. 
+In other words, {\bf the application of local QFT to a unitary propagation of Hawking quantum is not self-consistent. } 
+This should provide a much stronger motivation to modify the second statement than the other two. 
+Although there are still many different proposals capable of doing that, we hope such discovery can focus our efforts and make the progress even further.
+
+Before diving into details, we should explain why we focus on the last statement.
+That is becasue local QFT simply assumes a subsystem unitarity.
 Quantum mechanical evolution of a full system is by-definition unitary. 
-Unfortunately, we are not always able to describe everything by quantum mechanics all together. 
-Practical descriptions are always about subsystems. 
+However in practice, we are not able to describe everything by quantum mechanics all together, so we describe only subsystems. 
 Namely, we assume that the full system can be separated into a ``classical background'' and a ``quantum subsystem''. 
-Since we only use quantum mechanics to describe the quantum subsystem, it always appears to be unitary.
+After such artificial separation, since we only use quantum mechanics to describe the quantum subsystem, it always appears to be unitary.
 \footnote{Even a time-dependent Hamiltonian leads to an apparently unitary evolution under this assumption. That is obviously not a physical fact since a unitary subsystem should be determined by its own initial state, not co-determined by initial state plus an arbitrary time-dependence.} 
 However, such unitarity should not be taken as a physical fact unless one specifically checks the nature of interactions with the background.
 
@@ -64,40 +90,39 @@ The most direct way to justify the classical-background assumption is to also de
 This is clearly difficult in practice. 
 The very reason why we would like to apply the classical-background approximation is to avoid describing the far-too-complicated background by quantum mechanics. 
 A consistency check which requires us to do so defeats the purpose. 
-Furthermore, there are situations in which we in-principle do not know how to describe the classical background in quantum mechanics. 
-Quantum field theory in curved spacetime is a perfect example. 
-In this case, the classical background is the geometry.
-One in-principle needs to know quantum gravity in order to model the quantum interaction with the background. 
+In particular, there are situations in which we in-principle do not know how to describe the classical background in quantum mechanics. 
+Our problem at hand, QFT in curved spacetime, is exactly such annoying situation. 
+Since the classical background is the geometry, one in-principle needs to know quantum gravity in order to model the quantum interaction with the background. 
 
 Fortunately, Feynman, in his famous lectures, presented an interesting trick to circumvent the above obstacle. 
-This trick, to a certain extend, enables us to perform a self-consistency check of the classical-background assumption {\bf without} knowing the quantum nature of the background.
+This trick, to a certain extend, enables us to perform a {\bf self-consistency check} of the classical-background assumption {\bf without} knowing the quantum nature of the background.
 In Sec.\ref{sec-DoubleSlit}, we will review Feynman's analysis on the double-slit experiment. 
-In his case, the double-slit is the classical background, the particle passing through it is the quantum subsystem, and the operational definition of subsystem unitarity is whether an interference pattern can be observed on the final projection screen. 
-He showed that we can ignore the quantum details of the double-slits and summarize that as an uncertainty in its position, which is a classical quantity. 
-When such uncertainty is fixed, the interference pattern is always visible as long as we put the final projection screen to be infinitely far away. 
+In his case, the double-slit is the classical background, the particle passing through it is the quantum subsystem, and subsystem unitarity is checked by whether an interference pattern can be observed on the final projection screen. 
+He showed that we can ignore the quantum details of the double-slit and summarize that as an uncertainty in its position, which is a classical quantity. 
+When such uncertainty is fixed, a classical calculation can show that the interference pattern is always visible as long as we put the final projection screen to be infinitely far away. 
 It is in this sense that a unitary evolution of the subsystem is an arbitrarily good approximation.
 
-The fundamental principle from Feynman's trick is that ``classical wave coherence'' should be taken as the prerequisit of ``quantum unitarity''. 
+The fundamental principle behind Feynman's trick is that ``classical wave coherence'' should be taken as the prerequisite of ``quantum unitarity''. 
 In Sec.\ref{sec-QFT}, we argue that it has a natural generalization to local QFT in curved spacetime, thus we can apply it to re-examine the propagation of Hawking quanta. 
-This propagation is of particular importance because it plays a central role in the lasting debate of black hole information paradox. 
-The main dilemma is that one Hawking quantum needs to play two different roles. 
-Near the horizon, it has to be part of the local vacuum state; near spatial infinity, it has to recover a unitary evaporation process. 
-For an old black hole, the same state of a Hawking quantum cannot fulfill both requirements, thus the paradox. 
-If the propagation process from near the horizon to infinity is not unitary, then a near horizon mode and the asymptotic Hawking quantum does not have the same state, and the paradox loses its fundation. 
-Thus before jumping into any conclusion regarding the paradox, we should try to confirm whether QFT in a curved spacetime is indeed justified to provide a unitary propagation of Hawking quanta.
 
 In Sec.\ref{sec-BlackHole}, we will provide our detail analysis and analogy. 
-Roughly speaking, the classical geometry plays the role of the double-slit, a background that can potentially entangle with the Hawking quanta wavefunction and ruins its subsystem unitarity. 
+The classical geometry plays the role of the double-slit, a background that can potentially entangle with the Hawking quanta wavefunction and ruins its subsystem unitarity. 
 We then assume that the unknown quantum nature of geometry can be parametrize by a classical uncertainty with an unknown but fixed, gauge-invariant size. 
-A classical wave plays the role of the interference pattern; if even a classical wave decoheres due to the uncertainty of geometry, there is no reason to believed that the quantized version of such wave has unitarity.
-The common belief is that in the limit of a large black hole, gravitational effect outside the horizon is arbitrarily weak, thus local QFT should be arbitrarily trustworthy.
-By analogy to Feynman's analysis, we should expect that with a fixed uncertainty in the geometry, any effect on the classical wave should drops to zero when we take the large black hole limit.
+A classical wave plays the role of the interference pattern. 
+When even a classical wave decoheres due to the uncertainty of geometry, there is no reason to believed that the quantized version of such wave has unitarity.
+The common expectation is that in the limit of a large black hole, gravitational effect outside the horizon is arbitrarily weak, thus local QFT should be arbitrarily trustworthy.
+By analogy to Feynman's analysis, we should expect that with a fixed uncertainty in the geometry, any effect on the classical wave should drop to zero when we take the large black hole limit.
 Interestingly, what we found seems to be the opposite. 
 We show that with a fixed geometric uncertainty, a classical wave suffers an {\it arbitrarily large} correction in the large black hole limit.
-By analogy to Feynman's analysis, this as a strong evidence that the apparent unitarity of QFT in this case is not a valid assumption.
+By analogy to Feynman's analysis, this is a strong evidence that the apparent unitarity of QFT in this case is not a valid assumption.
 
-{\bf XXX tbc by I-Sheng}
-
+In Sec.\ref{sec-dis}, we discuss various implications of our finding. 
+First of all, our self-consistency check should be generally applicable to any geometry, and it does not invalidate local QFT entirely. 
+Likewise, even when unitarity is lost in local QFT, the values of many observables do not have to change. 
+Most existing applications of QFT in curved spacetime actually only care about the expectation value of particle numbers, which can be unaffected by the loss of subsystem unitarity. 
+Secondly, our finding resolve the information paradox by selecting one culprit among the three statements, but it does not yet resolve the information transfer puzzle. 
+We argue that our finding naturally implies an information exchange between a QFT quantum and the local geometry \cite{OsuPag16}.
+The the reason why local geometry carries the appropriate information to give in the first place may be related to the soft-hair proposal \cite{HawPer16}. 
 
 \section{Feyman's analysis on double-slit experiments}
 \label{sec-DoubleSlit}
@@ -294,20 +319,84 @@ We are going to assume that unitarity in QFT is fine in Minkowski space, effecti
 One can imagine a simple subtraction by a counter term.
 Or alternatively, since the actual value of $(\sigma\Delta r)$ is unknown, we assume that it is small enough to not cause any concern.
 
-Next we study Eq.~(\ref{eq-result}) with an actual black hole. When the double-shell is very far away from the black hole, $r_1\gg M$, it agrees with Eq.~(\ref{eq-Mink}) as expected. The interesting thing here is that when this pair of geodesics originate near the horizon, the double-shell could also be somewhere near the horizon. In that limit, Eq.~(\ref{eq-result}) can be approximated by
+Next we study Eq.~(\ref{eq-result}) with an actual black hole. 
+When the double-shell is very far away from the black hole, $r_1\gg M$, it agrees with Eq.~(\ref{eq-Mink}) as expected. 
+The interesting thing here is that when this pair of geodesics originate near the horizon, the double-shell could also be somewhere near the horizon. 
+In that limit, Eq.~(\ref{eq-result}) can be approximated by
 \begin{equation}
 \frac{\delta t_0 - \bar{\delta t_0}}{\delta t_0} \approx
 \sigma \Delta l \left(\frac{2M}{l_1}\right)^2~, \ \ \ \ {\rm \bf XXX \ check \ coefficients}
 \label{eq-NearHorizon}
 \end{equation}
-where $l$ is the proper distance between $r_1$ and the horizon and $\Delta l$ is the proper distance between the two shells. We can see that in addition to the same gauge-invariant quantity in Minkowski space\footnote{In Minkowski space, the radial coordinate is the proper distance, $\Delta r=\Delta l$.}, there is an extra factor of $(2M/l_1)^2$ which diverges as the shell approaches the horizon.
+where $l$ is the proper distance between $r_1$ and the horizon and $\Delta l$ is the proper distance between the two shells. 
+We can see that in addition to the same gauge-invariant quantity in Minkowski space
+\footnote{In Minkowski space, the radial coordinate is the proper distance, $\Delta r=\Delta l$.}, 
+there is an extra factor of $(2M/l_1)^2$ which diverges as the shell approaches the horizon.
 
-The small $l_1$ limit may not be the best way to appreciate how Eq.~(\ref{eq-NearHorizon}) poses a threat to QFT. After all, we do not expect QFT to hold for arbitrarily small distance anyway. The best way to understand Eq.~(\ref{eq-NearHorizon}) is to fix $l_1$ at some scale that much longer than any scale that we expect UV problems. By conventional knowledge, the effect of gravity near horizon gets arbitrarily weak as the black hole becomes large. However, the problem caused by Eq.~(\ref{eq-NearHorizon}) grows larger as the black hole becomes larger, and diverges in the large black hole limit.
+The small $l_1$ limit may not be the best way to appreciate how Eq.~(\ref{eq-NearHorizon}) poses a threat to QFT. 
+After all, we do not expect QFT to hold for arbitrarily small distance anyway. 
+The best way to understand Eq.~(\ref{eq-NearHorizon}) is to fix $l_1$ at some scale that much longer than any scale that we expect UV problems. 
+By conventional knowledge, the effect of gravity near horizon gets arbitrarily weak as the black hole becomes large. 
+However, the problem caused by Eq.~(\ref{eq-NearHorizon}) grows larger as the black hole becomes larger, and diverges in the large black hole limit.
+Since the large black hole limit is supposed to be the best case scenario for information paradox, such a diverging uncertainty to decohere classical waves causes a strong doubt on the subsystem unitarity assumption in QFT.
 
 
 \section{Discussion}
 
-{\bf XXX Maybe do this in the introduction: I-Sheng.}
+\subsection{The self-consistency check of local QFT}
+
+In this paper, we proposed a self-consistency check of local QFT in curved spacetime geometries.
+We have shown that the near-horizon geometry of a Schwarzschild black hole seems to fail such check.
+As explained in Sec.\ref{sec-BlackHole}, the consistency requires us to parametrize the uncertainty in the classical geometry.
+We have chosen a particular form of uncertainty in our explicit calculation.
+Our result is gauge invariant and makes physical sense, but there might be a more general way to parametrize such uncertainty to make our approach even more general.
+It is also interesting to apply the same check to other geometries, especially other types of horizons.
+
+We should emphasize that our check does not invalidate QFT all together.
+We simply suggest that the QFT degrees of freedom lose their subsystem unitarity.
+In the double-slit experiment, with or without the interference pattern, the total number of particles that passes through the double-slit is not affected, and the expectation value of the particle location remains in the center.
+The point is that we can always find a pair of pure and mixed density matrices which give identical expectation values to many observables.
+It is not unexpected that the only affected observable is the one explicitly checking unitarity.
+Thus we can still rely on QFT to calculate the values of other observables.
+
+Many existing results of QFT in curved/dynamical geometries are about particle numbers, such as the particle-production calculation following a Bogoliugov transformation. 
+As an example, one can easily see that
+\begin{equation}
+\rho_{\rm pure} = \left(\sum_n a_n|n\rangle\right)
+\left(\sum_n \langle n| a_n^*\right)
+\end{equation}
+and
+\begin{equation}
+\rho_{\rm mixed} = \sum_n |a_n|^2 |n\rangle\langle n|
+\end{equation}
+give the same particle number. 
+Thus there is no general crisis if we admit that local QFT sometimes loses subsystem unitarity. 
+
+As far as we know, an observable that explicitly checks the subsystem unitarity of local QFT is the cosmological Bell inequality \cite{Mal15}. 
+One can apply our self-consistency check to such model and update the prediction of whether a violation of Bell inequality is actually expected.
+
+
+\subsection{The information-transfer puzzle}
+
+Showing the lack of unitarity in the propagation of Hawking quanta does not resolve all the problem. 
+Usually, one pictures a nonunitarity process as losing information. 
+In the context of black hole information, a Hawking quantum actually has to {\it recover} information. 
+A near-horizon mode starts from a maximally mixed (thermal) state with no information, since its partner is the interior mode that never comes out of the horizon. 
+After the nonunitarity propagation to become an asymptotic Hawking quantum, it has to carry information to purify the rest of the Hawking radiation there.
+
+Since unitarity is lost to the local geometric uncertainty, what restores information must be the interaction with the local geometry. 
+An abstract realization of this information-recovery process is recently demonstrated in \cite{OsuPag16}. 
+In order for local geometry to give this information to the Hawking quanta, it must first carry such information.
+If was first suggested that superpositions of different classical geometries can store such information \cite{NomVar12}.
+In the conventional picture, classical geometries are determined by only a few parameters such as the location and size of the black hole.
+Thus the major objection to such picture is that the superpositons of classical geometries do not form a large enough Hilbert space to hold the required information.
+Recently, it was realized that there are actually a much larger number of classical geometries differed by their soft hairs \cite{HawPer16}.
+A simple counting suggested that the size of Hilbert space seems no longer the problem, so one should persue this line of thoughts even further.
+
+Classically, soft hairs manifest as memory effects that alters the distances between geodesics, which is very similar to the effect of geometric uncertainty as we showed in this paper.
+Based on this picture, one may try to quantize the soft hairs and build a toy model that invovles quantum interaction, therefore entanglement, between the soft hairs and the usual QFT modes.
+That would provide a complete picture that the loss of subsystem unitarity is really just entanglement with another subsystem which was originally (and illegitimately, as we argued) assumed as the classical background.
+
 
 \appendix
 
