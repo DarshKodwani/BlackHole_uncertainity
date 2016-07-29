@@ -29,45 +29,45 @@ Warning--missing journal in DodSil15
 Warning--missing journal in OsuPag16
 Warning--missing journal in HuiYan13
 Warning--missing journal in IlgYan13
-You've used 16 entries,
+You've used 20 entries,
             5847 wiz_defined-function locations,
-            1717 strings with 16943 characters,
-and the built_in function-call counts, 13129 in all, are:
-= -- 832
-> -- 271
-< -- 107
-+ -- 93
-- -- 77
-* -- 1999
-:= -- 1323
-add.period$ -- 14
-call.type$ -- 16
-change.case$ -- 56
-chr.to.int$ -- 24
-cite$ -- 22
-duplicate$ -- 1312
-empty$ -- 950
-format.name$ -- 162
-if$ -- 2472
+            1752 strings with 17521 characters,
+and the built_in function-call counts, 16488 in all, are:
+= -- 1074
+> -- 334
+< -- 129
++ -- 115
+- -- 91
+* -- 2484
+:= -- 1679
+add.period$ -- 18
+call.type$ -- 20
+change.case$ -- 72
+chr.to.int$ -- 28
+cite$ -- 26
+duplicate$ -- 1634
+empty$ -- 1209
+format.name$ -- 196
+if$ -- 3136
 int.to.chr$ -- 1
-int.to.str$ -- 23
-missing$ -- 170
-newline$ -- 107
-num.names$ -- 42
-pop$ -- 614
+int.to.str$ -- 27
+missing$ -- 213
+newline$ -- 122
+num.names$ -- 54
+pop$ -- 749
 preamble$ -- 1
-purify$ -- 70
+purify$ -- 90
 quote$ -- 0
-skip$ -- 456
+skip$ -- 585
 stack$ -- 0
-substring$ -- 283
-swap$ -- 1169
-text.length$ -- 29
+substring$ -- 372
+swap$ -- 1460
+text.length$ -- 36
 text.prefix$ -- 0
 top$ -- 10
-type$ -- 195
+type$ -- 246
 warning$ -- 7
-while$ -- 44
+while$ -- 56
 width$ -- 0
-write$ -- 178
+write$ -- 214
 (There were 7 warnings)

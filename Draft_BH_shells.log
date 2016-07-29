@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  21 JUL 2016 17:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  29 JUL 2016 16:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -450,106 +450,80 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 58.
- [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 137--140
-
- []
+ [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \vbox (0.81755pt too high) has occurred while \output is active []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--140
+[2] <DSe.pdf, id=23, 963.6pt x 542.025pt>
+File: DSe.pdf Graphic file (type pdf)
+ <use DSe.pdf>
+Package pdftex.def Info: DSe.pdf used on input line 140.
+(pdftex.def)             Requested size: 481.79883pt x 271.01183pt.
+ [3 <./DSe.pdf>]
+[4] <bh_coherence.pdf, id=49, 963.6pt x 542.025pt>
+File: bh_coherence.pdf Graphic file (type pdf)
+ <use bh_coherence.pdf>
+Package pdftex.def Info: bh_coherence.pdf used on input line 254.
+(pdftex.def)             Requested size: 481.79883pt x 271.01183pt.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 137--140
-
- []
-
-[3]
-
-LaTeX Warning: Reference `fig-QFT' on page 4 undefined on input line 228.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 236--238
-
- []
-
-[4] <Propertime.pdf, id=31, 963.6pt x 542.025pt>
+[5 <./bh_coherence.pdf>] <Propertime.pdf, id=75, 963.6pt x 542.025pt>
 File: Propertime.pdf Graphic file (type pdf)
- <use Propertime.pdf>
-Package pdftex.def Info: Propertime.pdf used on input line 287.
+
+<use Propertime.pdf>
+Package pdftex.def Info: Propertime.pdf used on input line 323.
 (pdftex.def)             Requested size: 578.16447pt x 325.2175pt.
 
-Overfull \hbox (68.16447pt too wide) in paragraph at lines 287--288
+Overfull \hbox (68.16447pt too wide) in paragraph at lines 323--324
  [] 
  []
 
-[5] [6 <./Propertime.pdf>] [7]
-File: Propertime.pdf Graphic file (type pdf)
- <use Propertime.pdf>
-Package pdftex.def Info: Propertime.pdf used on input line 433.
-(pdftex.def)             Requested size: 578.16447pt x 325.2175pt.
+[6] [7 <./Propertime.pdf>] [8] [9]
+Underfull \hbox (badness 10000) in paragraph at lines 482--486
 
-Overfull \hbox (68.16447pt too wide) in paragraph at lines 433--434
- [] 
  []
 
+[10] [11]
+Underfull \hbox (badness 10000) in paragraph at lines 625--629
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[8] [9] <frequency.pdf, id=70, 963.6pt x 542.025pt>
-File: frequency.pdf Graphic file (type pdf)
- <use frequency.pdf>
-Package pdftex.def Info: frequency.pdf used on input line 486.
-(pdftex.def)             Requested size: 578.16447pt x 325.2175pt.
-
-Overfull \hbox (68.16447pt too wide) in paragraph at lines 486--487
- [] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[10] [11 <./frequency.pdf>] (./Draft_BH_shells.bbl) [12] (./Draft_BH_shells.aux
-)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+[12] (./Draft_BH_shells.bbl) [13] (./Draft_BH_shells.aux) ) 
 Here is how much of TeX's memory you used:
- 6093 strings out of 493089
- 85103 string characters out of 6134842
- 174279 words of memory out of 5000000
- 9472 multiletter control sequences out of 15000+600000
+ 6120 strings out of 493089
+ 85395 string characters out of 6134842
+ 172633 words of memory out of 5000000
+ 9498 multiletter control sequences out of 15000+600000
  13136 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,10n,38p,1116b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
-sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
-local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loca
-l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/
-texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2015/texmf-dist/fon
-ts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Draft_BH_shells.pdf (12 pages, 343859 bytes).
+ 38i,9n,38p,974b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2015/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2015/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmti9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
+/symbols/msbm10.pfb>
+Output written on Draft_BH_shells.pdf (13 pages, 367164 bytes).
 PDF statistics:
- 166 PDF objects out of 1000 (max. 8388607)
- 120 compressed objects within 2 object streams
+ 197 PDF objects out of 1000 (max. 8388607)
+ 143 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
