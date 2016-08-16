@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  29 JUL 2016 16:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  13 AUG 2016 14:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -443,14 +443,67 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 48.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 58.
 
+Package natbib Warning: Citation `Haw76a' on page 1 undefined on input line 55.
+
+
+
+Package natbib Warning: Citation `AMPS' on page 1 undefined on input line 55.
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 58.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 58.
- [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+
+Package natbib Warning: Citation `Bek94' on page 1 undefined on input line 66.
+
+
+Package natbib Warning: Citation `BraPir09' on page 1 undefined on input line 6
+7.
+
+
+Package natbib Warning: Citation `AMPS' on page 1 undefined on input line 67.
+
+
+Package natbib Warning: Citation `MalSus13' on page 1 undefined on input line 6
+7.
+
+
+Package natbib Warning: Citation `Gid12' on page 1 undefined on input line 68.
+
+
+Package natbib Warning: Citation `DodSil15' on page 1 undefined on input line 6
+8.
+
+
+Package natbib Warning: Citation `OsuPag16' on page 1 undefined on input line 6
+8.
+
+
+Package natbib Warning: Citation `HuiYan13' on page 1 undefined on input line 6
+8.
+
+
+Package natbib Warning: Citation `IlgYan13' on page 1 undefined on input line 6
+8.
+
+
+Package natbib Warning: Citation `LowTho14' on page 1 undefined on input line 6
+8.
+
+[1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+Package natbib Warning: Citation `OsuPag16' on page 2 undefined on input line 1
+25.
+
+
+Package natbib Warning: Citation `HawPer16' on page 2 undefined on input line 1
+26.
+
+
 Overfull \vbox (0.81755pt too high) has occurred while \output is active []
 
 
@@ -466,6 +519,14 @@ File: bh_coherence.pdf Graphic file (type pdf)
 Package pdftex.def Info: bh_coherence.pdf used on input line 254.
 (pdftex.def)             Requested size: 481.79883pt x 271.01183pt.
 
+
+Package natbib Warning: Citation `Wei65' on page 5 undefined on input line 273.
+
+
+
+Package natbib Warning: Citation `HeLys14' on page 5 undefined on input line 27
+3.
+
 [5 <./bh_coherence.pdf>] <Propertime.pdf, id=75, 963.6pt x 542.025pt>
 File: Propertime.pdf Graphic file (type pdf)
 
@@ -477,53 +538,97 @@ Overfull \hbox (68.16447pt too wide) in paragraph at lines 323--324
  [] 
  []
 
-[6] [7 <./Propertime.pdf>] [8] [9]
+[6] [7 <./Propertime.pdf>]
+
+Package natbib Warning: Citation `Mal15' on page 8 undefined on input line 412.
+
+
+[8]
+
+Package natbib Warning: Citation `OsuPag16' on page 9 undefined on input line 4
+25.
+
+
+Package natbib Warning: Citation `NomVar12' on page 9 undefined on input line 4
+27.
+
+
+Package natbib Warning: Citation `HawPer16' on page 9 undefined on input line 4
+30.
+
+
+Package natbib Warning: Citation `Haw74' on page 9 undefined on input line 452.
+
+
+[9]
+
+Package natbib Warning: Citation `Isr66' on page 10 undefined on input line 482
+.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 482--486
 
  []
 
 [10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 625--629
+Underfull \hbox (badness 10000) in paragraph at lines 616--620
 
  []
 
-[12] (./Draft_BH_shells.bbl) [13] (./Draft_BH_shells.aux) ) 
+<tau_compare.pdf, id=117, 847.33966pt x 437.80966pt>
+File: tau_compare.pdf Graphic file (type pdf)
+ <use tau_compare.pdf>
+Package pdftex.def Info: tau_compare.pdf used on input line 664.
+(pdftex.def)             Requested size: 423.6688pt x 218.90428pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+No file Draft_BH_shells.bbl.
+
+Package natbib Warning: There were undefined citations.
+
+[12] [13 <./tau_compare.pdf>] (./Draft_BH_shells.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
+
+
+ ) 
 Here is how much of TeX's memory you used:
- 6120 strings out of 493089
- 85395 string characters out of 6134842
- 172633 words of memory out of 5000000
- 9498 multiletter control sequences out of 15000+600000
+ 6056 strings out of 493089
+ 84419 string characters out of 6134842
+ 172797 words of memory out of 5000000
+ 9435 multiletter control sequences out of 15000+600000
  13136 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,9n,38p,974b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/
-2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2015/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2015/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmti9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
-/symbols/msbm10.pfb>
-Output written on Draft_BH_shells.pdf (13 pages, 367164 bytes).
+ 38i,8n,38p,974b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loca
+l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/
+texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2015/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2015/texmf-dist/fonts
+/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Draft_BH_shells.pdf (13 pages, 391139 bytes).
 PDF statistics:
- 197 PDF objects out of 1000 (max. 8388607)
- 143 compressed objects within 2 object streams
+ 201 PDF objects out of 1000 (max. 8388607)
+ 145 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
