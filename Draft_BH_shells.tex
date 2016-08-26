@@ -61,21 +61,43 @@ Therefore, there is no drama while crossing the horizon.
 \item {\bf Local quantum field theory:} Away from the singularity, we can apply local quantum field theory (QFT) which describes microscopic steps of evaporation. 
 For large black holes, it manifests as a unitary propagation of every near-horizon mode into every asymptotic Hawking quanta.
 \end{itemize}
-
+Basically, Statement Three demands that a near horizon mode is related to an asymptotic Hawking quantum by a unitary transformation, therefore carrying the same qubit of information. 
+However statement 1 and 2 demand this unique qubit to be maximally entangled with two distinct objects, violating monogamy. 
 This conflict has inspired many different proposals to modify one of the above three statements. 
-For example, information loss or remnant \cite{Bek94} {\bf (XXX anyone knows a better reference for remnants?)} modifies the first statement; 
-firewall \cite{BraPir09,AMPS} or ER=EPR \cite{MalSus13} modifies the second statement;
+For example, information loss or remnant \cite{Bek94} modifies Statement One; 
+firewall \cite{BraPir09,AMPS} or ER=EPR \cite{MalSus13} modifies Statement Two;
 various proposals of nonlocal effects near the horizon \cite{Gid12,DodSil15,OsuPag16} or causal patch complementarity \cite{HuiYan13,IlgYan13,LowTho14}
-\footnote{Independent of the particular realization, causal-patch complementarity basically claims that QFT breaks down if one applies it to a region that does not fit into any observer's causal patch. 
-Since ``whether there exists a causal patch to fit'' is a highly nonlocal condition, it is effectively a break-down of local QFT.} 
-modifies the last statement.
-Unfortunately, since the paradox only shows a conflict with the three statements combined, it is up to individual taste/bias to modify any one of them. 
+\footnote{Independent of the particular realization, causal-patch complementarity basically claims that QFT breaks down if one applies it to a region that does not fit into any observer's causal patch.} 
+modifies Statement Three.
 
-In this paper, we will try to sharpen the problem even further. 
-We will try to argue that the last statement on its own is already self-conflicting. 
+In this paper, we will try to provide a stronger motivation to modify Statement Three. 
+In fact, we will argue that it is already problematic on its own. 
 In other words, {\bf the application of local QFT to a unitary propagation of Hawking quantum is not self-consistent. } 
-This should provide a much stronger motivation to modify the last statement instead of the other two. 
-Although there are still many different proposals capable of doing that, we hope such discovery can focus our efforts and make the progress even further.
+
+Before presenting our argument, we will first explain its relation to some existing ideas.
+The recent paper by Osuga and Page \cite{OsuPag16} provides an abstract framework of how modifying Statement Three resolves the paradox.
+Basically, the near horizon mode is thermal as demanded by Statement Two.
+But it propagates out in a non-unitary process, gaining the appropriate information to restore a unitary $S$-matrix as demanded by Statement One. 
+For such abstract model to work in practice, such non-unitary propagation should be understood as interacting with a hidden system.
+Here hidden simply means something that is ignorant to a na\"ive application of local QFT.
+The obvious candidate of such hidden system is the geometry.
+
+One proposal along this line of thoughts was discussed in \cite{NomVar12}. 
+The idea was that the black hole acquires a large uncertainty during the evaporation process. 
+If we treat the superposition of different classical geometries (black holes with different locations/momenta) as a quantum system, it may qualify as the hidden system that is responsible for the non-unitary propagation of Hawking quanta. 
+Unfortunately, such proposal can be defeated by counting entropy.
+In order for a non-unitary process to restore the asymptotic $S$-matrix, this hidden system must store the required information, which is comparable to the mount of microscopic information carried by the black hole.
+However, the black-hole-no-hair theorem states that two black holes with identical macroscopic parameters (mass, angular momentum, change) are isometric to each other. 
+This limits the number of different classical geometries to be parametrized by macroscopic parameters only.
+As a result, the Hilbert space of superposed classical geometries has far less dimensions than necessary to carry the required amount of information.\footnote{We thank Raphael Bousso for private communication.}
+Thus, even if a propagating Hawking quantum does interact with this hidden system, it cannot reproduce a unitary $S$-matrix; therefore such modification of Statement Three alone is insufficient to resolve the paradox.
+
+The recent development on black-hole-soft-hairs \cite{HawPer16} hinted a way to revive this idea.
+Basically, it was realized that two isometric (regions of) geometries should not always be considered as the same state.
+If one maps the geometries with congruences of geodesics, two isometric regions with different maps are actually different states.
+That is because changes in the mapping geodesics are measurable memory effects, and a consistent physical theory must be able to distinguish them.
+This realization dramatically increases the number of different states encoded in classical geometries.
+A tentative counting of state on a black hole horizon yields exactly the required number such that a modification to Statement Three can indeed resolve the paradox.
 
 Before diving into details, we should explain why we focus on the last statement.
 That is because local QFT simply assumes {\bf subsystem unitarity}.
