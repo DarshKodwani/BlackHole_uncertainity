@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  9 SEP 2016 13:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  14 OCT 2016 17:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -482,7 +482,7 @@ Overfull \hbox (68.16447pt too wide) in paragraph at lines 351--352
  []
 
 [7] [8 <./Propertime.pdf>] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 503--507
+Underfull \hbox (badness 10000) in paragraph at lines 498--502
 
  []
 
@@ -493,11 +493,11 @@ Use acknowledgments instead.
 
 [12] (./Draft_BH_shells.aux) ) 
 Here is how much of TeX's memory you used:
- 6128 strings out of 493089
- 85551 string characters out of 6134842
- 171574 words of memory out of 5000000
- 9506 multiletter control sequences out of 15000+600000
- 13136 words of font info for 50 fonts, out of 8000000 for 9000
+ 6120 strings out of 493089
+ 85475 string characters out of 6134842
+ 172574 words of memory out of 5000000
+ 9502 multiletter control sequences out of 15000+600000
+ 11896 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,8n,38p,974b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/p
@@ -522,7 +522,7 @@ local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/lo
 cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/loc
 al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local
 /texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Draft_BH_shells.pdf (12 pages, 356629 bytes).
+Output written on Draft_BH_shells.pdf (12 pages, 356355 bytes).
 PDF statistics:
  189 PDF objects out of 1000 (max. 8388607)
  137 compressed objects within 2 object streams
