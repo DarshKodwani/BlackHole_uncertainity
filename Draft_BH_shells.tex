@@ -88,11 +88,12 @@ The obvious candidate of such hidden system is the geometry.
 One proposal along this line of thoughts was discussed in \cite{NomVar12}. 
 The idea was that the black hole acquires a large uncertainty during the evaporation process. 
 If we treat the superposition of different classical geometries as a quantum system, it may qualify as the hidden system that is responsible for the non-unitary propagation of Hawking quanta. 
-Unfortunately, such proposal can be defeated by counting entropy.
+Unfortunately, the early version of such proposal can be defeated by counting entropy.
 In order for such non-unitary process to restore the asymptotic $S$-matrix, the hidden system must store the required information, which is comparable to the amount of microscopic information carried by the black hole.
 However, the black-hole-no-hair theorem states that two black holes with identical macroscopic parameters (mass, momentum, angular momentum, charge) are isometric to each other. 
 This limits the number of different classical geometries to be parametrized by macroscopic parameters only.
-As a result, the Hilbert space of superposed classical geometries has far fewer dimensions than are necessary to carry the required amount of information.\footnote{We thank Raphael Bousso for private communication.}
+As a result, the Hilbert space of superposed classical geometries has far fewer dimensions than what is necessary to carry the required amount of information.
+\footnote{We thank Raphael Bousso for private communication.}
 Thus, even if a propagating Hawking quantum does interact with this hidden system, it cannot reproduce a unitary $S$-matrix; therefore such modification of Statement Three alone is insufficient to resolve the paradox.
 
 The recent development on black-hole-soft-hairs \cite{HawPer16} hinted a way to revive this idea.
@@ -105,10 +106,11 @@ A tentative counting of state on a black hole horizon yields exactly the require
 In this paper, we still take another step that is complementary to the above progress. It is exciting to know that modifying Statement Three can in-principle resolve the paradox. 
 However, it remains a great mystery of why should local QFT break down in low curvature regions. 
 If we just demand that it breaks down in order to resolve the information paradox, then there is no reason why this solution is preferred over modifying Statement One or Two. 
-We would like argue that the application of QFT to a unitary propagation from a near horizon mode to an asymptotic Hawking quantum is already self-inconsistent. 
+We would like to argue that there is a self-consistency check that we should apply to QFT in curved spacetime, for a reason that is totally independent from the information paradox.
+Applying such self-consistency check, we can show that a unitary propagation from a near horizon mode to an asymptotic Hawking quantum is already self-inconsistent. 
 Thus it is only natural to modify Statement Three.
 
-\subsection{Quantum Field Theory in Curved Spacetime}
+\subsection{Quantum Field Theory in Curved Spacetime Requires a Self-Consistency Check}
 
 The starting point of our argument involves no new physics at all.
 We simply recognize that local QFT implies a standard assumption of {\bf subsystem unitarity}.
@@ -116,7 +118,7 @@ Quantum mechanical evolution of a full system is by-definition unitary.
 However in practice, we are not able to describe everything by quantum mechanics all together, so we describe only subsystems. 
 Namely, we assume that the full system can be separated into a ``classical background'' and a ``quantum subsystem''. 
 After such artificial separation, since we only use quantum mechanics to describe the quantum subsystem, it always appears to be unitary.
-\footnote{Even a time-dependent Hamiltonian leads to an apparently unitary evolution under this assumption. That is obviously not a physical fact since a unitary subsystem should be determined by its own initial state, not co-determined by initial state plus an arbitrary time-dependence.} 
+%\footnote{Even a time-dependent Hamiltonian leads to an apparently unitary evolution under this assumption. That is obviously not a physical fact since a unitary subsystem should be determined by its own initial state, not co-determined by initial state plus an arbitrary time-dependence.} 
 However, such unitarity should not be taken as a physical fact unless one specifically checks the nature of interactions with the background.
 
 The most direct way to justify the classical-background assumption is to also describe the background in quantum mechanics, and verify that the quantum interaction between the background and the quantum subsystem indeed does not entangle them. 
@@ -137,7 +139,7 @@ It is in this sense that a unitary evolution of the subsystem is an arbitrarily 
 
 The fundamental principle behind Feynman's trick is that ``classical wave coherence'' should be taken as the prerequisite of ``quantum unitarity''. 
 In Sec.\ref{sec-QFT}, we argue that this principle enables a general self-consistency check of the classical background assumption. 
-We provide a natural generalization to local QFT in curved spacetime, and we discuss why such self-consistency check is different from quantizing graviton.
+We provide a natural generalization to local QFT in curved spacetime, and we discuss why such self-consistency check is different from perturbative calculations of gravitons.
 
 In Sec.\ref{sec-BlackHole}, we apply the self-consistency check to the propagation of Hawking quanta in a close analogy to Feynman's analysis. 
 The classical geometry plays the role of the double-slit, a background that can potentially entangle with the Hawking quanta wavefunction and ruin its subsystem unitarity. 
@@ -335,7 +337,9 @@ It is simple to calculate and reflects the physcial intuition of vacuum pair flu
 \item The value of $\Delta g_{\mu\nu}$ is gauge dependent. 
 By relating it to the presence of extra matter, we can express it as a gauge-invariant local quantity, which is the natural thing to hold fixed in our analysis.
 \end{enumerate}
-Note that if we were reporting a positive result, that such uncertainty upholds unitarity, then one should question the validaty of learning a general lesson from a special example. However, we will show that this particular form of $\Delta g_{\mu\nu}$ is already sufficient to question unitarity, and we did not choose this form to specifically do that. Thus our limited analysis is sufficient to raise a reasonable doubt to the classical-background approximation.
+%If we were reporting a positive result, that such uncertainty upholds unitarity, then one should question the validaty of learning a general lesson from a special example. 
+%However, we will show that this particular form of $\Delta g_{\mu\nu}$ is already sufficient to question unitarity, and we did not choose this form to specifically do that. 
+%Thus our limited analysis is sufficient to raise a reasonable doubt to the classical-background approximation.
 \item {\bf Renormalization.} It is well-known that na\"ive applications of QFT often suffer from UV/IR divergences.
 In our case, we will see that even in Minkowski space, geometric uncertainty already leads to a finite change between the two null geodesics.
 We will simply ``renormalize'' that away by saying that if the black hole case leads to a similar change, it should not be taken as a serious problem.
@@ -448,11 +452,12 @@ Showing the lack of unitarity in the propagation of Hawking quanta does not reso
 Usually, one pictures a nonunitarity process as losing information. 
 In the context of black hole information, a Hawking quantum actually has to {\it recover} information. 
 A near-horizon mode starts from a maximally mixed (thermal) state with no information, since its partner is the interior mode that never comes out of the horizon. 
-After the nonunitarity propagation to become an asymptotic Hawking quantum, it has to carry information to purify the rest of the Hawking radiation there.
+After the non-unitary propagation, such a informationless mode has to become an asymptotic Hawking quantum which carries the information to purify the rest of the Hawking radiation there.
+The exact detail of this process remains an enigma.
 
 Since unitarity is lost to the local geometric uncertainty, what restores information must be the interaction with the local geometry.
-More precisely, the particular effect of local geometric uncertainty here is to create extra shifts between parallel null geodesics, which is reminiscent of memory effects or supertraslation\cite{GW_memory,HeLys14,KodPen16}.
-This naturally echoes the idea that the soft hairs \cite{HawPer16} encodes the black hole information and returns them to the Hawking radiation via an interaction that is beyond the na\"ive local QFT\cite{OsuPag16}. 
+More precisely, the particular effect of local geometric uncertainty here is to create extra shifts between parallel null geodesics, which is reminiscent of memory effects or supertranslation\cite{GW_memory,HeLys14,KodPen16}.
+This naturally echoes the idea that the soft hairs \cite{HawPer16} might encode the black hole information and returns them to the Hawking radiation via an interaction that is beyond the na\"ive local QFT\cite{OsuPag16}. 
 Based on this picture, one may try to quantize the soft hairs and build a toy model that involves quantum interaction, therefore entanglement, between the soft hairs and the usual QFT modes.
 That would provide a complete picture that the loss of subsystem unitarity is really just entanglement with another subsystem which was originally (and illegitimately, as we argued) assumed as the classical background.
 
