@@ -1,4 +1,4 @@
-\documentclass[aps,showpacs,twocolumn,floats,prd,superscriptaddress,nofootinbib]{revtex4-1} 
+\documentclass[aps,showpacs,onecolumn,floats,prd,superscriptaddress,nofootinbib]{revtex4-1} 
 \usepackage{graphicx,amsmath,amssymb,amstext}
 \usepackage{amssymb,amsbsy,amsfonts,amsthm,color}
 \usepackage{epsfig}
@@ -48,8 +48,6 @@ We present curious results to suggest a negative answer, and we discuss how this
 
 \maketitle
 
-
-\onecolumngrid
 
 \section{Introduction and Summary}
 
@@ -490,7 +488,8 @@ That would provide a complete picture that the loss of subsystem unitarity is re
 
 \appendix
 
-\section{Calculation of proper time change}\label{Dtime}
+\section{Calculation of proper time change}
+\label{Dtime}
 
 \subsection{Background spacetime - no shell}
 
@@ -558,10 +557,15 @@ This shows that when there are no shells, $\Delta M = 0$, there is no change in 
 By assuming $r_1>> \Delta r \equiv r_2 - r_1$ and $r_1>> \Delta M$ we can expand Eq (\ref{eq-result}), to leading order in small quantities,
 
 \begin{eqnarray}
-	\frac{\delta t_0 - \bar{\delta t_0}}{\delta t_0} & = & \left( \left( 1+ \frac{\Delta r}{r_1 - 2M} \right)^\frac{1}{2} \left( 1 + \frac{2\Delta M}{r_1 - 2M} \right)^\frac{1}{2} \left( 1 + \frac{\Delta r + 2 \Delta M}{r_1 - 2M} \right)^{-\frac{1}{2}} - 1	\nonumber	\\
+	\frac{\delta t_0 - \bar{\delta t_0}}{\delta t_0} & = & 
+	\left( \left( 1+ \frac{\Delta r}{r_1 - 2M} \right)^\frac{1}{2} \left( 1 + \frac{2\Delta M}{r_1 - 2M} \right)^\frac{1}{2} \left( 1 + \frac{\Delta r + 2 \Delta M}{r_1 - 2M} \right)^{-\frac{1}{2}} - 1 \right)	\nonumber	\\
 	%& = & \left( 1 + \frac{1}{2} \frac{\Delta r}{r_1 - 2M} - \frac{1}{8} \left( \frac{\Delta r}{r_1 - 2M} \right)^2 \right) \left( 1 + \frac{\Delta M}{r_1 - 2M} - \frac{1}{2} \left(\frac{\Delta M}{r_1 - 2M} \right)^2 \right) \left( 1 - \frac{1}{2} \frac{\Delta r+ 2 \Delta M}{r_1 - 2M} + \frac{3}{8} \frac{(\Delta r + 2 \Delta M)^2}{(r_1 - 2M)^2} \right) - 1	\nonumber	\\
 	%& = & \left( 1 + \frac{1}{2} \frac{\Delta r + 2 \Delta M}{r_1 - 2M} - \frac{1}{8} \left( \frac{\Delta r}{r_1 - 2M} \right)^2 + \frac{1}{2} \frac{\Delta r \Delta M}{(r_1 - 2M)^2} - \frac{1}{2} \left( \frac{\Delta M}{r_1 - 2M} \right)^2 \right) \left( 1 - \frac{1}{2} \frac{\Delta r + 2\Delta M}{r_1 - 2M} + \frac{3}{8} \frac{(\Delta r + 2 \Delta M)^2}{(r_1 - 2M)^2} \right) -1 \nonumber	\\
-	& = & - \frac{1}{8} \left( \frac{\Delta r}{r_1 - 2M} \right)^2 + \frac{1}{2} \frac{\Delta r \Delta M}{(r_1 - 2M)^2} - \frac{1}{2} \left( \frac{\Delta M}{r_1 - 2M} \right)^2 - \frac{1}{4} \frac{( \Delta r + 2 \Delta M)^2}{(r_1 - 2M)^2} + \frac{3}{8} \frac{(\Delta r+ 2 \Delta M)^2}{(r_1 - 2M)^2} 	\nonumber	\\
+	& = & - \frac{1}{8} \left( \frac{\Delta r}{r_1 - 2M} \right)^2 + 
+	\frac{1}{2} \frac{\Delta r \Delta M}{(r_1 - 2M)^2} - 
+	\frac{1}{2} \left( \frac{\Delta M}{r_1 - 2M} \right)^2 - 
+	\frac{1}{4} \frac{( \Delta r + 2 \Delta M)^2}{(r_1 - 2M)^2} + 
+	\frac{3}{8} \frac{(\Delta r+ 2 \Delta M)^2}{(r_1 - 2M)^2} 	\nonumber	\\
 	& = & \frac{\Delta M \Delta r}{(r_1 - 2M)^2}.
 \end{eqnarray}
 	
@@ -572,7 +576,9 @@ By assuming $r_1>> \Delta r \equiv r_2 - r_1$ and $r_1>> \Delta M$ we can expand
 %	\frac{\delta \tau_0 - \delta \bar{\tau_0}}{\delta \bar{\tau_0}} = - \frac{\Delta M \epsilon}{\epsilon^2}.	\label{11}
 %\end{equation}
 
-\section{Deriving Eq (\ref{fin-result})}\label{finalEq}
+%\section{Deriving Eq (\ref{fin-result})}\label{finalEq}
+\section{Whatever section name it was}
+\label{finalEq}
 
 The first step in this derivation is write down the physical, local, quantities needed to replace $\Delta M, r_1$ and $\Delta r$. The natural thing to replace $\Delta M$ is the surface stress energy, $\sigma$, of the shell. This is given by the $tt$ component of the surface stress energy tensor $S_{ab}$ given by the IJC.
 
@@ -666,7 +672,7 @@ Where in the last step we have used $x = y + \ln (y) \Rightarrow y = x - \ln(x)$
 \begin{eqnarray}
 	\frac{\delta t_0 - \delta \bar{t_0}}{\delta t_0} & = & 4 \pi \sigma \frac{r^2}{(r_1 - 2M)^2} \left( 1 - \frac{2M}{r_1} \right)^{\frac{1}{2}} \left( 1 - \frac{2M}{r_1} \right)^\frac{1}{2}  \nonumber	\\
 	& = & 4 \pi \sigma \Delta l \left( 1  + \frac{2M}{r_1 - 2M} \right)^2 \left( 1 - \frac{2M}{r_1} \right)	\nonumber	\\
-	& = & 4 \pi \sigma \dDelta l \left( 1 + \frac{2M}{l} \right) + \mathcal{O}(l^{-2})
+	& = & 4 \pi \sigma \Delta l \left( 1 + \frac{2M}{l} \right) + \mathcal{O}(l^{-2})
 \end{eqnarray}
 
 \subsection{Near horizon ($M>>r_1$)}
