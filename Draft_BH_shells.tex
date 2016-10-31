@@ -11,7 +11,7 @@
 
 \begin{document}
 
-\title{A self-consistency check for unitary propagation of Hawking quanta}
+\title{A self-consistency check for unitary Hawking radiation}
 
 \author{Daniel Baker}
 \email{dbaker@cita.utoronto.ca}
@@ -323,7 +323,8 @@ Given how little we understand quantum gravity, a classical self-consistency che
 \item {\bf Classical coherence by tracking geodesics.} The classical mode of a massless field basically has its peaks and nodes following null geodesics.
 Thus, instead of actually solving the mode function, we can perform a much simpler calculation to track geodesics.
 We start with two out-going null geodesics with the separation of one period of such mode near the horizon, and then we calculate the change in their separations at spatial infinity.
-If this change is comparable to the wavelength, then the mode function of this wavelength loses classical coherence.
+The change of distance (arrival time difference) between these two geodesics qualitatively represent the change a mode function will have.
+As such change gets large, we should lose faith on the apparent unitarity in the QFT calculation.
 \item {\bf The background and the uncertainty.} The classical background in this case is the Schwarzschild geometry, which can be written as the metric $g_{\mu\nu}$. 
 A classical uncertainty can be expressed as deviation from such metric, $\Delta g_{\mu\nu}$. 
 There are two major challenges here.
@@ -334,11 +335,11 @@ It is simple to calculate and reflects the physcial intuition of vacuum pair flu
 \item The value of $\Delta g_{\mu\nu}$ is gauge dependent. 
 By relating it to the presence of extra matter, we can express it as a gauge-invariant local quantity, which is the natural thing to hold fixed in our analysis.
 \end{enumerate}
-Note that if we were reporting a positive result, that such uncertainty upholds unitarity, then one should question the validaty of learning a general lesson from a special example. However, we will show that this particular form of $\Delta g_{\mu\nu}$ is already sufficient to question unitarity, and we did not choose this form to specifically do that. Thus our limited analysis is sufficient to raise a reasonable doubt to the classical-background approximation.
+Note that if we were reporting a positive result, that such uncertainty upholds unitarity, then one should question the validity of learning a general lesson from a special example. However, we will show that this particular form of $\Delta g_{\mu\nu}$ is already sufficient to question unitarity, and we did not choose this form to specifically do that. Thus our limited analysis is sufficient to raise a reasonable doubt to the classical-background approximation.
 \item {\bf Renormalization.} It is well-known that na\"ive applications of QFT often suffer from UV/IR divergences.
-In our case, we will see that even in Minkowski space, geometric uncertainty already leads to a finite change between the two null geodesics.
+In our case, we will see that even in Minkowski space, geometric uncertainty already leads to an in-principle-finite change between the two null geodesics.
 We will simply ``renormalize'' that away by saying that if the black hole case leads to a similar change, it should not be taken as a serious problem.
-Our surprising result is that in the black hole case, we get an infinitely larger change, which is difficult to blame on renormalization.
+Our surprising result is that in the black hole case, we get an infinitely larger effects than in Minkowski space, which is difficult to blame on the usual divergence of QFT.
 \end{itemize}
 
 More concretely, our setup is shown in Fig.\ref{fig-setup}. 
@@ -346,7 +347,7 @@ We start by choosing two points at some $r_0\gg M$ with a $\delta t_0\sim M$ coo
 This represents one wavelength of the mode function of an asymptotic Hawking quantum.
 We then back-track two null geodesics from these two points back to two points near the horizon, at $r_A$ with $(r_A-2M)\ll 2M$.
 Now their separation represents one wavelength of a near-horizon mode, which would have propagated to the asymptotic mode if there were no geometric uncertainty. 
-We then introduce introduce a geometric uncertainty as two shells of zero total ADM mass. 
+We then introduce a geometric uncertainty as two shells of zero total ADM mass. 
 Therefore, both the near horizon and the asymptotic regions are not affected by such uncertainty.
 Only the process of propagation is affected.
 With the same two starting points near the horizon. we calculate the separation $\bar{\delta t_0}$ of the two null geodesics when they arrive at $r_0$, and compare it with $\delta t_0$.
@@ -485,6 +486,9 @@ Classically, soft hairs manifest as memory effects that alters the distances bet
 Based on this picture, one may try to quantize the soft hairs and build a toy model that involves quantum interaction, therefore entanglement, between the soft hairs and the usual QFT modes.
 That would provide a complete picture that the loss of subsystem unitarity is really just entanglement with another subsystem which was originally (and illegitimately, as we argued) assumed as the classical background.
 
+\acknowledgments
+
+We thank XXX for discussions. We are supported by XXX fundings.
 
 \appendix
 
@@ -576,8 +580,7 @@ By assuming $r_1>> \Delta r \equiv r_2 - r_1$ and $r_1>> \Delta M$ we can expand
 %	\frac{\delta \tau_0 - \delta \bar{\tau_0}}{\delta \bar{\tau_0}} = - \frac{\Delta M \epsilon}{\epsilon^2}.	\label{11}
 %\end{equation}
 
-%\section{Deriving Eq (\ref{fin-result})}\label{finalEq}
-\section{Whatever section name it was}
+\section{Deriving Eq (\ref{fin-result})}\label{finalEq}
 \label{finalEq}
 
 The first step in this derivation is write down the physical, local, quantities needed to replace $\Delta M, r_1$ and $\Delta r$. The natural thing to replace $\Delta M$ is the surface stress energy, $\sigma$, of the shell. This is given by the $tt$ component of the surface stress energy tensor $S_{ab}$ given by the IJC.
