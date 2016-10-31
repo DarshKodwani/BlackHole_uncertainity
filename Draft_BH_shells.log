@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  31 OCT 2016 10:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  31 OCT 2016 10:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -476,12 +476,8 @@ Overfull \hbox (68.16447pt too wide) in paragraph at lines 357--358
  [] 
  []
 
-[8 <./Propertime.pdf>] [9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 536--540
-
- []
-
-[11] [12] [13] (./Draft_BH_shells.bbl) [14] (./Draft_BH_shells.aux)
+[8 <./Propertime.pdf>] [9] [10] [11] [12] [13] (./Draft_BH_shells.bbl) [14]
+(./Draft_BH_shells.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -516,7 +512,7 @@ t/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2015/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Draft_BH_shells.pdf (14 pages, 364778 bytes).
+Output written on Draft_BH_shells.pdf (14 pages, 364722 bytes).
 PDF statistics:
  196 PDF objects out of 1000 (max. 8388607)
  142 compressed objects within 2 object streams
