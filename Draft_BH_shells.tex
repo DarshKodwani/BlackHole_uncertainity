@@ -11,11 +11,7 @@
 
 \begin{document}
 
-<<<<<<< Updated upstream
 \title{A self-consistency check for unitary propagation of Hawking quanta}
-=======
-\title{A self-consistency check for the propagation of Hawking radiation}
->>>>>>> Stashed changes
 
 \author{Daniel Baker}
 \email{dbaker@cita.utoronto.ca}
@@ -71,9 +67,9 @@ However, Statement One and Two demand this unique qubit to be maximally entangle
 This conflict has inspired many different proposals to modify one of the above three statements. 
 For example, information loss or remnant \cite{Bek94} modifies Statement One; 
 firewall \cite{BraPir09,AMPS} or ER=EPR \cite{MalSus13} modifies Statement Two;
-various proposals of nonlocal effects near the horizon \cite{Gid12,DodSil15,OsuPag16} or causal patch complementarity \cite{HuiYan13,IlgYan13,LowTho14}
-\footnote{Independent of the particular realization, causal-patch complementarity basically claims that QFT breaks down if one applies it to a region that does not fit into any observer's causal patch.} 
-modifies Statement Three.
+various proposals of nonlocal effects near the horizon \cite{Gid12,DodSil15,OsuPag16}, causal patch complementarity \cite{HuiYan13,IlgYan13,LowTho14}, or computational complementarity \cite{HH} modifies Statement Three.
+\footnote{Various versions of complementarity basically claim that QFT breaks down if one applies it compare quantities which are in-principle not measurable (or difficult to measure) by the same observer.} 
+
 
 In this paper, we will try to provide a stronger motivation to modify Statement Three. 
 In fact, we will argue that it is already problematic on its own. 
@@ -102,7 +98,7 @@ The recent development on black-hole-soft-hairs \cite{HawPer16} hinted a way to 
 Basically, it was realized that two isometric (regions of) geometries should not always be considered as the same state.
 If one maps the geometries with congruences of geodesics, two isometric regions with different maps are actually different states.
 That is because changes in the mapping geodesics are measurable memory effects, and a consistent physical theory must be able to distinguish them.
-This realization dramatically increases the number of different states encoded in classical geometries.
+This realization may dramatically increase the number of different states encoded in classical geometries.
 A tentative counting of state on a black hole horizon yields exactly the required number such that a modification to Statement Three can indeed resolve the paradox \cite{HawPer16}.
 
 In this paper, we still take another step that is complementary to the above progress. It is exciting to know that modifying Statement Three can in-principle resolve the paradox. 
@@ -327,7 +323,7 @@ Given how little we understand quantum gravity, a classical self-consistency che
 \item {\bf Classical coherence by tracking geodesics.} The classical mode of a massless field basically has its peaks and nodes following null geodesics.
 Thus, instead of actually solving the mode function, we can perform a much simpler calculation to track geodesics.
 We start with two out-going null geodesics with the separation of one period of such mode near the horizon, and then we calculate the change in their separations at spatial infinity.
-If this change is comparable to the wavelength, then the mode function of this wavelength loses classical coherence.
+As this change increases, one should gradually lose faith in the unitary propagation of such mode, since it becomes increasingly difficult to experimentally verify.
 \item {\bf The background and the uncertainty.} The classical background in this case is the Schwarzschild geometry, which can be written as the metric $g_{\mu\nu}$. 
 A classical uncertainty can be expressed as deviation from such metric, $\Delta g_{\mu\nu}$. 
 There are two major challenges here.
@@ -342,13 +338,13 @@ Note that if we were reporting a positive result, that such uncertainty upholds 
 \item {\bf Renormalization.} It is well-known that na\"ive applications of QFT often suffer from UV/IR divergences.
 In our case, we will see that even in Minkowski space, geometric uncertainty already leads to a finite change between the two null geodesics.
 We will simply ``renormalize'' that away by saying that if the black hole case leads to a similar change, it should not be taken as a serious problem.
-Our surprising result is that in the black hole case, we get an infinitely larger change, which is difficult to blame on renormalization.
+Our surprising result is that in the black hole case, we get an infinitely larger change, which is difficult to blame on the usual divergence of QFT.
 \end{itemize}
 
 More concretely, our setup is shown in Fig.\ref{fig-setup}. 
 We start by choosing two points at some $r_0\gg M$ with a $\delta t_0\sim M$ coordinate time separation between them.
 This represents one wavelength of the mode function of an asymptotic Hawking quantum.
-We then back-track two null geodesics from these two points back to two points near the horizon, at $r_A$ with $(r_A-2M)\ll 2M$.
+We then back-track two null geodesics from these two points back to two points near the horizon, at $r_e$ with $(r_e-2M)\ll 2M$.
 Now their separation represents one wavelength of a near-horizon mode, which would have propagated to the asymptotic mode if there were no geometric uncertainty. 
 We then introduce introduce a geometric uncertainty as two shells of zero total ADM mass. 
 Therefore, both the near horizon and the asymptotic regions are not affected by such uncertainty.
@@ -363,7 +359,13 @@ With the same two starting points near the horizon. we calculate the separation 
 \end{center}
 \end{figure}
 
-After some formal calculations in the appendix \ref{Dtime}, we arrive at this simple expression:
+Note that we have assumed two stationary and spherically symmetric shells to simplify the calculation, but that is not the actual physical picture.
+There is no reason why vacuum fluctuation suddenly manifests two complete shells together to surround the black hole, and holding them at a fixed location will require unphysically large pressure if they are close to the horizon.
+As it will become clear later, our result only cares about the local energy density of two small pieces of shells at the ``location and time'' where the pair of null rays actually pass through.
+It does not care about whether the whole shell exists or not, and the pressure does not directly affect the answer.
+Our result is also invariant under radial boosts, thus it does not matter how the shells move before and after the crossing, or whether the shells are actually stationary.
+
+After some formal calculations in Appendix \ref{Dtime}, we arrive at this simple expression:
 \begin{equation}
 \frac{\delta t_0 - \bar{\delta t_0}}{\delta t_0} = 
 \left(\sqrt{\frac{r_2-2M}{r_1-2M}}\sqrt{\frac{r_1-2(M+\Delta M)}{r_2-2(M+\Delta M)}}-1\right)~,
@@ -373,50 +375,53 @@ where $r_1$ is the location of the inner shell, $r_2$ is the location of the out
 
 \subsection{Physical interpretation}
 
-\textbf{XXX I-Sheng: Add a sentence about why we are using this limit?}
- 
-We can expand Eq (\ref{eq-result}) in the limit that $r_1>> \Delta M$ and $r_1>> \Delta r = r_2 - r_1$
-
+In the entire calculation, we will stay in the regime that $r_1, 2M, (r_1-2M) \gg \Delta M, \Delta r$, where $\Delta r \equiv(r_2-r_1)$. 
+This guarantees that the geometric fluctuation is small, as it only affects a small region $\Delta r$, and the change in the metric $\Delta g_{\mu\nu}/g_{\mu\nu}$ is small in the affected region.
+Under this assumption, we can expand Eq (\ref{eq-result}) to get 
 \begin{equation}
-	\frac{\delta t_0 - \bar{ \delta t_0}}{\delta t_0} = \frac{\Delta M \Delta r}{(r_1-2M)^2} = \frac{\Delta M \Delta r}{r_1^2} g_{rr}^{2}	\label{lim-result}
+	\frac{\delta t_0 - \bar{ \delta t_0}}{\delta t_0} = \frac{\Delta M \Delta r}{(r_1-2M)^2} = \frac{\Delta M \Delta r}{r_1^2} g_{tt}^{-2}~.
+		\label{lim-result}
 \end{equation}
+Here $g_{tt}=(1-2M/r_1)$ is the radial component of the metric in the background geometry, evaluated at the location where the null rays pass through the geometric uncertainty. 
 
-In fact, this expression can be written in general (see Eq (\ref{Eq-mink}) in the appendix for derivation) in terms of physical, local quantities, which are the local surface energy of the shell $\sigma$ and the proper distances,
-
+It is more enlightening to write this expression in the local physical quantities (see Appendix \ref{finalEq} for derivation).  Let $\sigma$ be the energy density of the shell in its rest frame, and $\Delta l$ be the physical distance between the shells in that frame, we get
 \begin{equation}
-	\frac{\delta t_0 - \bar{ \delta t_0}}{\delta t_0} = 4 \pi \sigma \Delta l g_{rr}
+	\frac{\delta t_0 - \bar{ \delta t_0}}{\delta t_0} = 4 \pi \sigma \Delta l g_{tt}^{-1}~.
+	\label{eq-inv}
 \end{equation}
+Here we can see that the effect is due to the local energy density which the null rays pass through.
+Also, the combination $(\sigma\Delta l)$ is invariant under radial boosts, thus Eq.~(\ref{eq-inv}) does not care about whether the shells are actually at rest, nor in which frame we calculate it.
 
-where $g_{rr}$ is the radial component of the Schwasrchild metric. This expression can be evaluated in three limits; 1) The Minkowski limit ($M=0$), 2) Far from horizon ($M <<r_1$), 3) Near horizon limit ($r_1<<M$). The calculations are performed in appendix \ref{finalEq} and the results are summarized below:
+In order to appreciate the effect of such geometric uncertainty near the horizon of a large black hole (which is usually considered the ideal situation to formulate the information paradox), we evaluate Eq.~(\ref{eq-inv}) in three regimes; 
+1) The Minkowski limit: $M=0$; 
+2) Small black holes / far from horizon: $M \ll r_1$; 
+3) Large black holes / near horizon: $r_1\gg M$. 
+Instead of using the coordinate $r_1$, we will express the answer with the physical distance $l$ between the horizon and the shells. 
+The relation between $r$ and $l$ can also be found in Appendix \ref{finalEq}. 
+We will hold $l$, $\Delta l$ and $\sigma$ fixed while the black hole mass is being varied.
 
 \begin{equation}
 \frac{\delta t_0 - \bar{ \delta t_0}}{\delta t_0} = \begin{cases}
  4 \pi \sigma \Delta l~	 &\ \ \ \ \ (M = 0)\\
-4\pi \sigma \Delta l \left( 1 + \frac{2M}{l} \right) & \ \ \ \ \ (M<<r_1)	\\
-64 \pi  \sigma \Delta l \frac{M^2}{l^2} & \ \ \ \ \ (M>>r_1).
+4\pi \sigma \Delta l \left( 1 + \frac{2M}{l} \right) & \ \ \ \ \ (M \ll r_1)	\\
+64 \pi  \sigma \Delta l \frac{M^2}{l^2} & \ \ \ \ \ (M \ll r_1).
 \end{cases}	\label{fin-result}
 \end{equation}
 
-Lets try to interpret each of these terms.
-
 \begin{itemize}
 
-\item \textbf{Minkowski limit ($M=0$)}: This seems to be a reasonable answer. 
-First of all, it is quite unlikely that the entire shell of mass $\Delta M$ fluctuates out of vacuum.
-It is reasonable that any change to the null geodesics is about a local energy density of the particular piece of shell they happen to pass through.
-Secondly, this result is gauge invariant. For an observer at rest, $\sigma$ is the local energy density and $\Delta r$ is the proper distance. 
-For a boosted observer, $\sigma$ increases by a boost factor while $\Delta r$ contracts by the same factor.
-We take it as a good sign that other forms of geometric uncertainty can also be parametrize by a similar, gauge invariant quantity.
-
+\item \textbf{Minkowski limit ($M=0$)}: 
 The na\"ive interpretation of the $M=0$ result is that even in Minkowski space, geometric uncertainty can potentially decohere classical mode functions.
 By our definition, that poses some threat to QFT in Minkowski space.
 We are going to assume that unitarity in QFT is fine in Minkowski space, effectively ``renormalize away'' the effect at $M=0$.
 One can imagine a simple subtraction by a counter term.
 Or alternatively, since the actual value of $(\sigma\Delta r)$ is unknown, we assume that it is small enough to not cause any concern.
 
-\item \textbf{Far from horizon ($M<<r_1$)}: This is a region where we expect to understand the physics well. Indeed the QFT we test here on earth can be considered an example of this limit. If we keep $l$ fixed and along with the gauge invariant $\sigma \Delta l$, we see that the effect grows with $M$. Of course, we cannot assume that this grows without bound since we have to maintain the $M<<r_1$ limit. It is interesting to note that similar behaviour is observed when this limit no longer holds and this is what we describe next. 
+\item \textbf{Far from horizon ($M \ll l$)}: 
+If we send signals from the Earth surface to somewhere far in the space, this result tell us how much can we trust a unitary QFT description.
+It starts to show a small deviation from the Minkowski result, but in the $M \ll r_1$ limit, it is almost indistinguishable. 
 
-\item \textbf{Near horizon ($M>>r_1$)}: We can see that the same gauge-invariant quantity in Minkowski space from the $M=0$ limit appears here. We see that taking the small $l$ limit with $\delta l \sigma$ fixed gives $\frac{\delta t_0 - \delta \hat{t_0}}{\delta t_0} \rightarrow \infty$, which is the largest possible effect in the arrival times of two geodesics. However, the small $l$ limit may not be the best way to appreciate how this limit poses a threat to QFT. 
+\item \textbf{Near horizon ($M \gg l$)}: We can see that the same gauge-invariant quantity in Minkowski space from the $M=0$ limit appears here. We see that taking the small $l$ limit with $\delta l \sigma$ fixed gives $\frac{\delta t_0 - \delta \hat{t_0}}{\delta t_0} \rightarrow \infty$, which is the largest possible effect in the arrival times of two geodesics. However, the small $l$ limit may not be the best way to appreciate how this limit poses a threat to QFT. 
 After all, we do not expect QFT to hold for arbitrarily small distance anyway. 
 The best way to understand this limit is to fix $l$ at some scale that much longer than any scale that we expect UV problems. 
 By conventional knowledge, the effect of gravity near horizon gets arbitrarily weak as the black hole becomes large. 
@@ -425,18 +430,7 @@ Since the large black hole limit is supposed to be the best case scenario for th
 
 \end{itemize}
 
-%In that limit, Eq.~(\ref{eq-result}) can be approximated by
-%\begin{equation}
-%	\frac{\delta t_0 - \bar{\delta t_0}}{\delta t_0} \approx \frac{l}{4M} \sqrt{\frac{1}{(6 \pi \delta l \sigma - 1)^\frac{2}{3} -1 }} - 1.	\label{eq-NearHorizon}
-%\end{equation}
-%where $l$ is the proper distance between $r_1$ and the horizon and $\delta l$ is the proper distance between the two shells. 
-%We can see that the same gauge-invariant quantity in Minkowski space from Eq. (\ref{eq-Mink}) appears in the denominator this time
-%\footnote{In Minkowski space, the radial coordinate is the proper distance, $\Delta r=\delta l$.}. We see that taking the small $l$ limit with $\delta l \sigma$ fixed gives $\frac{\delta t_0 - \delta \hat{t_0}}{\delta t_0} = -1$, which is the largest possible effect in the arrival times of two geodesics. However, the small $l$ limit may not be the best way to appreciate how Eq.~(\ref{eq-NearHorizon}) poses a threat to QFT. 
-%After all, we do not expect QFT to hold for arbitrarily small distance anyway. 
-%The best way to understand Eq.~(\ref{eq-NearHorizon}) is to fix $l$ at some scale that much longer than any scale that we expect UV problems. 
-%By conventional knowledge, the effect of gravity near horizon gets arbitrarily weak as the black hole becomes large. 
-%However, the problem caused by Eq.~(\ref{eq-NearHorizon}) grows larger as the black hole becomes larger, and gives the maximum effect as the black hole mass becomes infinite.
-%Since the large black hole limit is supposed to be the best case scenario for the information paradox and this is the regime that gives rise to maximum uncertainty to decohere classical waves, one is forced to have strong doubts about assuming subsystem unitarity in QFT.
+
 
 \section{Discussion}
 \label{sec-dis}
@@ -586,22 +580,10 @@ By assuming $r_1>> \Delta r \equiv r_2 - r_1$ and $r_1>> \Delta M$ we can expand
 %	\frac{\delta \tau_0 - \delta \bar{\tau_0}}{\delta \bar{\tau_0}} = - \frac{\Delta M \epsilon}{\epsilon^2}.	\label{11}
 %\end{equation}
 
-%\section{Deriving Eq (\ref{fin-result})}\label{finalEq}
-\section{Whatever section name it was}
+\section{Local physical quantities}
 \label{finalEq}
 
 The first step in this derivation is write down the physical, local, quantities needed to replace $\Delta M, r_1$ and $\Delta r$. The natural thing to replace $\Delta M$ is the surface stress energy, $\sigma$, of the shell. This is given by the $tt$ component of the surface stress energy tensor $S_{ab}$ given by the IJC.
-
-%As the first step, we set $M=0$ in Eq.~(\ref{lim-result}) to study its meaning in Minkowski space,
-%
-%\begin{equation}
-%\frac{\delta t_0 - \bar{\delta t_0}}{\delta t_0} \approx - \frac{\Delta M}{r_1^2} \Delta r 
-%\equiv \sigma \Delta r~.	
-%\label{eq-Mink}
-%\end{equation}
-%
-%Next we study Eq.~(\ref{lim-result}) with an actual black hole. 
-%Before we perform any analysis with a black hole it is important to convert the coordinate quantities in Eq (\ref{lim-result}) to physical quantities. We implicitly did this in the Minkowski limit; the variables in Eq (\ref{eq-Mink}) indeed represent the physical surface energy of the shell and the proper distance to it. In the case of a black hole we have to be more careful. The natural quantity to use for the local surface energy of the shell is the time component of the surface stress energy term, $S_{ab}$, given by the IJC
 
 \begin{equation}
 	S^a_b = [K^a_b] - [K]h^a_b,
@@ -703,126 +685,6 @@ Again, we substitute this expression along with Eqs (\ref{sig-Dm}, \ref{Dl-Dr}) 
 	& =& 4 \pi \sigma \delta l \left( \frac{2M}{r_1 - 2M}\right)^2 \left( \frac{r_1 - 2M}{2M}  + \mathcal{O}(M^{-2}) \right)	\nonumber	\\
 	& = & 64 \pi \sigma \delta l \frac{M^2}{l^2} + \mathcal{O}(r^{-2})
 \end{eqnarray}
-
-
-
-
-%There is a natural choice of what physical quantity we should use to replace $\Delta M$ with and that is the $tt$ component of the surface stress energy tensor, $S_{ab}$, of the shell as computed by the IJC
-%
-%\begin{equation}
-%	S^a_b =  [K^a_b] - [K]h^a_b
-%\end{equation}
-%
-%where $K_{ab}$ is the extrinsic curvature corresponding to the induced metric we are using, $K = K_{ab} h^{ab}$ is the trace of the extrinsic curvature taken with respect to the induced metric and the notation of square brackets represents the difference in a quantity in two different induced metrics. 
-%%
-%%We can define the induced metrics for constant $r$ values; for region $I$ it is 
-%%
-%%\begin{equation}
-%%	ds_{3M}^2 = - \left( 1 - \frac{2M}{r} \right)^{-1} dt^2 + r^2 d \Omega_2^2.	\label{13}
-%%\end{equation}
-%%
-%%Analogously we have the metric corresponding to mass $M' = M- \Delta M$ in region $II$
-%%
-%%\begin{equation}
-%%	ds_{3M'}^2 = - \left( 1 - \frac{2M'}{r} \right)^{-1} dt'^2 + r^2 d \Omega_2^2.	\label{14}
-%%\end{equation}
-%%
-%%We could rewrite Eq (\ref{13}) and (\ref{14}) in Gaussian normal coordinates (where the coefficient in front of the time component is 1), however the first order junction condition is that the induced metric on both sides of the shell must be the same. Therefore it is easy to find a relation between the two time coordinates
-%%
-%%\begin{equation}
-%%	dt'^2 = \left( \frac{1 - \frac{2M'}{r_1}}{ 1- \frac{2M}{r_1}} \right) dt^2.
-%%\end{equation}
-%%
-%%Using this, we calculate the extrinsic curvature components
-%%
-%%\begin{eqnarray}
-%%	(K^t_t)^{(M)} & = & \frac{M}{r_1^2} \left( 1 - \frac{2M}{r_1} \right)^{-\frac{1}{2}} 	\nonumber	\\
-%%	(K^\theta_\theta)^{(M)} & = & \frac{1}{r_1} \left( 1 - \frac{2M}{r_1} \right)^\frac{1}{2} 
-%%	= (K^\phi_\phi)^{(M)}	\label{16}
-%%\end{eqnarray}
-%%
-%%where the superscript of $M$ denotes the quantities evaluated in the metric of mass $M$. Analogous expressions hold for the extrinsic curvature components calculated in the metric of mass $M'$ by just replacing $M$ by $M'$ in Eq (\ref{16}). 
-%
-%The $tt$ component of the surface stress energy tensor is
-%
-%\begin{equation}
-%	\sigma = S^0_0 =  \frac{1}{4 \pi r_1} \left( \left( 1 - \frac{2M}{r_1} \right)^\frac{1}{2} - \left( 1 - \frac{2M'}{r_1} \right)^\frac{1}{2} \right).	\label{sig}
-%\end{equation}
-
-%This represents the surface energy density, to convert it to the energy of the shell, $\mathcal{E}$, we multiply by the surface area of the shell which is $4 \pi r_1^2$
-%
-%\begin{equation}
-%	\mathcal{E} =  r_1 \left( \left( 1 - \frac{2M}{r_1} \right)^\frac{1}{2} - \left( 1 - \frac{2M'}{r_1} \right)^\frac{1}{2} \right).	\label{19}
-%\end{equation}
-
-%Substituting in for $r_1 = 2M + \epsilon$, where $\Delta M<<\epsilon<<2M$ and expanding to leading order in small quantities, 
-%
-%\begin{equation}
-%	\mathcal{E} = \left( \frac{2M}{\epsilon} \right)^\frac{1}{2} \Delta M.
-%\end{equation} 
-
-%
-%\subsubsection{Proper time between shells}
-%
-%We calculate the proper time between the two shells, $\tau_{12}$, as seen by an observer at the first shell\footnote{One could also calculate the proper length between the shells.}. This is done with a view to replace $\delta \epsilon$ by $\tau_{12}.
-%
-%\begin{eqnarray}
-%	\tau_{12} & = & \int^{t_2}_{t_1} \left( 1 - \frac{2M'}{r_1} \right)^\frac{1}{2} dt	\nonumber	\\
-%	& = & \left( 1 - \frac{2M'}{r_1} \right)^\frac{1}{2} (t_2 - t_1)	\nonumber	\\
-%	& = & \left( 1 - \frac{2M'}{r_1} \right)^\frac{1}{2} (r_2 - r_1 + 2M' \ln \left( \frac{r_2 - 2M'}{r_1 - 2M'} \right) \right).	
-%\end{eqnarray}
-%
-%We substitute in for $r_1$ and $r_2$ from Eq (\ref{11'}) to give
-%
-%\begin{equation}
-%	\tau_{12} = \delta \epsilon \left( \frac{\epsilon}{2M} \right)^\frac{1}{2} \left( 1 + \frac{2M}{\epsilon} \right).
-%\end{equation}
-%
-
-%\subsubsection{Deriving Eq (\ref{fin-result})}
-%
-%The proper length $l$ between the horizon and shell is,
-%
-%\begin{equation}
-%	l =  (2M \epsilon)^\frac{1}{2}  + M \ln \left( \frac{M + \epsilon + (2M\epsilon)^\frac{1}{2}}{M} \right).	\label{20}
-%\end{equation}
-%
-%Similarly, the proper distance between the two shells, $\delta l$, is given by
-%
-%\begin{equation}
-%	\delta l = (2M'(\epsilon + \delta \epsilon))^{\frac{1}{2}} + M' \ln \left(\frac{M' + \epsilon + \delta \epsilon + (2M'(\epsilon +\delta \epsilon))^{\frac{1}{2}}}{M'} \right) - (2M'\epsilon)^\frac{1}{2} - M' \ln \left( \frac{M' + \epsilon + (2M' \epsilon)^\frac{1}{2}}{M'} \right)	\label{21}
-%\end{equation}
-%	
-%Eqs (\ref{sig}, \ref{20}, \ref{21}) can be used in Eq (\ref{12}) to replace $\Delta M, \epsilon, \delta \epsilon$ respectively by the appropriate physical quantities. We can obtain analytic expressions for Eq (\ref{12}) in the limit that the shells are very close to the horizon and this is what is presented in the next section. 
-%
-%
-%
-%%to leading order this reduces to 
-%
-%\begin{equation}
-%	l = 2 (2 \epsilon M)^\frac{1}{2}.	\label{25}
-%\end{equation}
-%
-%We can further calculate $\delta l$, the distance between the two shells, from Eq (\ref{25})
-%
-%\begin{equation}
-%	\delta l = \frac{4 M \delta \epsilon}{l}.
-%\end{equation}
-
-%Using these local quantities to replace the coordinate quantities in Eq (\ref{11}) gives
-%
-%\begin{equation}
-%	\frac{\delta \tau_0 - \delta \bar{\tau_0}}{\delta \bar{\tau_0}} = \frac{4 \mathcal{E} \delta l}{l^2}.	\label{24'}
-%\end{equation}
-%
-%We want to define the local energy density of the shell, $\sigma$, which is, in the near horizon limit, given by $\sim \frac{\mathcal{E}}{(2M)^2}$. Thus we can rewrite Eq (\ref{24'}) by, 
-%
-%\begin{equation}
-%	\frac{\delta \tau_0 - \delta \bar{\tau_0}}{\delta {\bar{\tau_0}}} = 4 \sigma \delta l \left( \frac{M}{l} \right)^2	\label{25'}
-%\end{equation}
-%
-%If we take $\sigma$ and $\delta l$ to be fixed (since they represent the fluctuations of the spacetime), we see that Eq (\ref{25'}) increases linearly with $M$.
-
 
 
 
