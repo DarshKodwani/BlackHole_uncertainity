@@ -1,4 +1,4 @@
-\documentclass[aps,showpacs,twocolumn,floats,prd,superscriptaddress,nofootinbib]{revtex4-1} 
+\documentclass[aps,showpacs,onecolumn,floats,prd,superscriptaddress,nofootinbib]{revtex4-1} 
 \usepackage{graphicx,amsmath,amssymb,amstext}
 \usepackage{amssymb,amsbsy,amsfonts,amsthm,color}
 \usepackage{epsfig}
@@ -30,27 +30,28 @@
 \affiliation{Dunlap Institute for Astronomy \& Astrophysics, University of Toronto, AB 120-50 St. George Street, Toronto, ON M5S 3H4, Canada.}
 \affiliation{Perimeter Institute of Theoretical Physics, 31 Caroline Street North, Waterloo, ON N2L 2Y5, Canada.}
 
-\author{I-Sheng Yang}
+\author{I-Sheng Yang}s
 
 \email{isheng.yang@gmail.com}
 \affiliation{Canadian Institute of Theoretical Astrophysics, 60 St George St, Toronto, ON M5S 3H8, Canada.}
 \affiliation{Perimeter Institute of Theoretical Physics, 31 Caroline Street North, Waterloo, ON N2L 2Y5, Canada.}
 
 \begin{abstract}
-The black hole information paradox presumes that local quantum field theory can provide unitary propagations from near-horizon modes to asymptotic Hawking quanta. 
+The black hole information paradox presumes that quantum field theory in curved spacetime can provide unitary propagations from near-horizon modes to asymptotic Hawking quanta. 
 Instead of invoking conjectural quantum-gravity effects to modify such assumption, we propose a self-consistency check.
 We re-examine this assumption by establishing an analogy to Feynman's analysis of a double-slit experiment. 
 Feynman showed that a unitary propagation of the interfering particles, namely ignoring the entanglement with the double-slit, becomes an arbitrarily reliable assumption when the screen to project the interference pattern goes to infinitely far away.
-Analogously, here we ask whether a unitary propagation of Hawking quanta, namely ignoring the entanglement with the geometry, also becomes arbitrarily reliable in the limit of a large black hole and asymptotic observers. 
+We argue for an analogous self-consistency check for quantum field theory in curved spacetime.
+We apply it to the propagation of Hawking quanta, testing whether ignoring the entanglement with the geometry also becomes arbitrarily reliable in the limit of a large black hole and asymptotic observers. 
 We present curious results to suggest a negative answer, and we discuss how this is related to the information transfer from near-horizon geometry and the soft-hair proposal.
 \end{abstract}
 
 \maketitle
 
 
-\onecolumngrid
-
 \section{Introduction and Summary}
+
+\subsection{Black Hole Information Paradox}
 
 The black hole information paradox \cite{Haw76a} was sharpened to show a self-inconsistency among the following three widely-believed statements \cite{AMPS}
 \footnote{Different physicists may believe in some of those more strongly than the others, but very few would have argued against any single statement without the explicitly conflict in the information paradox.}:
@@ -59,10 +60,10 @@ The black hole information paradox \cite{Haw76a} was sharpened to show a self-in
 \item {\bf General relativity:} The collapse-Schwarzschid geometry given by general relativity is a valid description to the spacetime everywhere except for near the singularity.
 Therefore, there is no drama while crossing the horizon.
 \item {\bf Local quantum field theory:} Away from the singularity, we can apply local quantum field theory (QFT) which describes microscopic steps of evaporation. 
-For large black holes, it manifests as a unitary propagation of every near-horizon mode into every asymptotic Hawking quanta.
+For large black holes, it manifests itself as unitary propagation of every near-horizon mode into every asymptotic Hawking quanta.
 \end{itemize}
-Basically, Statement Three demands that a near horizon mode is related to an asymptotic Hawking quantum by a unitary transformation, therefore carrying the same qubit of information. 
-However statement 1 and 2 demand this unique qubit to be maximally entangled with two distinct objects, violating monogamy. 
+Basically, Statement Three demands that a near horizon mode is related to an asymptotic Hawking quanta by a unitary transformation, therefore carrying the same qubit of information. 
+However, Statement One and Two demand this unique qubit to be maximally entangled with two distinct objects, violating monogamy. 
 This conflict has inspired many different proposals to modify one of the above three statements. 
 For example, information loss or remnant \cite{Bek94} modifies Statement One; 
 firewall \cite{BraPir09,AMPS} or ER=EPR \cite{MalSus13} modifies Statement Two;
@@ -78,18 +79,19 @@ Before presenting our argument, we will first explain its relation to some exist
 The recent paper by Osuga and Page \cite{OsuPag16} provides an abstract framework of how modifying Statement Three resolves the paradox.
 Basically, the near horizon mode is thermal as demanded by Statement Two.
 But it propagates out in a non-unitary process, gaining the appropriate information to restore a unitary $S$-matrix as demanded by Statement One. 
-For such abstract model to work in practice, such non-unitary propagation should be understood as interacting with a hidden system.
-Here hidden simply means something that is ignorant to a na\"ive application of local QFT.
+For such abstract model to work in practice, this non-unitary propagation should be understood as interaction with a hidden system.
+Here hidden simply means something that a na\"ive application of local QFT is ignorant to.
 The obvious candidate of such hidden system is the geometry.
 
 One proposal along this line of thoughts was discussed in \cite{NomVar12}. 
 The idea was that the black hole acquires a large uncertainty during the evaporation process. 
-If we treat the superposition of different classical geometries (black holes with different locations/momenta) as a quantum system, it may qualify as the hidden system that is responsible for the non-unitary propagation of Hawking quanta. 
-Unfortunately, such proposal can be defeated by counting entropy.
-In order for a non-unitary process to restore the asymptotic $S$-matrix, this hidden system must store the required information, which is comparable to the mount of microscopic information carried by the black hole.
-However, the black-hole-no-hair theorem states that two black holes with identical macroscopic parameters (mass, angular momentum, change) are isometric to each other. 
+If we treat the superposition of different classical geometries as a quantum system, it may qualify as the hidden system that is responsible for the non-unitary propagation of Hawking quanta. 
+Unfortunately, the early version of such proposal can be defeated by counting entropy.
+In order for such non-unitary process to restore the asymptotic $S$-matrix, the hidden system must store the required information, which is comparable to the amount of microscopic information carried by the black hole.
+However, the black-hole-no-hair theorem states that two black holes with identical macroscopic parameters (mass, momentum, angular momentum, charge) are isometric to each other. 
 This limits the number of different classical geometries to be parametrized by macroscopic parameters only.
-As a result, the Hilbert space of superposed classical geometries has far less dimensions than necessary to carry the required amount of information.\footnote{We thank Raphael Bousso for private communication.}
+As a result, the Hilbert space of superposed classical geometries has far fewer dimensions than what is necessary to carry the required amount of information.
+\footnote{We thank Raphael Bousso for private communication.}
 Thus, even if a propagating Hawking quantum does interact with this hidden system, it cannot reproduce a unitary $S$-matrix; therefore such modification of Statement Three alone is insufficient to resolve the paradox.
 
 The recent development on black-hole-soft-hairs \cite{HawPer16} hinted a way to revive this idea.
@@ -97,15 +99,24 @@ Basically, it was realized that two isometric (regions of) geometries should not
 If one maps the geometries with congruences of geodesics, two isometric regions with different maps are actually different states.
 That is because changes in the mapping geodesics are measurable memory effects, and a consistent physical theory must be able to distinguish them.
 This realization dramatically increases the number of different states encoded in classical geometries.
-A tentative counting of state on a black hole horizon yields exactly the required number such that a modification to Statement Three can indeed resolve the paradox.
+A tentative counting of state on a black hole horizon yields exactly the required number such that a modification to Statement Three can indeed resolve the paradox \cite{HawPer16}.
 
-Before diving into details, we should explain why we focus on the last statement.
-That is because local QFT simply assumes {\bf subsystem unitarity}.
+In this paper, we still take another step that is complementary to the above progress. It is exciting to know that modifying Statement Three can in-principle resolve the paradox. 
+However, it remains a great mystery of why should local QFT break down in low curvature regions. 
+If we just demand that it breaks down in order to resolve the information paradox, then there is no reason why this solution is preferred over modifying Statement One or Two. 
+We would like to argue that there is a self-consistency check that we should apply to QFT in curved spacetime, for a reason that is totally independent from the information paradox.
+Applying such self-consistency check, we can show that a unitary propagation from a near horizon mode to an asymptotic Hawking quantum is already self-inconsistent. 
+Thus it is only natural to modify Statement Three.
+
+\subsection{Quantum Field Theory in Curved Spacetime Requires a Self-Consistency Check}
+
+The starting point of our argument involves no new physics at all.
+We simply recognize that local QFT implies a standard assumption of {\bf subsystem unitarity}.
 Quantum mechanical evolution of a full system is by-definition unitary. 
 However in practice, we are not able to describe everything by quantum mechanics all together, so we describe only subsystems. 
 Namely, we assume that the full system can be separated into a ``classical background'' and a ``quantum subsystem''. 
 After such artificial separation, since we only use quantum mechanics to describe the quantum subsystem, it always appears to be unitary.
-\footnote{Even a time-dependent Hamiltonian leads to an apparently unitary evolution under this assumption. That is obviously not a physical fact since a unitary subsystem should be determined by its own initial state, not co-determined by initial state plus an arbitrary time-dependence.} 
+%\footnote{Even a time-dependent Hamiltonian leads to an apparently unitary evolution under this assumption. That is obviously not a physical fact since a unitary subsystem should be determined by its own initial state, not co-determined by initial state plus an arbitrary time-dependence.} 
 However, such unitarity should not be taken as a physical fact unless one specifically checks the nature of interactions with the background.
 
 The most direct way to justify the classical-background assumption is to also describe the background in quantum mechanics, and verify that the quantum interaction between the background and the quantum subsystem indeed does not entangle them. 
@@ -126,10 +137,10 @@ It is in this sense that a unitary evolution of the subsystem is an arbitrarily 
 
 The fundamental principle behind Feynman's trick is that ``classical wave coherence'' should be taken as the prerequisite of ``quantum unitarity''. 
 In Sec.\ref{sec-QFT}, we argue that this principle enables a general self-consistency check of the classical background assumption. 
-We provide a natural generalization to local QFT in curved spacetime, and we discuss why such self-consistency check is different from quantizing graviton.
+We provide a natural generalization to local QFT in curved spacetime, and we discuss why such self-consistency check is different from perturbative calculations of gravitons.
 
 In Sec.\ref{sec-BlackHole}, we apply the self-consistency check to the propagation of Hawking quanta in a close analogy to Feynman's analysis. 
-The classical geometry plays the role of the double-slit, a background that can potentially entangle with the Hawking quanta wavefunction and ruins its subsystem unitarity. 
+The classical geometry plays the role of the double-slit, a background that can potentially entangle with the Hawking quanta wavefunction and ruin its subsystem unitarity. 
 We then assume that the unknown quantum nature of geometry can be parametrize by a classical uncertainty with an unknown but fixed, gauge-invariant size. 
 A classical wave plays the role of the interference pattern. 
 When even a classical wave decoheres due to the uncertainty of geometry, there is no reason to believed that the quantized version of such wave has unitarity.
@@ -153,14 +164,14 @@ The reason why local geometry carries the appropriate information to give in the
 Double-slit interference is the signature experiment to demonstrate the nature of quantum mechanics. Figure 1 shows a simple example of such experiment.
 When a group of particles of the same momentum pass through slit 1 only, they reach the final screen as some probability distribution $P_1(y)$. 
 When they pass through slit 2 only, they reach the final screen as a probability distribution $P_2(y)$.
-When both slits are open, the probability distribution we find on the final screen is not a simple sum; $P_{12}(y) \neq P_1(y) + P_2(y)$
-Instead, the final screen shows an interference pattern which can only be explained by wavefunctions.
+When both slits are open, the probability distribution we find on the final screen is not a simple sum; $P_{12}(y) \neq P_1(y) + P_2(y)$,
+instead, the final screen shows an interference pattern which can only be explained by wavefunctions.
 $P_i = \langle \phi_i | \phi_i \rangle$ and $P_{12} = (\langle \phi_1|+\langle \phi_2| ) (|\phi_1\rangle + | \phi_2 \rangle)=P_1 + P_2 + 2{\rm Re}\langle\phi_1|\phi_2\rangle$.
 
 \begin{figure}[h!]
 \begin{center}.
 \includegraphics[scale = 0.5]{DSe.pdf}
-\caption{Schematic of the double slit experiment. The diagram shows two different scenarios. The top figure shows the behaviour one would expect of classical particles going through one slit or the other. The bottom figure shows the behaviour of classical waves creating an interference patter. Screen one shows the signal that one would see in each scenario (i.e classical particles or waves) if only one slit was open. If slit 1 was open we would see $P_1$ and see on. Screen 2 shows the signal we see if both the silts are open in each scenario.}
+\caption{Schematic of the double slit experiment. The diagram shows two different scenarios. The top figure shows the behaviour one would expect of classical particles going through one slit or the other. The bottom figure shows the behaviour of classical waves creating an interference pattern. Screen one shows the signal that one would see in each scenario (i.e classical particles or waves) if only one slit was open. If slit 1 was open we would see $P_1$ and see on. Screen 2 shows the signal we see if both the silts are open in each scenario.}
 \label{fig-doubleslit}
 \end{center}
 \end{figure}
@@ -293,7 +304,7 @@ Instead of parametrizing a classical geometric uncertainty, one can treat deviat
 Then a standard QFT calculation of scattering with this new field (graviton) should capture all interactions with the geometry, and a small scattering amplitude should guarantee that the interaction is suppressed. 
 The concern for such method is that IR issues for these scattering calculations cannot be unambiguously regulated like in global Minkowski space.
 Since soft gravitons lead to real physical changes in the geometry that can be seen in memory effects \cite{Wei65,HeLys14}, an IR ambiguity signals our ignorance on how these geometric changes enter QFT.
-Thus a direct graviton scattering calculation cannot be the full extend of a self-consistency check, and it is reasonable for our method to give extra constraints on the reliability of local QFT.
+Thus a direct graviton scattering calculation cannot be the full extent of a self-consistency check, and it is reasonable for our method to give extra constraints on the reliability of local QFT.
 
 \section{Hawking quanta propagation}
 \label{sec-BlackHole}
@@ -343,61 +354,85 @@ With the same two starting points near the horizon. we calculate the separation 
 \begin{figure}[tb]
 \begin{center}
 \includegraphics[scale = 0.6]{Propertime.pdf}
-\caption{The two parts of this diagrams describe two different scenarios. The trajectories of the photon are the lines in orange. The trajectory of the observer and the position from which the photons are emitted are represented by solid blue lines. The bottom part is a general case of two Hawking photons coming from a distance $r_A$ from the black hole of mass $M$ and arriving at an observer who is at a distance of $r_0$. The top part shows two Hawking photons coming from the same distance $r_A$ from a black hole of mass $M$. Instead of the photons freely propagating through to an observer at $r_0$, they have to cross two shells, represented by blue dotted line, of equal and opposite mass $-\Delta M, \Delta M$ at $r_{1}, r_{2}$ respectively. The regions $I$ represent a metric with mass $M$ and region $II$ represents a metric with mass $M-\Delta M$.}
+\caption{The two parts of this diagrams describe two different scenarios. The trajectories of the photon are the lines in orange. The trajectory of the observer and the position from which the photons are emitted are represented by solid blue lines. The bottom part is a general case of two Hawking photons coming from a distance $r_A$ from the black hole of mass $M$ and arriving at an observer who is at a distance of $r_0$. The top part shows two Hawking photons coming from the same distance $r_A$ from a black hole of mass $M$. Instead of the photons freely propagating through to an observer at $r_0$, they have to cross two shells, represented by blue dotted line, of equal and opposite mass $\Delta M, -\Delta M$ at $r_{1}, r_{2}$ respectively. The regions $I$ represent a metric with mass $M$ and region $II$ represents a metric with mass $M+\Delta M$.}
 \label{fig-setup}
 \end{center}
 \end{figure}
 
-After some formal calculations in the {\bf Appendix}, we arrive at this simple expression:
+After some formal calculations in the appendix \ref{Dtime}, we arrive at this simple expression:
 \begin{equation}
 \frac{\delta t_0 - \bar{\delta t_0}}{\delta t_0} = 
-\left(\sqrt{\frac{r_2-2M}{r_1-2M}}\sqrt{\frac{r_1-2(M-\Delta M)}{r_2-2(M-\Delta M)}}-1\right)~,
+\left(\sqrt{\frac{r_2-2M}{r_1-2M}}\sqrt{\frac{r_1-2(M+\Delta M)}{r_2-2(M+\Delta M)}}-1\right)~,
 \label{eq-result}
 \end{equation}
-where $r_1$ is the location of the inner shell, $r_2$ is the location of the outer shell, and $\pm\Delta M$ are their individual ADM masses.
+where $r_1$ is the location of the inner shell, $r_2$ is the location of the outer shell, and $\pm\Delta M$ are their individual ADM masses. 
 
 \subsection{Physical interpretation}
 
-As the first step, we set $M=0$ in Eq.~(\ref{eq-result}) to study its meaning in Minkowski space. Assuming that $|r_1-r_2| \equiv \Delta r \ll r_1$ and $\Delta M \ll r_1$, the leading order result becomes
+\textbf{XXX I-Sheng: Add a sentence about why we are using this limit?}
+ 
+We can expand Eq (\ref{eq-result}) in the limit that $r_1>> \Delta M$ and $r_1>> \Delta r = r_2 - r_1$
+
 \begin{equation}
-\frac{\delta t_0 - \bar{\delta t_0}}{\delta t_0} \approx - \frac{\Delta M}{r_1^2} \Delta r 
-\equiv \sigma \Delta r~.
-\label{eq-Mink}
+	\frac{\delta t_0 - \bar{ \delta t_0}}{\delta t_0} = \frac{\Delta M \Delta r}{(r_1-2M)^2} = \frac{\Delta M \Delta r}{r_1^2} g_{rr}^{2}	\label{lim-result}
 \end{equation}
-This seems to be a reasonable answer. 
+
+In fact, this expression can be written in general (see Eq (\ref{Eq-mink}) in the appendix for derivation) in terms of physical, local quantities, which are the local surface energy of the shell $\sigma$ and the proper distances,
+
+\begin{equation}
+	\frac{\delta t_0 - \bar{ \delta t_0}}{\delta t_0} = 4 \pi \sigma \Delta l g_{rr}
+\end{equation}
+
+where $g_{rr}$ is the radial component of the Schwasrchild metric. This expression can be evaluated in three limits; 1) The Minkowski limit ($M=0$), 2) Far from horizon ($M <<r_1$), 3) Near horizon limit ($r_1<<M$). The calculations are performed in appendix \ref{finalEq} and the results are summarized below:
+
+\begin{equation}
+\frac{\delta t_0 - \bar{ \delta t_0}}{\delta t_0} = \begin{cases}
+ 4 \pi \sigma \Delta l~	 &\ \ \ \ \ (M = 0)\\
+4\pi \sigma \Delta l \left( 1 + \frac{2M}{l} \right) & \ \ \ \ \ (M<<r_1)	\\
+64 \pi  \sigma \Delta l \frac{M^2}{l^2} & \ \ \ \ \ (M>>r_1).
+\end{cases}	\label{fin-result}
+\end{equation}
+
+Lets try to interpret each of these terms.
+
+\begin{itemize}
+
+\item \textbf{Minkowski limit ($M=0$)}: This seems to be a reasonable answer. 
 First of all, it is quite unlikely that the entire shell of mass $\Delta M$ fluctuates out of vacuum.
 It is reasonable that any change to the null geodesics is about a local energy density of the particular piece of shell they happen to pass through.
 Secondly, this result is gauge invariant. For an observer at rest, $\sigma$ is the local energy density and $\Delta r$ is the proper distance. 
 For a boosted observer, $\sigma$ increases by a boost factor while $\Delta r$ contracts by the same factor.
 We take it as a good sign that other forms of geometric uncertainty can also be parametrize by a similar, gauge invariant quantity.
 
-The na\"ive interpretation of Eq.~(\ref{eq-Mink}) is that even in Minkowski space, geometric uncertainty can potentially decohere classical mode functions.
+The na\"ive interpretation of the $M=0$ result is that even in Minkowski space, geometric uncertainty can potentially decohere classical mode functions.
 By our definition, that poses some threat to QFT in Minkowski space.
-We are going to assume that unitarity in QFT is fine in Minkowski space, effectively ``renormalize away'' the effect of Eq.~(\ref{eq-Mink}).
+We are going to assume that unitarity in QFT is fine in Minkowski space, effectively ``renormalize away'' the effect at $M=0$.
 One can imagine a simple subtraction by a counter term.
 Or alternatively, since the actual value of $(\sigma\Delta r)$ is unknown, we assume that it is small enough to not cause any concern.
 
-Next we study Eq.~(\ref{eq-result}) with an actual black hole. 
-When the double-shell is very far away from the black hole, $r_1\gg M$, it agrees with Eq.~(\ref{eq-Mink}) as expected. 
-The interesting thing here is that when this pair of geodesics originate near the horizon, the double-shell could also be somewhere near the horizon. 
-In that limit, Eq.~(\ref{eq-result}) can be approximated by
-\begin{equation}
-\frac{\delta t_0 - \bar{\delta t_0}}{\delta t_0} \approx
-- \sigma \Delta l \left(\frac{2M}{l}\right)^2~, \ \ \ \ {\rm \bf XXX \ check \ coefficients}
-\label{eq-NearHorizon}
-\end{equation}
-where $l$ is the proper distance between $r_1$ and the horizon and $\Delta l$ is the proper distance between the two shells. 
-We can see that in addition to the same gauge-invariant quantity in Minkowski space
-\footnote{In Minkowski space, the radial coordinate is the proper distance, $\Delta r=\Delta l$.}, 
-there is an extra factor of $(2M/l)^2$ which diverges as the shell approaches the horizon.
+\item \textbf{Far from horizon ($M<<r_1$)}: This is a region where we expect to understand the physics well. Indeed the QFT we test here on earth can be considered an example of this limit. If we keep $l$ fixed and along with the gauge invariant $\sigma \Delta l$, we see that the effect grows with $M$. Of course, we cannot assume that this grows without bound since we have to maintain the $M<<r_1$ limit. It is interesting to note that similar behaviour is observed when this limit no longer holds and this is what we describe next. 
 
-The small $l$ limit may not be the best way to appreciate how Eq.~(\ref{eq-NearHorizon}) poses a threat to QFT. 
+\item \textbf{Near horizon ($M>>r_1$)}: We can see that the same gauge-invariant quantity in Minkowski space from the $M=0$ limit appears here. We see that taking the small $l$ limit with $\delta l \sigma$ fixed gives $\frac{\delta t_0 - \delta \hat{t_0}}{\delta t_0} \rightarrow \infty$, which is the largest possible effect in the arrival times of two geodesics. However, the small $l$ limit may not be the best way to appreciate how this limit poses a threat to QFT. 
 After all, we do not expect QFT to hold for arbitrarily small distance anyway. 
-The best way to understand Eq.~(\ref{eq-NearHorizon}) is to fix $l$ at some scale that much longer than any scale that we expect UV problems. 
+The best way to understand this limit is to fix $l$ at some scale that much longer than any scale that we expect UV problems. 
 By conventional knowledge, the effect of gravity near horizon gets arbitrarily weak as the black hole becomes large. 
-However, the problem caused by Eq.~(\ref{eq-NearHorizon}) grows larger as the black hole becomes larger, and diverges in the large black hole limit.
-Since the large black hole limit is supposed to be the best case scenario for information paradox, such a diverging uncertainty to decohere classical waves causes a strong doubt on the subsystem unitarity assumption in QFT.
+However, the problem is that this effect grows larger as the black hole becomes larger, and gives the maximum effect as the black hole mass becomes infinite.
+Since the large black hole limit is supposed to be the best case scenario for the information paradox and this is the regime that gives rise to maximum uncertainty to decohere classical waves, one is forced to have strong doubts about assuming subsystem unitarity in QFT.
 
+\end{itemize}
+
+%In that limit, Eq.~(\ref{eq-result}) can be approximated by
+%\begin{equation}
+%	\frac{\delta t_0 - \bar{\delta t_0}}{\delta t_0} \approx \frac{l}{4M} \sqrt{\frac{1}{(6 \pi \delta l \sigma - 1)^\frac{2}{3} -1 }} - 1.	\label{eq-NearHorizon}
+%\end{equation}
+%where $l$ is the proper distance between $r_1$ and the horizon and $\delta l$ is the proper distance between the two shells. 
+%We can see that the same gauge-invariant quantity in Minkowski space from Eq. (\ref{eq-Mink}) appears in the denominator this time
+%\footnote{In Minkowski space, the radial coordinate is the proper distance, $\Delta r=\delta l$.}. We see that taking the small $l$ limit with $\delta l \sigma$ fixed gives $\frac{\delta t_0 - \delta \hat{t_0}}{\delta t_0} = -1$, which is the largest possible effect in the arrival times of two geodesics. However, the small $l$ limit may not be the best way to appreciate how Eq.~(\ref{eq-NearHorizon}) poses a threat to QFT. 
+%After all, we do not expect QFT to hold for arbitrarily small distance anyway. 
+%The best way to understand Eq.~(\ref{eq-NearHorizon}) is to fix $l$ at some scale that much longer than any scale that we expect UV problems. 
+%By conventional knowledge, the effect of gravity near horizon gets arbitrarily weak as the black hole becomes large. 
+%However, the problem caused by Eq.~(\ref{eq-NearHorizon}) grows larger as the black hole becomes larger, and gives the maximum effect as the black hole mass becomes infinite.
+%Since the large black hole limit is supposed to be the best case scenario for the information paradox and this is the regime that gives rise to maximum uncertainty to decohere classical waves, one is forced to have strong doubts about assuming subsystem unitarity in QFT.
 
 \section{Discussion}
 \label{sec-dis}
@@ -418,7 +453,7 @@ The point is that we can always find a pair of pure and mixed density matrices w
 It is not unexpected that the only affected observable is the one explicitly checking unitarity.
 Thus we can still rely on QFT to calculate the values of other observables.
 
-Many existing results of QFT in curved/dynamical geometries are about particle numbers, such as the particle-production calculation following a Bogoliugov transformation. 
+Many existing results of QFT in curved/dynamical geometries are about particle numbers, such as the particle-production calculation following a Bogoliubov transformation. 
 As an example, one can easily see that
 \begin{equation}
 \rho_{\rm pure} = \left(\sum_n a_n|n\rangle\right)
@@ -448,9 +483,9 @@ An abstract realization of this information-recovery process is recently demonst
 In order for local geometry to give this information to the Hawking quanta, it must first carry such information.
 If was first suggested that superpositions of different classical geometries can store such information \cite{NomVar12}.
 In the conventional picture, classical geometries are determined by only a few parameters such as the location and size of the black hole.
-Thus the major objection to such picture is that the superpositons of classical geometries do not form a large enough Hilbert space to hold the required information.
+Thus the major objection to such picture is that the superpositions of classical geometries do not form a large enough Hilbert space to hold the required information.
 Recently, it was realized that there are actually a much larger number of classical geometries differed by their soft hairs \cite{HawPer16}.
-A simple counting suggested that the size of Hilbert space seems no longer the problem, so one should persue this line of thoughts even further.
+A simple counting suggested that the size of Hilbert space seems no longer the problem, so one should pursue this line of thoughts even further.
 
 Classically, soft hairs manifest as memory effects that alters the distances between geodesics, which is very similar to the effect of geometric uncertainty as we showed in this paper.
 Based on this picture, one may try to quantize the soft hairs and build a toy model that involves quantum interaction, therefore entanglement, between the soft hairs and the usual QFT modes.
@@ -459,8 +494,10 @@ That would provide a complete picture that the loss of subsystem unitarity is re
 
 \appendix
 
+\section{Calculation of proper time change}
+\label{Dtime}
 
-\section{Calculation}
+\subsection{Background spacetime - no shell}
 
 A black hole of mass $M$ defines a Schwarzschild geometry for the spacetime with the following metric 
 
@@ -496,36 +533,47 @@ Therefore the coordinate time interval when the particles are emitted remains th
 %
 %and in the limit that the observer is very far away $\delta \bar{\tau_0} \approx \delta \bar{t_0}$. 
 
-\subsubsection{Perturbed spacetime - double shell}
+\subsection{Perturbed spacetime - double shell}
 
-Now we introduce two shells of matter with equal and opposite ADM mass, $-\Delta M$ and $\Delta M$ where $|\Delta M|<<M$, at a distance of $r_1$ and $r_2$ respectively as shown in the top part of figure \ref{fig-setup}. We model these shells as infinitesimally thin and therefore use the Israel Junction Conditions (IJC) \cite{Isr66} with a delta function shell to analyze the effects of the shells. In this case the particle's move through two different spacetime regions. Region $I$ is defined by the black hole of mass $M$ and region $II$ is defined by a Schwarzschild metric of mass $M-\Delta M$ as shown in the top part of figure \ref{fig-setup}.
+Now we introduce two shells of matter with equal and opposite ADM mass, $\Delta M$ and $-\Delta M$ where $|\Delta M|<<M$, at a distance of $r_1$ and $r_2$ respectively as shown in the top part of figure \ref{fig-setup}. We model these shells as infinitesimally thin and therefore use the Israel Junction Conditions (IJC) \cite{Isr66} with a delta function shell to analyze the effects of the shells. In this case the particle's move through two different spacetime regions. Region $I$ is defined by the black hole of mass $M$ and region $II$ is defined by a Schwarzschild metric of mass $M+\Delta M$ as shown in the top part of figure \ref{fig-setup}.
 \\
 \\
 As explained in the previous section, the proper time interval between two particles emitted at $r_e$, $\delta t_e$, is the same as the coordinate time interval at $r_1$, $\delta t_1$. Now we need to find the corresponding coordinate time interval in region $II$, $\delta \hat{t}_1$ (in general we will use hats on top of quantities that are evaluated in region $II$). To do this we simply note that the corresponding proper time at $r_1$, $\delta \tau_1$ must be the same in both regions of spacetime - this is a simple consequence of the IJC. The coordinate time intervals at $r_1$, in the two different regions, are therefore related by
 
 \begin{equation}
-	\delta t_1 = \delta t_0 = \left( \frac{1 - \frac{2(M - \Delta M)}{r_1}}{1 - \frac{2M}{r_1}} \right)^\frac{1}{2} \delta \hat{t}_1.
+	\delta t_1 = \delta t_0 = \left( \frac{1 - \frac{2(M + \Delta M)}{r_1}}{1 - \frac{2M}{r_1}} \right)^\frac{1}{2} \delta \hat{t}_1.
 \end{equation}
 
 We can propagate the particles through region $II$ from $r_1$ to $r_2$ and we know $\delta \hat{t}_1 = \delta \hat{t}_2$. From the fact that the proper time corresponding to the coordinate time intervals will be the same, we can relate $\delta \hat{t}_2$ back to $\delta t_2$ in region $I$, 
 
 \begin{equation}
-	\delta \hat{t}_2 = \delta \hat{t}_1= \left( \frac{1 - \frac{2M}{r_2}}{1 - \frac{2(M- \Delta M)}{r_2}} \right) \delta t_2.	\label{7}
+	\delta \hat{t}_2 = \delta \hat{t}_1= \left( \frac{1 - \frac{2M}{r_2}}{1 - \frac{2(M + \Delta M)}{r_2}} \right) \delta t_2.	\label{7}
 \end{equation}
 
-Since $\delta t_2$ is equal to the time interval observed by the observer at $r_0$, $\delta t_0$, we can find the proper time observed by the observer, $\delta \tau_0  = \delta t_e \left( \left( \frac{r_2 - 2M}{r_1 - 2M} \right) \left( \frac{r_1 - 2(M-\Delta M)}{r_2 - 2(M - \Delta M)} \right) \right)^\frac{1}{2}$. Where we have dropped the $\left( 1 - \frac{2M}{r_0} \right)^\frac{1}{2}$ term since we assume the observer is very far away. $\delta t_e = \delta \bar{\tau_0}$ when the observer is far away therefore we can define a dimensionless quantity that quantifies the change in proper time intervals for consecutive photons in perturbed spacetime case and the unperturbed case, 
+Since $\delta t_2$ is equal to the time interval observed by the observer at $r_0$, $\delta t_0$, we can find the proper time observed by the observer, $\delta \tau_0  = \delta t_e \left( \left( \frac{r_2 - 2M}{r_1 - 2M} \right) \left( \frac{r_1 - 2(M+\Delta M)}{r_2 - 2(M + \Delta M)} \right) \right)^\frac{1}{2}$. Where we have dropped the $\left( 1 - \frac{2M}{r_0} \right)^\frac{1}{2}$ term since we assume the observer is very far away. $\delta t_e = \delta \bar{\tau_0}$ when the observer is far away therefore we can define a dimensionless quantity that quantifies the change in proper time intervals for consecutive photons in perturbed spacetime case and the unperturbed case, 
 
 \begin{equation}
-	 \frac{\delta \tau_0 - \delta \bar{\tau_0}}{\delta \bar{\tau_0}} = \left( \left( \frac{r_2 - 2M}{r_1 - 2M} \right)^\frac{1}{2} \left( \frac{r_1 - 2(M-\Delta M)}{r_2 - 2(M-\Delta M)} \right)^\frac{1}{2} - 1\right).	\label{10}
+	 \frac{\delta \tau_0 - \delta \bar{\tau_0}}{\delta \bar{\tau_0}} = \left( \left( \frac{r_2 - 2M}{r_1 - 2M} \right)^\frac{1}{2} \left( \frac{r_1 - 2(M+\Delta M)}{r_2 - 2(M+\Delta M)} \right)^\frac{1}{2} - 1\right).	\label{10}
 \end{equation}
 
-This expression is exact in the limit that the observer is far away. By expressing the distances from the horizon as, $r_1  =  2M + \epsilon,  r_2  =  2M + \epsilon + \delta \epsilon$, we can write Eq (\ref{10}) as
+This shows that when there are no shells, $\Delta M = 0$, there is no change in proper time intervals which is what one would expect. 
 
-\begin{equation}
-	\frac{\delta t_0 - \bar{\delta t_0}}{\delta t_0} = \left( \left( \frac{\epsilon + \delta \epsilon}{\epsilon} \right)^\frac{1}{2} \left( \frac{\epsilon + 2 \Delta M}{\epsilon + \delta \epsilon + 2\Delta M} \right)^\frac{1}{2} - 1\right). \label{12}
-\end{equation}
+\subsection{Leading order expansion limit}
 
-This shows that when there are no shells, $\Delta M = 0$, there is no change in proper time intervals which is what one would expect. More interestingly we see that there is no $M$ dependence in this equation. This suggests the effect is present in flat space as well. One may interpret this effect as being a phase shift between the photons as the travel through two different gravitational potential wells. Before jumping to any conclusions, however, we should convert the coordinate quantities in Eq (\ref{12}) into physical quantities. 
+By assuming $r_1>> \Delta r \equiv r_2 - r_1$ and $r_1>> \Delta M$ we can expand Eq (\ref{eq-result}), to leading order in small quantities,
+
+\begin{eqnarray}
+	\frac{\delta t_0 - \bar{\delta t_0}}{\delta t_0} & = & 
+	\left( \left( 1+ \frac{\Delta r}{r_1 - 2M} \right)^\frac{1}{2} \left( 1 + \frac{2\Delta M}{r_1 - 2M} \right)^\frac{1}{2} \left( 1 + \frac{\Delta r + 2 \Delta M}{r_1 - 2M} \right)^{-\frac{1}{2}} - 1 \right)	\nonumber	\\
+	%& = & \left( 1 + \frac{1}{2} \frac{\Delta r}{r_1 - 2M} - \frac{1}{8} \left( \frac{\Delta r}{r_1 - 2M} \right)^2 \right) \left( 1 + \frac{\Delta M}{r_1 - 2M} - \frac{1}{2} \left(\frac{\Delta M}{r_1 - 2M} \right)^2 \right) \left( 1 - \frac{1}{2} \frac{\Delta r+ 2 \Delta M}{r_1 - 2M} + \frac{3}{8} \frac{(\Delta r + 2 \Delta M)^2}{(r_1 - 2M)^2} \right) - 1	\nonumber	\\
+	%& = & \left( 1 + \frac{1}{2} \frac{\Delta r + 2 \Delta M}{r_1 - 2M} - \frac{1}{8} \left( \frac{\Delta r}{r_1 - 2M} \right)^2 + \frac{1}{2} \frac{\Delta r \Delta M}{(r_1 - 2M)^2} - \frac{1}{2} \left( \frac{\Delta M}{r_1 - 2M} \right)^2 \right) \left( 1 - \frac{1}{2} \frac{\Delta r + 2\Delta M}{r_1 - 2M} + \frac{3}{8} \frac{(\Delta r + 2 \Delta M)^2}{(r_1 - 2M)^2} \right) -1 \nonumber	\\
+	& = & - \frac{1}{8} \left( \frac{\Delta r}{r_1 - 2M} \right)^2 + 
+	\frac{1}{2} \frac{\Delta r \Delta M}{(r_1 - 2M)^2} - 
+	\frac{1}{2} \left( \frac{\Delta M}{r_1 - 2M} \right)^2 - 
+	\frac{1}{4} \frac{( \Delta r + 2 \Delta M)^2}{(r_1 - 2M)^2} + 
+	\frac{3}{8} \frac{(\Delta r+ 2 \Delta M)^2}{(r_1 - 2M)^2} 	\nonumber	\\
+	& = & \frac{\Delta M \Delta r}{(r_1 - 2M)^2}.
+\end{eqnarray}
 	
 %
 %where $\epsilon<<2M, \ \epsilon << \epsilon$. To leading order in small quantities Eq (\ref{10}) becomes, 
@@ -534,51 +582,168 @@ This shows that when there are no shells, $\Delta M = 0$, there is no change in 
 %	\frac{\delta \tau_0 - \delta \bar{\tau_0}}{\delta \bar{\tau_0}} = - \frac{\Delta M \epsilon}{\epsilon^2}.	\label{11}
 %\end{equation}
 
-\subsection{Defining local quantities}
+%\section{Deriving Eq (\ref{fin-result})}\label{finalEq}
+\section{Whatever section name it was}
+\label{finalEq}
 
-\subsubsection{Energy of shell}
+The first step in this derivation is write down the physical, local, quantities needed to replace $\Delta M, r_1$ and $\Delta r$. The natural thing to replace $\Delta M$ is the surface stress energy, $\sigma$, of the shell. This is given by the $tt$ component of the surface stress energy tensor $S_{ab}$ given by the IJC.
 
-There is a natural choice of what physical quantity we should use to replace $\Delta M$ with and that is the $tt$ component of the surface stress energy tensor, $S_{ab}$, of the shell as computed by the IJC
+%As the first step, we set $M=0$ in Eq.~(\ref{lim-result}) to study its meaning in Minkowski space,
+%
+%\begin{equation}
+%\frac{\delta t_0 - \bar{\delta t_0}}{\delta t_0} \approx - \frac{\Delta M}{r_1^2} \Delta r 
+%\equiv \sigma \Delta r~.	
+%\label{eq-Mink}
+%\end{equation}
+%
+%Next we study Eq.~(\ref{lim-result}) with an actual black hole. 
+%Before we perform any analysis with a black hole it is important to convert the coordinate quantities in Eq (\ref{lim-result}) to physical quantities. We implicitly did this in the Minkowski limit; the variables in Eq (\ref{eq-Mink}) indeed represent the physical surface energy of the shell and the proper distance to it. In the case of a black hole we have to be more careful. The natural quantity to use for the local surface energy of the shell is the time component of the surface stress energy term, $S_{ab}$, given by the IJC
 
 \begin{equation}
-	S^a_b =  [K^a_b] - [K]h^a_b
+	S^a_b = [K^a_b] - [K]h^a_b,
 \end{equation}
 
-where $K_{ab}$ is the extrinsic curvature corresponding to the induced metric we are using, $K = K_{ab} h^{ab}$ is the trace of the extrinsic curvature taken with respect to the induced metric and the notation of square brackets represents the difference in a quantity in two different induced metrics. 
-%
-%We can define the induced metrics for constant $r$ values; for region $I$ it is 
-%
-%\begin{equation}
-%	ds_{3M}^2 = - \left( 1 - \frac{2M}{r} \right)^{-1} dt^2 + r^2 d \Omega_2^2.	\label{13}
-%\end{equation}
-%
-%Analogously we have the metric corresponding to mass $M' = M- \Delta M$ in region $II$
-%
-%\begin{equation}
-%	ds_{3M'}^2 = - \left( 1 - \frac{2M'}{r} \right)^{-1} dt'^2 + r^2 d \Omega_2^2.	\label{14}
-%\end{equation}
-%
-%We could rewrite Eq (\ref{13}) and (\ref{14}) in Gaussian normal coordinates (where the coefficient in front of the time component is 1), however the first order junction condition is that the induced metric on both sides of the shell must be the same. Therefore it is easy to find a relation between the two time coordinates
-%
-%\begin{equation}
-%	dt'^2 = \left( \frac{1 - \frac{2M'}{r_1}}{ 1- \frac{2M}{r_1}} \right) dt^2.
-%\end{equation}
-%
-%Using this, we calculate the extrinsic curvature components
-%
-%\begin{eqnarray}
-%	(K^t_t)^{(M)} & = & \frac{M}{r_1^2} \left( 1 - \frac{2M}{r_1} \right)^{-\frac{1}{2}} 	\nonumber	\\
-%	(K^\theta_\theta)^{(M)} & = & \frac{1}{r_1} \left( 1 - \frac{2M}{r_1} \right)^\frac{1}{2} 
-%	= (K^\phi_\phi)^{(M)}	\label{16}
-%\end{eqnarray}
-%
-%where the superscript of $M$ denotes the quantities evaluated in the metric of mass $M$. Analogous expressions hold for the extrinsic curvature components calculated in the metric of mass $M'$ by just replacing $M$ by $M'$ in Eq (\ref{16}). 
-
-The $tt$ component of the surface stress energy tensor is
+where $K_{ab}$ is the extrinsic curvature corresponding to the induced metric, $h^{ab}$, we are using. $K = K_{ab} h^{ab}$ is the trace of the extrinsic curvature.
+We can define the induced metrics for constant $r$ values; for region $I$ it is 
 
 \begin{equation}
-	\sigma = S^0_0 =  \frac{1}{4 \pi r_1} \left( \left( 1 - \frac{2M}{r_1} \right)^\frac{1}{2} - \left( 1 - \frac{2M'}{r_1} \right)^\frac{1}{2} \right).	\label{sig}
+	ds_{3M}^2 = - \left( 1 - \frac{2M}{r} \right)^{-1} dt^2 + r^2 d \Omega_2^2.	\label{13}
 \end{equation}
+
+Analogously we have the metric corresponding to mass $M' = M+ \Delta M$ in region $II$
+
+\begin{equation}
+	ds_{3M'}^2 = - \left( 1 - \frac{2M'}{r} \right)^{-1} dt'^2 + r^2 d \Omega_2^2.	\label{14}
+\end{equation}
+
+We could rewrite Eq (\ref{13}) and (\ref{14}) in Gaussian normal coordinates (where the coefficient in front of the time component is 1), however the first order junction condition is that the induced metric on both sides of the shell must be the same. Therefore it is easy to find a relation between the two time coordinates
+
+\begin{equation}
+	dt'^2 = \left( \frac{1 - \frac{2M'}{r_1}}{ 1- \frac{2M}{r_1}} \right) dt^2.
+\end{equation}
+
+Using this, we calculate the extrinsic curvature components
+
+\begin{eqnarray}
+	(K^t_t)^{(M)} & = & \frac{M}{r_1^2} \left( 1 - \frac{2M}{r_1} \right)^{-\frac{1}{2}} 	\nonumber	\\
+	(K^\theta_\theta)^{(M)} & = & \frac{1}{r_1} \left( 1 - \frac{2M}{r_1} \right)^\frac{1}{2} 
+	= (K^\phi_\phi)^{(M)}	\label{16}
+\end{eqnarray}
+
+where the superscript of $M$ denotes the quantities evaluated in the metric of mass $M$. Analogous expressions hold for the extrinsic curvature components calculated in the metric of mass $M'$ by just replacing $M$ by $M'$ in Eq (\ref{16}).
+ The time component of the surface stress energy tensor $S^0_0$ is 
+
+\begin{equation}
+	\sigma = S^0_0 = \frac{1}{4 \pi r_1} \left( \left( 1 - \frac{2M}{r_1} \right)^\frac{1}{2} - \left( 1 - \frac{2(M+\Delta M)}{r_1} \right)^\frac{1}{2} \right).
+\end{equation}
+
+This expression represents a small change in the mass and thus can be written as
+
+\begin{eqnarray}
+	\sigma & = & \frac{1}{4 \pi r_1} \left[ \partial_X \left( 1 - \frac{2X}{r_1} \right)^\frac{1}{2} \right]_{X = M} \Delta M. \nonumber	\\
+	& = &  \frac{\Delta M}{4 \pi r_1^2} \left( 1 - \frac{2M}{r_1} \right)^{-\frac{1}{2}}.	\label{sig-Dm}
+\end{eqnarray}
+
+Next we need to replace the coordinate distance $\Delta r$ with the proper distance $\Delta l$ and the relation between them is given by
+
+\begin{equation}
+	\Delta l = \left( 1 - \frac{2M}{r_1} \right)^{-\frac{1}{2}} \Delta r.	\label{Dl-Dr}
+\end{equation}
+
+This can be integrated to give the proper distance, $l$, between the inner shell and the horizon
+
+\begin{eqnarray}
+	l & = & \int^{r_1}_{2M} \left( 1 - \frac{2M}{r} \right)^{-\frac{1}{2}} dr	\nonumber	\\
+	& = & \sqrt{(r_1 - 2M)r_1} + M \log \left( \frac{ r_1 - M + \sqrt{(r_1 - 2M)r_1}}{M} \right)	\label{l-r}
+\end{eqnarray}
+
+\subsection{Minkowski limit ($M=0$)}
+
+In the Minkowski limit we set $M=0$ in Eq (\ref{lim-result}) and put in the physical quantities from Eqs (\ref{sig-Dm}, \ref{Dl-Dr}, \ref{l-r}) to get
+
+\begin{equation}
+	\frac{\delta t_0 - \bar{t_0}}{\delta t_0} = \frac{\Delta M \Delta l}{l^2} = 4 \pi \sigma \Delta l.	\label{Eq-mink}
+\end{equation}
+
+Very far away from the horizon, we expect a small deviation in Eq (\ref{Eq-mink}) from the Minkowski result as we know that the Schwarzschild geometry is asymptotically flat. By assuming $r_1>>M$ we  expanded Eq \ref{l-r} to first order to give
+
+\begin{equation}
+	l = r_1 - 2M - M \ln \left( \frac{r_1 - 2M}{M} \right) \Rightarrow r_1 - 2M = l - M \ln \left( \frac{l}{M} \right)	\label{l-r1}.
+\end{equation}
+
+Where in the last step we have used $x = y + \ln (y) \Rightarrow y = x - \ln(x)$ to leading order when $x \approx y$. We can substitute this, along with Eqs (\ref{sig-Dm}, \ref{Dl-Dr}) into Eq (\ref{lim-result}) to get
+
+\begin{eqnarray}
+	\frac{\delta t_0 - \delta \bar{t_0}}{\delta t_0} & = & 4 \pi \sigma \frac{r_1^2}{(r_1 - 2M)^2} \left( 1 - \frac{2M}{r_1} \right)^{\frac{1}{2}} \left( 1 - \frac{2M}{r_1} \right)^\frac{1}{2}  \nonumber	\\
+	& = & 4 \pi \sigma \Delta l \left( 1 - \frac{2M}{r_1} \right)^{-1} = 4 \pi \sigma \Delta l g_{rr}	\label{gen-result}
+\end{eqnarray}
+
+Note that this is actually a general result so far in terms of the coordinate distance $r_1$. We can expand this to leading order now by assuming $2M/r_1 <<1$,
+
+\begin{equation}
+	\frac{\delta t_0 - \delta \bar{t_0}}{\delta t_0} = 4 \pi \sigma \Delta l \left( 1 + \frac{2M}{r_1} \right) 
+\end{equation}
+
+\subsection{Near horizon ($M>>r_1$)}
+
+In this limit the coordinate distance $r_1$ and proper distance $l$ are related by
+
+\begin{equation}
+	r_1 = \frac{l^2}{8M} + 2M
+\end{equation}
+
+Again, we substitute this expression along with Eqs (\ref{sig-Dm}, \ref{Dl-Dr}) into Eq (\ref{lim-result}) to get 
+
+\begin{eqnarray}
+	\frac{\delta t_0 - \delta \bar{t_0}}{\delta t_0} & = &  4 \pi \sigma \delta l \left( 1+ \frac{2M}{r_1 - 2M} \right)^2 \left( 1 - \left( 1 + \frac{r_1 - 2M}{2M} \right)^{-1} \right)	\nonumber	\\
+	& =& 4 \pi \sigma \delta l \left( \frac{2M}{r_1 - 2M}\right)^2 \left( \frac{r_1 - 2M}{2M}  + \mathcal{O}(M^{-2}) \right)	\nonumber	\\
+	& = & 64 \pi \sigma \delta l \frac{M^2}{l^2} + \mathcal{O}(r^{-2})
+\end{eqnarray}
+
+
+
+
+%There is a natural choice of what physical quantity we should use to replace $\Delta M$ with and that is the $tt$ component of the surface stress energy tensor, $S_{ab}$, of the shell as computed by the IJC
+%
+%\begin{equation}
+%	S^a_b =  [K^a_b] - [K]h^a_b
+%\end{equation}
+%
+%where $K_{ab}$ is the extrinsic curvature corresponding to the induced metric we are using, $K = K_{ab} h^{ab}$ is the trace of the extrinsic curvature taken with respect to the induced metric and the notation of square brackets represents the difference in a quantity in two different induced metrics. 
+%%
+%%We can define the induced metrics for constant $r$ values; for region $I$ it is 
+%%
+%%\begin{equation}
+%%	ds_{3M}^2 = - \left( 1 - \frac{2M}{r} \right)^{-1} dt^2 + r^2 d \Omega_2^2.	\label{13}
+%%\end{equation}
+%%
+%%Analogously we have the metric corresponding to mass $M' = M- \Delta M$ in region $II$
+%%
+%%\begin{equation}
+%%	ds_{3M'}^2 = - \left( 1 - \frac{2M'}{r} \right)^{-1} dt'^2 + r^2 d \Omega_2^2.	\label{14}
+%%\end{equation}
+%%
+%%We could rewrite Eq (\ref{13}) and (\ref{14}) in Gaussian normal coordinates (where the coefficient in front of the time component is 1), however the first order junction condition is that the induced metric on both sides of the shell must be the same. Therefore it is easy to find a relation between the two time coordinates
+%%
+%%\begin{equation}
+%%	dt'^2 = \left( \frac{1 - \frac{2M'}{r_1}}{ 1- \frac{2M}{r_1}} \right) dt^2.
+%%\end{equation}
+%%
+%%Using this, we calculate the extrinsic curvature components
+%%
+%%\begin{eqnarray}
+%%	(K^t_t)^{(M)} & = & \frac{M}{r_1^2} \left( 1 - \frac{2M}{r_1} \right)^{-\frac{1}{2}} 	\nonumber	\\
+%%	(K^\theta_\theta)^{(M)} & = & \frac{1}{r_1} \left( 1 - \frac{2M}{r_1} \right)^\frac{1}{2} 
+%%	= (K^\phi_\phi)^{(M)}	\label{16}
+%%\end{eqnarray}
+%%
+%%where the superscript of $M$ denotes the quantities evaluated in the metric of mass $M$. Analogous expressions hold for the extrinsic curvature components calculated in the metric of mass $M'$ by just replacing $M$ by $M'$ in Eq (\ref{16}). 
+%
+%The $tt$ component of the surface stress energy tensor is
+%
+%\begin{equation}
+%	\sigma = S^0_0 =  \frac{1}{4 \pi r_1} \left( \left( 1 - \frac{2M}{r_1} \right)^\frac{1}{2} - \left( 1 - \frac{2M'}{r_1} \right)^\frac{1}{2} \right).	\label{sig}
+%\end{equation}
 
 %This represents the surface energy density, to convert it to the energy of the shell, $\mathcal{E}$, we multiply by the surface area of the shell which is $4 \pi r_1^2$
 %
@@ -610,37 +775,25 @@ The $tt$ component of the surface stress energy tensor is
 %\end{equation}
 %
 
-\subsubsection{Proper distances}
-
-The proper length $l$ between the horizon and shell is,
-
-\begin{equation}
-	l =  (2M \epsilon)^\frac{1}{2}  + M \ln \left( \frac{M + \epsilon + (2M\epsilon)^\frac{1}{2}}{M} \right).	\label{20}
-\end{equation}
-
-Similarly, the proper distance between the two shells, $\delta l$, is given by
-
-\begin{equation}
-	\delta l = (2M'(\epsilon + \delta \epsilon))^{\frac{1}{2}} + M' \ln \left(\frac{M' + \epsilon + \delta \epsilon + (2M'(\epsilon +\delta \epsilon))^{\frac{1}{2}}}{M'} \right) - (2M'\epsilon)^\frac{1}{2} - M' \ln \left( \frac{M' + \epsilon + (2M' \epsilon)^\frac{1}{2}}{M'} \right)	\label{21}
-\end{equation}
-	
-Eqs (\ref{sig}, \ref{20}, \ref{21}) can be used in Eq (\ref{12}) to replace $\Delta M, \epsilon, \delta \epsilon$ respectively by the appropriate physical quantities. We can obtain analytic expressions for Eq (\ref{12}) in the limit that the shells are very close to the horizon and this is what is presented in the next section. 
-
-\subsection{Near horizon limit}
-
-In the near horizon limit we assume $\epsilon<< 2M$ and furthermore assume that the perturbations $\Delta M, \delta \epsilon$ are much smaller than $\epsilon$. Under these assumptions Eq (\ref{12}), to leading order in small quantities, becomes
-
-\begin{equation}
-	\frac{\delta t_0 - \bar{\delta t_0}}{\delta t_0} = - \frac{\Delta M \delta \epsilon}{\epsilon^2}
-\end{equation}
-
-and the conversion to proper quantities from Eqs (\ref{sig}, \ref{20}, \ref{21}) gives, to leading order, 
-
-\begin{equation}
-	\frac{\delta t_0 - \bar{\delta t_0}}{\delta t_0} \approx \frac{l}{4M} \sqrt{\frac{1}{(6 \pi \delta l \sigma - 1)^\frac{2}{3} -1 }} - 1.
-\end{equation}
-
-%to leading order this reduces to 
+%\subsubsection{Deriving Eq (\ref{fin-result})}
+%
+%The proper length $l$ between the horizon and shell is,
+%
+%\begin{equation}
+%	l =  (2M \epsilon)^\frac{1}{2}  + M \ln \left( \frac{M + \epsilon + (2M\epsilon)^\frac{1}{2}}{M} \right).	\label{20}
+%\end{equation}
+%
+%Similarly, the proper distance between the two shells, $\delta l$, is given by
+%
+%\begin{equation}
+%	\delta l = (2M'(\epsilon + \delta \epsilon))^{\frac{1}{2}} + M' \ln \left(\frac{M' + \epsilon + \delta \epsilon + (2M'(\epsilon +\delta \epsilon))^{\frac{1}{2}}}{M'} \right) - (2M'\epsilon)^\frac{1}{2} - M' \ln \left( \frac{M' + \epsilon + (2M' \epsilon)^\frac{1}{2}}{M'} \right)	\label{21}
+%\end{equation}
+%	
+%Eqs (\ref{sig}, \ref{20}, \ref{21}) can be used in Eq (\ref{12}) to replace $\Delta M, \epsilon, \delta \epsilon$ respectively by the appropriate physical quantities. We can obtain analytic expressions for Eq (\ref{12}) in the limit that the shells are very close to the horizon and this is what is presented in the next section. 
+%
+%
+%
+%%to leading order this reduces to 
 %
 %\begin{equation}
 %	l = 2 (2 \epsilon M)^\frac{1}{2}.	\label{25}
