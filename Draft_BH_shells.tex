@@ -11,7 +11,7 @@
 
 \begin{document}
 
-\title{A self-consistency check for unitary Hawking radiation}
+\title{A self-consistency check for unitary propagation of Hawking quanta}
 
 \author{Daniel Baker}
 \email{dbaker@cita.utoronto.ca}
@@ -323,8 +323,7 @@ Given how little we understand quantum gravity, a classical self-consistency che
 \item {\bf Classical coherence by tracking geodesics.} The classical mode of a massless field basically has its peaks and nodes following null geodesics.
 Thus, instead of actually solving the mode function, we can perform a much simpler calculation to track geodesics.
 We start with two out-going null geodesics with the separation of one period of such mode near the horizon, and then we calculate the change in their separations at spatial infinity.
-The change of distance (arrival time difference) between these two geodesics qualitatively represent the change a mode function will have.
-As such change gets large, we should lose faith on the apparent unitarity in the QFT calculation.
+If this change is comparable to the wavelength, then the mode function of this wavelength loses classical coherence.
 \item {\bf The background and the uncertainty.} The classical background in this case is the Schwarzschild geometry, which can be written as the metric $g_{\mu\nu}$. 
 A classical uncertainty can be expressed as deviation from such metric, $\Delta g_{\mu\nu}$. 
 There are two major challenges here.
@@ -335,11 +334,11 @@ It is simple to calculate and reflects the physcial intuition of vacuum pair flu
 \item The value of $\Delta g_{\mu\nu}$ is gauge dependent. 
 By relating it to the presence of extra matter, we can express it as a gauge-invariant local quantity, which is the natural thing to hold fixed in our analysis.
 \end{enumerate}
-Note that if we were reporting a positive result, that such uncertainty upholds unitarity, then one should question the validity of learning a general lesson from a special example. However, we will show that this particular form of $\Delta g_{\mu\nu}$ is already sufficient to question unitarity, and we did not choose this form to specifically do that. Thus our limited analysis is sufficient to raise a reasonable doubt to the classical-background approximation.
+Note that if we were reporting a positive result, that such uncertainty upholds unitarity, then one should question the validaty of learning a general lesson from a special example. However, we will show that this particular form of $\Delta g_{\mu\nu}$ is already sufficient to question unitarity, and we did not choose this form to specifically do that. Thus our limited analysis is sufficient to raise a reasonable doubt to the classical-background approximation.
 \item {\bf Renormalization.} It is well-known that na\"ive applications of QFT often suffer from UV/IR divergences.
-In our case, we will see that even in Minkowski space, geometric uncertainty already leads to an in-principle-finite change between the two null geodesics.
+In our case, we will see that even in Minkowski space, geometric uncertainty already leads to a finite change between the two null geodesics.
 We will simply ``renormalize'' that away by saying that if the black hole case leads to a similar change, it should not be taken as a serious problem.
-Our surprising result is that in the black hole case, we get an arbitrarily larger effects than in Minkowski space, which is difficult to blame on the usual divergence of QFT.
+Our surprising result is that in the black hole case, we get an infinitely larger change, which is difficult to blame on renormalization.
 \end{itemize}
 
 More concretely, our setup is shown in Fig.\ref{fig-setup}. 
@@ -347,7 +346,7 @@ We start by choosing two points at some $r_0\gg M$ with a $\delta t_0\sim M$ coo
 This represents one wavelength of the mode function of an asymptotic Hawking quantum.
 We then back-track two null geodesics from these two points back to two points near the horizon, at $r_A$ with $(r_A-2M)\ll 2M$.
 Now their separation represents one wavelength of a near-horizon mode, which would have propagated to the asymptotic mode if there were no geometric uncertainty. 
-We then introduce a geometric uncertainty as two shells of zero total ADM mass. 
+We then introduce introduce a geometric uncertainty as two shells of zero total ADM mass. 
 Therefore, both the near horizon and the asymptotic regions are not affected by such uncertainty.
 Only the process of propagation is affected.
 With the same two starting points near the horizon. we calculate the separation $\bar{\delta t_0}$ of the two null geodesics when they arrive at $r_0$, and compare it with $\delta t_0$.
@@ -355,7 +354,7 @@ With the same two starting points near the horizon. we calculate the separation 
 \begin{figure}[tb]
 \begin{center}
 \includegraphics[scale = 0.6]{Propertime.pdf}
-\caption{The two parts of this diagrams describe two different scenarios. The trajectories of the photon are the lines in orange. The trajectory of the observer and the position from which the photons are emitted are represented by solid blue lines. The bottom part is a general case of two Hawking photons coming from a distance $r_A$ from the black hole of mass $M$ and arriving at an observer who is at a distance of $r_0$. The top part shows two Hawking photons coming from the same distance $r_A$ from a black hole of mass $M$. Instead of the photons freely propagating through to an observer at $r_0$, they have to cross two shells, represented by blue dotted line, of equal and opposite mass $\Delta M, -\Delta M$ at $r_{1}, r_{2}$ respectively. The regions $I$ represent a metric with mass $M$ and region $II$ represents a metric with mass $M-\Delta M$.}
+\caption{The two parts of this diagrams describe two different scenarios. The trajectories of the photon are the lines in orange. The trajectory of the observer and the position from which the photons are emitted are represented by solid blue lines. The bottom part is a general case of two Hawking photons coming from a distance $r_A$ from the black hole of mass $M$ and arriving at an observer who is at a distance of $r_0$. The top part shows two Hawking photons coming from the same distance $r_A$ from a black hole of mass $M$. Instead of the photons freely propagating through to an observer at $r_0$, they have to cross two shells, represented by blue dotted line, of equal and opposite mass $\Delta M, -\Delta M$ at $r_{1}, r_{2}$ respectively. The regions $I$ represent a metric with mass $M$ and region $II$ represents a metric with mass $M+\Delta M$.}
 \label{fig-setup}
 \end{center}
 \end{figure}
@@ -366,7 +365,7 @@ After some formal calculations in the appendix \ref{Dtime}, we arrive at this si
 \left(\sqrt{\frac{r_2-2M}{r_1-2M}}\sqrt{\frac{r_1-2(M+\Delta M)}{r_2-2(M+\Delta M)}}-1\right)~,
 \label{eq-result}
 \end{equation}
-where $r_1$ is the location of the inner shell, $r_2$ is the location of the outer shell, and $\pm\Delta M$ are their individual ADM masses.
+where $r_1$ is the location of the inner shell, $r_2$ is the location of the outer shell, and $\pm\Delta M$ are their individual ADM masses. 
 
 \subsection{Physical interpretation}
 
@@ -375,16 +374,22 @@ where $r_1$ is the location of the inner shell, $r_2$ is the location of the out
 We can expand Eq (\ref{eq-result}) in the limit that $r_1>> \Delta M$ and $r_1>> \Delta r = r_2 - r_1$
 
 \begin{equation}
-	\frac{\delta t_0 - \bar{ \delta t_0}}{\delta t_0} = \frac{\Delta M \Delta r}{(r_1-2M)^2}	\label{lim-result}
+	\frac{\delta t_0 - \bar{ \delta t_0}}{\delta t_0} = \frac{\Delta M \Delta r}{(r_1-2M)^2} = \frac{\Delta M \Delta r}{r_1^2} g_{rr}^{2}	\label{lim-result}
 \end{equation}
 
-This expression can be evaluated in three limits; 1) The Minkowski limit ($M=0$), 2) Far from horizon ($M <<r_1$), 3) Near horizon limit ($r_1<<M$). These limits have to be calculated using physical, local quantities, which are the local surface energy of the shell $\sigma$ and the proper distances. The calculations are performed in appendix \ref{finalEq} and the results are summarized below:
+In fact, this expression can be written in general (see Eq (\ref{Eq-mink}) in the appendix for derivation) in terms of physical, local quantities, which are the local surface energy of the shell $\sigma$ and the proper distances,
+
+\begin{equation}
+	\frac{\delta t_0 - \bar{ \delta t_0}}{\delta t_0} = 4 \pi \sigma \Delta l g_{rr}
+\end{equation}
+
+where $g_{rr}$ is the radial component of the Schwasrchild metric. This expression can be evaluated in three limits; 1) The Minkowski limit ($M=0$), 2) Far from horizon ($M <<r_1$), 3) Near horizon limit ($r_1<<M$). The calculations are performed in appendix \ref{finalEq} and the results are summarized below:
 
 \begin{equation}
 \frac{\delta t_0 - \bar{ \delta t_0}}{\delta t_0} = \begin{cases}
- \sigma \Delta l~	 &\ \ \ \ \ (M = 0)\\
-- 4\pi \sigma \Delta l \left( 1 + \frac{2M}{l} \right) & \ \ \ \ \ (M<<r_1)	\\
-- 64 \pi  \sigma \Delta l \frac{M^2}{l^2} & \ \ \ \ \ (M>>r_1).
+ 4 \pi \sigma \Delta l~	 &\ \ \ \ \ (M = 0)\\
+4\pi \sigma \Delta l \left( 1 + \frac{2M}{l} \right) & \ \ \ \ \ (M<<r_1)	\\
+64 \pi  \sigma \Delta l \frac{M^2}{l^2} & \ \ \ \ \ (M>>r_1).
 \end{cases}	\label{fin-result}
 \end{equation}
 
@@ -448,7 +453,7 @@ The point is that we can always find a pair of pure and mixed density matrices w
 It is not unexpected that the only affected observable is the one explicitly checking unitarity.
 Thus we can still rely on QFT to calculate the values of other observables.
 
-Many existing results of QFT in curved/dynamical geometries are about particle numbers, such as the particle-production calculation following a Bogoliugov transformation. 
+Many existing results of QFT in curved/dynamical geometries are about particle numbers, such as the particle-production calculation following a Bogoliubov transformation. 
 As an example, one can easily see that
 \begin{equation}
 \rho_{\rm pure} = \left(\sum_n a_n|n\rangle\right)
@@ -486,9 +491,6 @@ Classically, soft hairs manifest as memory effects that alters the distances bet
 Based on this picture, one may try to quantize the soft hairs and build a toy model that involves quantum interaction, therefore entanglement, between the soft hairs and the usual QFT modes.
 That would provide a complete picture that the loss of subsystem unitarity is really just entanglement with another subsystem which was originally (and illegitimately, as we argued) assumed as the classical background.
 
-\acknowledgments
-
-We thank XXX for discussions. We are supported by XXX fundings.
 
 \appendix
 
@@ -497,25 +499,30 @@ We thank XXX for discussions. We are supported by XXX fundings.
 
 \subsection{Background spacetime - no shell}
 
-A black hole of mass $M$ defines a Schwarzschild geometry for the spacetime with the following metric,
-\begin{equation}
-	ds^2 = - \left( 1 -\frac{2M}{r} \right) dt^2 + \left( 1 - \frac{2M}{r} \right)^{-1} dr^2 + r^2 d \Omega_2^2	\label{1}~,
-\end{equation}
-where we are working with units in which $G = c = 1$. We know there will be a flux of particles appearing from the horizon of the black hole \cite{Haw74}. Take some coordinate time interval, $\delta \bar{t_e}$, (which will have some corresponding proper time interval $\delta \bar{\tau_e}$) between two consecutive particles being emitted from the same position above the horizon of the black hole. An observer far away will see these particles arrive with some coordinate time interval $\delta \bar{t_0}$. We can follow the trajectory of the particles (assuming they are relativistic) from the position they are emitted, $r_e$, to the observer at $r_0$ by setting $ds = 0$ in Eq (\ref{1}). 
+A black hole of mass $M$ defines a Schwarzschild geometry for the spacetime with the following metric 
 
-Confining the motion to be only in the radial direction, i.e $d \Omega_2 = 0$, we get the following geodesic equation,
 \begin{equation}
-	\bar{t_e}^{(1)} - \bar{t_0}^{(1)} = \bar{r_0} - \bar{r_e} + 2M \ln \left( \frac{\bar{r_0} - 2M}{\bar{r_e} - 2M}  \right)~,	
-	\label{3}
+	ds^2 = - \left( 1 -\frac{2M}{r} \right) dt^2 + \left( 1 - \frac{2M}{r} \right)^{-1} dr^2 + r^2 d \Omega_2^2	\label{1}
 \end{equation}
+
+where we are working with units in which $G = c = 1$. We know there will be a flux of particles appearing from the horizon of the black hole \cite{Haw74}. Take some coordinate time interval, $\delta \bar{t_e}$, (which will have some corresponding proper time interval $\delta \bar{\tau_e}$) between two consecutive particles being emitted from the same position above the horizon of the black hole. An observer far away will see these particles arrive with some coordinate time interval $\delta \bar{t_0}$. We can follow the trajectory of the particles (assuming they are relativistic) from the position they are emitted, $r_e$, to the observer at $r_0$ by setting $ds = 0$ in Eq (\ref{1}). By confining the motion to be only in the radial direction, i.e $d \Omega_2 = 0$, we get the following geodesic equation
+
+\begin{equation}
+	\bar{t_e}^{(1)} - \bar{t_0}^{(1)} = \bar{r_0} - \bar{r_e} + 2M \ln \left( \frac{\bar{r_0} - 2M}{\bar{r_e} - 2M}  \right)	\label{3}
+\end{equation}
+
 where the superscript represents particle $1$. An analogous geodesic equation is given for particle 2. 
+
 \begin{equation}
-	\bar{t_e}^{(2)} - \bar{t_0}^{(2)} = \bar{r_0} - \bar{r_e} + 2M \ln \left( \frac{\bar{r_0} - 2M}{\bar{r_e} - 2M}  \right)~.	\label{4}
+	\bar{t_e}^{(2)} - \bar{t_0}^{(2)} = \bar{r_0} - \bar{r_e} + 2M \ln \left( \frac{\bar{r_0} - 2M}{\bar{r_e} - 2M}  \right).	\label{4}
 \end{equation}
+
 Since the right hand side of Eq (\ref{3}) and (\ref{4}) is the same, we see that
+
 \begin{equation}
-	\bar{t_0}^{(2)} - \bar{t_0}^{(1)} = \bar{t_e}^{(2)} - \bar{t_e}^{(1)} \Rightarrow \delta \bar{t_0} = \delta \bar{t_e}~.
+	\bar{t_0}^{(2)} - \bar{t_0}^{(1)} = \bar{t_e}^{(2)} - \bar{t_e}^{(1)} \Rightarrow \delta \bar{t_0} = \delta \bar{t_e}.
 \end{equation}
+
 Therefore the coordinate time interval when the particles are emitted remains the same when it is observed at distance $r_0$ as is shown in the bottom part of figure \ref{fig-setup}.
 
 %We can convert $\delta\bar{t_0}$ to proper time
@@ -529,7 +536,8 @@ Therefore the coordinate time interval when the particles are emitted remains th
 \subsection{Perturbed spacetime - double shell}
 
 Now we introduce two shells of matter with equal and opposite ADM mass, $\Delta M$ and $-\Delta M$ where $|\Delta M|<<M$, at a distance of $r_1$ and $r_2$ respectively as shown in the top part of figure \ref{fig-setup}. We model these shells as infinitesimally thin and therefore use the Israel Junction Conditions (IJC) \cite{Isr66} with a delta function shell to analyze the effects of the shells. In this case the particle's move through two different spacetime regions. Region $I$ is defined by the black hole of mass $M$ and region $II$ is defined by a Schwarzschild metric of mass $M+\Delta M$ as shown in the top part of figure \ref{fig-setup}.
-
+\\
+\\
 As explained in the previous section, the proper time interval between two particles emitted at $r_e$, $\delta t_e$, is the same as the coordinate time interval at $r_1$, $\delta t_1$. Now we need to find the corresponding coordinate time interval in region $II$, $\delta \hat{t}_1$ (in general we will use hats on top of quantities that are evaluated in region $II$). To do this we simply note that the corresponding proper time at $r_1$, $\delta \tau_1$ must be the same in both regions of spacetime - this is a simple consequence of the IJC. The coordinate time intervals at $r_1$, in the two different regions, are therefore related by
 
 \begin{equation}
@@ -574,7 +582,8 @@ By assuming $r_1>> \Delta r \equiv r_2 - r_1$ and $r_1>> \Delta M$ we can expand
 %	\frac{\delta \tau_0 - \delta \bar{\tau_0}}{\delta \bar{\tau_0}} = - \frac{\Delta M \epsilon}{\epsilon^2}.	\label{11}
 %\end{equation}
 
-\section{Deriving Eq (\ref{fin-result})}\label{finalEq}
+%\section{Deriving Eq (\ref{fin-result})}\label{finalEq}
+\section{Whatever section name it was}
 \label{finalEq}
 
 The first step in this derivation is write down the physical, local, quantities needed to replace $\Delta M, r_1$ and $\Delta r$. The natural thing to replace $\Delta M$ is the surface stress energy, $\sigma$, of the shell. This is given by the $tt$ component of the surface stress energy tensor $S_{ab}$ given by the IJC.
@@ -653,12 +662,10 @@ This can be integrated to give the proper distance, $l$, between the inner shell
 In the Minkowski limit we set $M=0$ in Eq (\ref{lim-result}) and put in the physical quantities from Eqs (\ref{sig-Dm}, \ref{Dl-Dr}, \ref{l-r}) to get
 
 \begin{equation}
-	\frac{\delta t_0 - \bar{t_0}}{\delta t_0} = \frac{\Delta M \Delta l}{l^2} = \sigma \Delta l.
+	\frac{\delta t_0 - \bar{t_0}}{\delta t_0} = \frac{\Delta M \Delta l}{l^2} = 4 \pi \sigma \Delta l.	\label{Eq-mink}
 \end{equation}
 
-\subsection{Far from horizon limit ($M<<r_1$)}
-
-In this limit Eq (\ref{l-r}) can be expanded to first order to give
+Very far away from the horizon, we expect a small deviation in Eq (\ref{Eq-mink}) from the Minkowski result as we know that the Schwarzschild geometry is asymptotically flat. By assuming $r_1>>M$ we  expanded Eq \ref{l-r} to first order to give
 
 \begin{equation}
 	l = r_1 - 2M - M \ln \left( \frac{r_1 - 2M}{M} \right) \Rightarrow r_1 - 2M = l - M \ln \left( \frac{l}{M} \right)	\label{l-r1}.
@@ -667,14 +674,19 @@ In this limit Eq (\ref{l-r}) can be expanded to first order to give
 Where in the last step we have used $x = y + \ln (y) \Rightarrow y = x - \ln(x)$ to leading order when $x \approx y$. We can substitute this, along with Eqs (\ref{sig-Dm}, \ref{Dl-Dr}) into Eq (\ref{lim-result}) to get
 
 \begin{eqnarray}
-	\frac{\delta t_0 - \delta \bar{t_0}}{\delta t_0} & = & 4 \pi \sigma \frac{r^2}{(r_1 - 2M)^2} \left( 1 - \frac{2M}{r_1} \right)^{\frac{1}{2}} \left( 1 - \frac{2M}{r_1} \right)^\frac{1}{2}  \nonumber	\\
-	& = & 4 \pi \sigma \Delta l \left( 1  + \frac{2M}{r_1 - 2M} \right)^2 \left( 1 - \frac{2M}{r_1} \right)	\nonumber	\\
-	& = & 4 \pi \sigma \Delta l \left( 1 + \frac{2M}{l} \right) + \mathcal{O}(l^{-2})
+	\frac{\delta t_0 - \delta \bar{t_0}}{\delta t_0} & = & 4 \pi \sigma \frac{r_1^2}{(r_1 - 2M)^2} \left( 1 - \frac{2M}{r_1} \right)^{\frac{1}{2}} \left( 1 - \frac{2M}{r_1} \right)^\frac{1}{2}  \nonumber	\\
+	& = & 4 \pi \sigma \Delta l \left( 1 - \frac{2M}{r_1} \right)^{-1} = 4 \pi \sigma \Delta l g_{rr}	\label{gen-result}
 \end{eqnarray}
+
+Note that this is actually a general result so far in terms of the coordinate distance $r_1$. We can expand this to leading order now by assuming $2M/r_1 <<1$,
+
+\begin{equation}
+	\frac{\delta t_0 - \delta \bar{t_0}}{\delta t_0} = 4 \pi \sigma \Delta l \left( 1 + \frac{2M}{r_1} \right) 
+\end{equation}
 
 \subsection{Near horizon ($M>>r_1$)}
 
-in this limit the coordinate distance $r_1$ and proper distance $l$ are related by
+In this limit the coordinate distance $r_1$ and proper distance $l$ are related by
 
 \begin{equation}
 	r_1 = \frac{l^2}{8M} + 2M
@@ -685,8 +697,9 @@ Again, we substitute this expression along with Eqs (\ref{sig-Dm}, \ref{Dl-Dr}) 
 \begin{eqnarray}
 	\frac{\delta t_0 - \delta \bar{t_0}}{\delta t_0} & = &  4 \pi \sigma \delta l \left( 1+ \frac{2M}{r_1 - 2M} \right)^2 \left( 1 - \left( 1 + \frac{r_1 - 2M}{2M} \right)^{-1} \right)	\nonumber	\\
 	& =& 4 \pi \sigma \delta l \left( \frac{2M}{r_1 - 2M}\right)^2 \left( \frac{r_1 - 2M}{2M}  + \mathcal{O}(M^{-2}) \right)	\nonumber	\\
-	& = & 64 \pi \sigma \delta l \frac{M^2}{l^2}
+	& = & 64 \pi \sigma \delta l \frac{M^2}{l^2} + \mathcal{O}(r^{-2})
 \end{eqnarray}
+
 
 
 
