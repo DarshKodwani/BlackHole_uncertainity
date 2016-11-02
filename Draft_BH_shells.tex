@@ -42,8 +42,8 @@ Instead of invoking conjectural quantum-gravity effects to modify such an assump
 We establish an analogy to Feynman's analysis of a double-slit experiment. 
 Feynman showed that a unitary propagation of the interfering particles, namely ignoring the entanglement with the double-slit, becomes an arbitrarily reliable assumption when the screen to project the interference pattern goes to infinitely far away.
 We argue for an analogous self-consistency check for quantum field theory in curved spacetime.
-We apply it to the propagation of Hawking quanta, testing whether ignoring the entanglement with the geometry also becomes arbitrarily reliable in the limit of a large black hole. 
-We present curious results to suggest a negative answer, and we discuss how this loss of na\"ive unitarity in QFT might be related to the soft-hair-memory effect.
+We apply it to the propagation of Hawking quanta and test whether ignoring the entanglement with the geometry also becomes arbitrarily reliable in the limit of a large black hole. 
+We present curious results to suggest a negative answer, and we discuss how this loss of na\"ive unitarity in QFT might be related to a solution of the paradox based on the soft-hair-memory effect.
 \end{abstract}
 
 \maketitle
@@ -56,7 +56,7 @@ We present curious results to suggest a negative answer, and we discuss how this
 The black hole information paradox \cite{Haw76a} was sharpened to show a self-inconsistency among the following three widely-believed statements \cite{AMPS}\footnote{Different physicists may believe in some of those more strongly than the others, but very few would have argued against any single statement without the explicit conflict in the information paradox.}:
 \begin{itemize}
 \item {\bf Unitary evaporation:} A black hole will totally evaporate; the formation and evaporation of a black hole is described by an asymptotic observer by a unitary $S$-matrix, whose size is the exponential of the black hole's Bekenstein entropy.
-\item {\bf General relativity:} The collapse-Schwarzschid geometry given by general relativity is a valid description of the spacetime everywhere except for near the singularity.
+\item {\bf General relativity:} The collapse-Schwarzschild geometry given by general relativity is a valid description of the spacetime everywhere except for near the singularity.
 Therefore, there is no drama while crossing the horizon.
 \item {\bf Local quantum field theory:} Away from the singularity, we can apply local quantum field theory (QFT) which describes microscopic steps of evaporation. 
 For large black holes, it manifests itself as unitary propagation of every near-horizon mode into every asymptotic Hawking quanta.
@@ -308,6 +308,7 @@ The usual treatment of how a near-horizon mode becomes an asymptotic Hawking qua
 The background is the Schwarzschild geometry.
 \begin{equation}
 ds^2 = -\left(1-\frac{2M}{r}\right)dt^2 + \frac{dr^2}{1-\frac{2M}{r}} + r^2d\Omega_2^2~.
+\label{eq-metric}
 \end{equation}
 When one applies local quantum field theory to describe a field on this fixed background, the result is by-definition unitary, but that is not necessary a physical fact. 
 Given how little we understand quantum gravity, a classical self-consistency check as we described in the previous section is a reasonable thing to do.
@@ -329,22 +330,30 @@ It is simple to calculate and reflects the physical intuition of vacuum pair flu
 \item The value of $\Delta g_{\mu\nu}$ is gauge dependent. 
 By relating it to the presence of extra matter, we can express it as a gauge-invariant local quantity, which is the natural thing to hold fixed in our analysis.
 \end{enumerate}
-Note that if we were reporting a positive result, that such uncertainty upholds unitarity, then one should question the validaty of learning a general lesson from a special example. However, we will show that this particular form of $\Delta g_{\mu\nu}$ is already sufficient to question unitarity, and we did not choose this form to specifically do that. Thus our limited analysis is sufficient to raise a reasonable doubt to the classical-background approximation.
-\item {\bf Renormalization.} It is well-known that na\"ive applications of QFT often suffer from UV/IR divergences.
+Note that if we were reporting a positive result, that such uncertainty upholds unitarity, then one should question the validity of learning a general lesson from a special example. However, we will show that this particular form of $\Delta g_{\mu\nu}$ is already sufficient to question unitarity, and we did not choose this form to specifically do that. Thus our limited analysis is sufficient to raise a reasonable doubt to the classical-background approximation.
+\item {\bf Renormalization.} It is well-known that na\"ive applications of QFT often suffers from UV/IR divergences.
 In our case, we will see that even in Minkowski space, geometric uncertainty already leads to a finite change between the two null geodesics.
 We will simply ``renormalize'' that away by saying that if the black hole case leads to a similar change, it should not be taken as a serious problem.
 Our surprising result is that in the black hole case, we get an infinitely larger change, which is difficult to blame on the usual divergence of QFT.
 \end{itemize}
 
 More concretely, our setup is shown in Fig.\ref{fig-setup}. 
-We start by choosing two points at some $r_0\gg M$ with a $\delta \bar{t_0}\sim M$ coordinate time separation between them.
-This represents one wavelength of the mode function of an asymptotic Hawking quantum.
-We then back-track two null geodesics from these two points back to two points near the horizon, at $r_e$ with $(r_e-2M)\ll 2M$.
-Now their separation represents one wavelength of a near-horizon mode, which would have propagated to the asymptotic mode if there were no geometric uncertainty. 
-We then introduce introduce a geometric uncertainty as two shells of zero total ADM mass. 
-Therefore, both the near horizon and the asymptotic regions are not affected by such uncertainty.
-Only the process of propagation is affected.
-With the same two starting points near the horizon we calculate the separation $\delta t_0$ of the two null geodesics when they arrive at $r_0$, and compare it with $\delta \bar{t_0}$.
+We start by choosing two out-going null rays in the background Schwarzschild spacetime given by Eq.~(\ref{eq-metric}).
+Far away from the black hole, at $r_0\gg M$, they are separated by time $T \sim M$, which is one period of an asymptotic Hawking quantum.
+Near the horizon, at $r_e$ with $(r_e-2M)\ll 2M$, the same two null rays will have the same coordinate time separation, but a much smaller proper time separation.
+This represent a near-horizon mode.
+
+Next, we introduce geometric uncertainty as two shells of zero total ADM mass.
+Both the near horizon and the asymptotic regions are not affected by such uncertainty.
+Thus it is a well-defined question to ask how the same near-horizon mode will end up when they reached the same large $r_0$. 
+It turns out that the time separation between these two null rays will be different. 
+Following the calculation in Appendix \ref{Dtime}, we arrive at this simple expression:
+\begin{equation}
+\frac{\Delta T}{T} = 
+\left(\sqrt{\frac{r_2-2M}{r_1-2M}}\sqrt{\frac{r_1-2(M+\Delta M)}{r_2-2(M+\Delta M)}}-1\right)~,
+\label{eq-result}
+\end{equation}
+where $(T+\Delta T)$ is the new separation with the geometric uncertainty, $r_1$ is the location of the inner shell, $r_2$ is the location of the outer shell, and $\pm\Delta M$ are their individual ADM masses. 
 
 \begin{figure}[tb]
 \begin{center}
@@ -360,32 +369,28 @@ As it will become clear later, our result only cares about the local energy dens
 It does not care about whether the whole shell exists or not, and the pressure does not directly affect the answer.
 Our result is also invariant under radial boosts, thus it does not matter how the shells move before and after the crossing, or whether the shells are actually stationary.
 
-After some formal calculations in Appendix \ref{Dtime}, we arrive at this simple expression:
-\begin{equation}
-\frac{\delta t_0 - \bar{\delta t_0}}{\delta \bar{t_0}} = 
-\left(\sqrt{\frac{r_2-2M}{r_1-2M}}\sqrt{\frac{r_1-2(M+\Delta M)}{r_2-2(M+\Delta M)}}-1\right)~,
-\label{eq-result}
-\end{equation}
-where $r_1$ is the location of the inner shell, $r_2$ is the location of the outer shell, and $\pm\Delta M$ are their individual ADM masses. 
 
 \subsection{Physical interpretation}
 
-In the entire calculation, we will stay in the regime that $r_1, 2M, (r_1-2M) \gg \Delta M, \Delta r$, where $\Delta r \equiv(r_2-r_1)$. 
+In the rest of this paper, we will stay in the regime that $r_1, 2M, (r_1-2M) \gg \Delta M, \Delta r$, where $\Delta r \equiv(r_2-r_1)$. 
 This guarantees that the geometric fluctuation is small, as it only affects a small region $\Delta r$, and the change in the metric $\Delta g_{\mu\nu}/g_{\mu\nu}$ is small in the affected region.
-Under this assumption, we can expand Eq (\ref{eq-result}) to get 
+Under this assumption, we can expand Eq.~(\ref{eq-result}) to get 
 \begin{equation}
-	\frac{\delta t_0 - \bar{ \delta t_0}}{\delta \bar{t_0}} = \frac{\Delta M \Delta r}{(r_1-2M)^2} = \frac{\Delta M \Delta r}{r_1^2} g_{tt}^{-2}~.
+	\frac{\Delta T}{T} = \frac{\Delta M \Delta r}{(r_1-2M)^2} = \frac{\Delta M \Delta r}{r_1^2} g_{tt}^{-2}~.
 		\label{lim-result}
 \end{equation}
 Here $g_{tt}=(1-2M/r_1)$ is the time component of the metric in the background geometry, evaluated at the location where the null rays pass through the geometric uncertainty. 
 
 It is more enlightening to write this expression in terms of local physical quantities (see Appendix \ref{finalEq} for derivations).  Let $\sigma$ be the energy density of the shell in its rest frame, and $\Delta l$ be the physical distance between the shells in that frame, we get
 \begin{equation}
-	\frac{\delta t_0 - \bar{ \delta t_0}}{\delta \bar{t_0}} = 4 \pi \sigma \Delta l g_{tt}^{-1}~.
+	\frac{\Delta T}{T} = 4 \pi \sigma \Delta l g_{tt}^{-1}~.
 	\label{eq-inv}
 \end{equation}
 Here we can see that the effect is due to the local energy density which the null rays pass through.
 Also, the combination $(\sigma\Delta l)$ is invariant under radial boosts, thus Eq.~(\ref{eq-inv}) does not care about whether the shells are actually at rest, nor in which frame we calculate it.
+
+The physical meaning of Eq.~(\ref{eq-inv}) is quite obvious. 
+
 
 In order to appreciate the effect of such geometric uncertainty near the horizon of a large black hole (which is usually considered the ideal situation to formulate the information paradox), we evaluate Eq.~(\ref{eq-inv}) in three regimes; 
 1) The Minkowski limit: $M=0$; 
@@ -396,7 +401,7 @@ The relation between $r$ and $l$ can also be found in Appendix \ref{finalEq}.
 We will hold $l$, $\Delta l$ and $\sigma$ fixed while the black hole mass is being varied.
 
 \begin{equation}
-\frac{\delta t_0 - \bar{ \delta t_0}}{\delta \bar{t_0}}  \begin{cases}
+\frac{\Delta T}{T} ~ \begin{cases}
 = 4 \pi \sigma \Delta l~	 &\ \ \ \ \ (M = 0)\\
 \approx 4\pi \sigma \Delta l \left( 1 + \frac{2M}{l} \right) & \ \ \ \ \ (M \ll l)	\\
 \approx 4 \pi  \sigma \Delta l \frac{16M^2}{l^2} & \ \ \ \ \ (M \gg l).
@@ -419,9 +424,11 @@ It starts to show a small deviation from the Minkowski result, but in the $M \ll
 \item \textbf{Near horizon ($M \gg l$)}: 
 If we consider a region of size $l$ across the horizon of a large black hole $M\gg l$, QFT believes that such region is locally the same as empty Minkowski.
 As long as $l$ is much larger than the UV cut-off scale of the QFT, one would believe that modes in this region propagates out to become Hawking quanta, and QFT guarantees the unitarity of such process.
-Here we hold $\sigma\Delta l$ fixed at the same value of empty Minkowski space, we can see that the effect of geometric uncertainty gets arbitrarily larger than in the Minkowski space.
+Here we hold $(\sigma\Delta l)$ fixed at the same value of empty Minkowski space, we can see that the effect of geometric uncertainty gets arbitrarily larger than in the Minkowski space.
 Note that the absolute value of the effect cannot become arbitrarily large, since it is actually bounded at order one by the validity constraint of our calculation: $\Delta g_{\mu\nu} \ll g_{\mu\nu}$.
 However, seeing that it can be arbitrarily larger than the Minkowski result should be a sufficient reason to raise a reasonable doubt about the unitarity of the propagation process.
+
+
 
 \end{itemize}
 
@@ -437,7 +444,13 @@ We have shown that propagation from the near-horizon region of a large black hol
 As explained in Sec.\ref{sec-BlackHole}, the consistency requires us to parametrize the uncertainty in the classical geometry.
 We have chosen a particular form of uncertainty in our explicit calculation.
 Our result is gauge invariant and makes physical sense, but there might be a more general way to parametrize such uncertainty to make our approach even more general.
-It is also interesting to apply the same check to other geometries, especially other types of horizons.
+
+In the hindsight, the physical meaning of our effect, Eq.~(\ref{eq-inv}), is quite clear.
+The geometric uncertainty, parametrized by $(\sigma\Delta l)$, leads to a fixed physical change locally where it is.
+When there is a large gravitational redshift, such effect is amplified.
+In the large black hole limit, starting from a fixed physical distance from the horizon, the redshift gets arbitrarily large, so the effect gets amplified by an arbitrarily large factor.
+It is natural to expect similar effects in other geometries with horizons or even just expansions.
+We look forward to exploring those more general cases.
 
 We should emphasize that our check does not invalidate QFT all together.
 We simply suggest that the QFT degrees of freedom lose their subsystem unitarity.
@@ -467,7 +480,7 @@ One might be able to apply a similar self-consistency check to such a model and 
 \subsection{The information paradox}
 
 While formulating the information paradox, it is customary to take the large black hole limit.
-Such limit allows us to identify modes with wavelength much shorter than the curvature scale, but much longer than the UV cut-off scale.
+Such limit allows us to identify near-horizon modes with wavelength much shorter than the curvature scale, but much longer than the UV cut-off scale.
 For these modes, we are confident that they start in local vacuum states of QFT as if they live in Minkowski space.
 This large black hole limit, which is effectively a near-Minkowski limit of a near horizon region, is the key argument to eliminate many na\"ive solutions to the information paradox.
 
@@ -510,31 +523,18 @@ We thank XXX for discussions. We are supported by XXX.
 
 \subsection{Background spacetime - no shell}
 
-A black hole of mass $M$ defines a Schwarzschild geometry for the spacetime with the following metric 
-
+The background geometry is given by Eq.~(\ref{eq-metric}).
+An out-going radial null ray is given by
 \begin{equation}
-	ds^2 = - \left( 1 -\frac{2M}{r} \right) d\bar{t}^2 + \left( 1 - \frac{2M}{r} \right)^{-1} dr^2 + r^2 d \Omega_2^2	\label{1}
+	t - t_e = r - r_e + 2M \ln \left( \frac{r - 2M}{r_e - 2M}  \right)~,
+	\label{3}
 \end{equation}
-
-where we are working with units in which $G = c = 1$. The bar is used over the time coordinate to differentiate it from the time coordinate we will use in the spacetime with mass $M'$. We know there will be a flux of particles appearing from the horizon of the black hole \cite{Haw74}. Take some coordinate time interval, $\delta \bar{t_e}$, (which will have some corresponding proper time interval $\delta \bar{\tau_e}$) between two consecutive particles being emitted from the same position above the horizon of the black hole. An observer far away will see these particles arrive with some coordinate time interval $\delta \bar{t_0}$. We can follow the trajectory of the particles (assuming they are relativistic) from the position they are emitted, $r_e$, to the observer at $r_0$ by setting $ds = 0$ in Eq (\ref{1}). By confining the motion to be only in the radial direction, i.e $d \Omega_2 = 0$, we get the following geodesic equation
-
+where $r_e$ and $t_e$ are the starting point of this null ray.
+A second null ray which reaches some asymptotic $r=r_0\gg M$ at a later time is simply
 \begin{equation}
-	\bar{t_e}^{(1)} - \bar{t_0}^{(1)} = r_0 - r_e + 2M \ln \left( \frac{r_0 - 2M}{r_e - 2M}  \right)	\label{3}
+	t - (t_e + T) = r - r_e + 2M \ln \left( \frac{r - 2M}{r_e - 2M}  \right)~.
 \end{equation}
-
-where the superscript represents particle $1$. An analogous geodesic equation is given for particle 2. 
-
-\begin{equation}
-	\bar{t_e}^{(2)} - \bar{t_0}^{(2)} = r_0 - r_e + 2M \ln \left( \frac{r_0 - 2M}{r_e - 2M}  \right).	\label{4}
-\end{equation}
-
-Since the right hand side of Eq (\ref{3}) and (\ref{4}) is the same, we see that
-
-\begin{equation}
-	\bar{t_0}^{(2)} - \bar{t_0}^{(1)} = \bar{t_e}^{(2)} - \bar{t_e}^{(1)} \Rightarrow \delta \bar{t_0} = \delta \bar{t_e}.
-\end{equation}
-
-Therefore the coordinate time interval when the particles are emitted remains the same when it is observed at distance $r_0$ as is shown in the bottom part of figure \ref{fig-setup}.
+Clearly, they have the same coordinate time separation $\Delta t = T$ everywhere, we illustrate in the lower part of Figure \ref{fig-setup}.
 
 %We can convert $\delta\bar{t_0}$ to proper time
 %
@@ -546,7 +546,10 @@ Therefore the coordinate time interval when the particles are emitted remains th
 
 \subsection{Perturbed spacetime - double shell}
 
-Now we introduce two shells of matter with equal and opposite ADM mass, $\Delta M$ and $-\Delta M$ where $|\Delta M|<<M$, at a distance of $r_1$ and $r_2$ respectively as shown in the top part of figure \ref{fig-setup}. We model these shells as infinitesimally thin and therefore use the Israel Junction Conditions (IJC) \cite{Isr66} with a delta function shell to analyze the effects of the shells. In this case the particle's move through two different spacetime regions. Region $I$ is defined by the black hole of mass $M$ and region $II$ is defined by a Schwarzschild metric of mass $M' \equiv M+\Delta M$ as shown in the top part of figure \ref{fig-setup}. The metric in region II is given by 
+Now we introduce two shells of matter with equal and opposite ADM mass, $\Delta M$ and $-\Delta M$ where $|\Delta M| \ll M$, at a distance of $r_1$ and $r_2$ respectively as shown in the top part of figure \ref{fig-setup}. We model these shells as infinitesimally thin and therefore use the Israel Junction Conditions (IJC) \cite{Isr66} with a delta function shell to analyze the effects of the shells. 
+
+
+In this case the particle's move through two different spacetime regions. Region $I$ is defined by the black hole of mass $M$ and region $II$ is defined by a Schwarzschild metric of mass $M' \equiv M+\Delta M$ as shown in the top part of figure \ref{fig-setup}. The metric in region II is given by 
 
 \begin{equation}
 	ds^2 = - \left( 1 - \frac{2M'}{r} \right) d t^2 + \left( 1 - \frac{2M'}{r} \right)^{-1} dr^2 + r^2 d \Omega_2^2	\label{2}.
