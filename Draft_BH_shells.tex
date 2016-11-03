@@ -38,7 +38,7 @@
 
 \begin{abstract}
 The black hole information paradox presumes that quantum field theory in curved spacetime can provide unitary propagations from near-horizon modes to asymptotic Hawking quanta. 
-Instead of invoking conjectural quantum-gravity effects to modify such an assumption, we propose a self-consistency check.
+Instead of invoking conjectural quantum-gravity effects to modify such assumption, we propose a self-consistency check.
 We establish an analogy to Feynman's analysis of a double-slit experiment. 
 Feynman showed that a unitary propagation of the interfering particles, namely ignoring the entanglement with the double-slit, becomes an arbitrarily reliable assumption when the screen to project the interference pattern goes to infinitely far away.
 We argue for an analogous self-consistency check for quantum field theory in curved spacetime.
@@ -58,7 +58,7 @@ The black hole information paradox \cite{Haw76a} was sharpened to show a self-in
 \item {\bf Unitary evaporation:} A black hole will totally evaporate; the formation and evaporation of a black hole is described by an asymptotic observer by a unitary $S$-matrix, whose size is the exponential of the black hole's Bekenstein entropy.
 \item {\bf General relativity:} The collapse-Schwarzschild geometry given by general relativity is a valid description of the spacetime everywhere except for near the singularity.
 Therefore, there is no drama while crossing the horizon.
-\item {\bf Local quantum field theory:} Away from the singularity, we can apply local quantum field theory (QFT) which describes microscopic steps of evaporation. 
+\item {\bf Quantum field theory in curved spacetime:} Away from the singularity, we can apply local quantum field theory (QFT) which describes microscopic steps of evaporation. 
 For large black holes, it manifests itself as unitary propagation of every near-horizon mode into every asymptotic Hawking quanta.
 \end{itemize}
 Basically, Statement Three demands that a near horizon mode is related to an asymptotic Hawking quanta by a unitary transformation, therefore carrying the same qubit of information. 
@@ -320,7 +320,7 @@ Given how little we understand quantum gravity, a classical self-consistency che
 Thus, instead of actually solving the mode function, we can perform a much simpler calculation to track geodesics.
 We start with two out-going null geodesics with the separation of one period of such mode near the horizon, and then we calculate the change in their separations at spatial infinity.
 As this change increases, one should gradually lose faith in the unitary propagation of such mode, since it becomes increasingly difficult to experimentally verify.
-\item {\bf The background and the uncertainty.} The classical background in this case is the Schwarzschild geometry, which can be written as the metric $g_{\mu\nu}$. 
+\item {\bf The background and the uncertainty.} The classical background in this case is the Schwarzschild geometry, which can be written as the metric $g_{\mu\nu}$ in Eq.~(\ref{eq-metric}). 
 A classical uncertainty can be expressed as deviation from such metric, $\Delta g_{\mu\nu}$. 
 There are two major challenges here.
 \begin{enumerate}
@@ -343,7 +343,7 @@ Far away from the black hole, at $r_0\gg M$, they are separated by time $T \sim 
 Near the horizon, at $r_e$ with $(r_e-2M)\ll 2M$, the same two null rays will have the same coordinate time separation, but a much smaller proper time separation.
 This represent a near-horizon mode.
 
-Next, we introduce geometric uncertainty as two shells of zero total ADM mass.
+Next, we introduce geometric uncertainty as sourced by two shells of zero total ADM mass.
 Both the near horizon and the asymptotic regions are not affected by such uncertainty.
 Thus it is a well-defined question to ask how the same near-horizon mode will end up when they reached the same large $r_0$. 
 It turns out that the time separation between these two null rays will be different. 
@@ -390,9 +390,9 @@ Here we can see that the effect is due to the local energy density which the nul
 Also, the combination $(\sigma\Delta l)$ is invariant under radial boosts, thus Eq.~(\ref{eq-inv}) does not care about whether the shells are actually at rest, nor in which frame we calculate it.
 
 The physical meaning of Eq.~(\ref{eq-inv}) is quite obvious. 
-
-
-In order to appreciate the effect of such geometric uncertainty near the horizon of a large black hole (which is usually considered the ideal situation to formulate the information paradox), we evaluate Eq.~(\ref{eq-inv}) in three regimes; 
+Geometric uncertainty creates a fixed-size uncertainty in the local proper time where it occurs.
+If it happens in the region which the wavelength of a mode is blue-shifted, then it gets magnified to be relatively larger.
+To be more precise, we evaluate Eq.~(\ref{eq-inv}) in three regimes; 
 1) The Minkowski limit: $M=0$; 
 2) Small black holes / far from horizon: $M \ll r_1$; 
 3) Large black holes / near horizon: $r_1\gg M$. 
@@ -437,9 +437,9 @@ However, seeing that it can be arbitrarily larger than the Minkowski result shou
 \section{Discussion}
 \label{sec-dis}
 
-\subsection{The self-consistency check of local QFT}
+\subsection{The self-consistency check of QFT}
 
-In this paper, we proposed a self-consistency check of local QFT in curved spacetime geometries.
+In this paper, we proposed a self-consistency check of QFT in curved spacetime geometries.
 We have shown that propagation from the near-horizon region of a large black hole seems to fail such check.
 As explained in Sec.\ref{sec-BlackHole}, the consistency requires us to parametrize the uncertainty in the classical geometry.
 We have chosen a particular form of uncertainty in our explicit calculation.
@@ -471,9 +471,9 @@ and
 \rho_{\rm mixed} = \sum_n |a_n|^2 |n\rangle\langle n|
 \end{equation}
 give the same particle number. 
-Thus there is no general crisis if we admit that local QFT sometimes loses subsystem unitarity. 
+Thus there is no general crisis if we admit that QFT sometimes loses subsystem unitarity. 
 
-As far as we know, an observable that explicitly checks the subsystem unitarity of local QFT during particle-production events is the cosmological Bell inequality \cite{Mal15}. 
+As far as we know, an observable that explicitly checks the subsystem unitarity of QFT during particle-production events is the cosmological Bell inequality \cite{Mal15}. 
 One might be able to apply a similar self-consistency check to such a model and update the prediction of whether a violation of Bell inequality is actually expected.
 
 
@@ -518,10 +518,8 @@ We thank XXX for discussions. We are supported by XXX.
 
 \appendix
 
-\section{Calculation of proper time change}
+\section{Calculation of time shift at $r_0\gg M$}
 \label{Dtime}
-
-\subsection{Background spacetime - no shell}
 
 The background geometry is given by Eq.~(\ref{eq-metric}).
 An out-going radial null ray is given by
@@ -530,53 +528,42 @@ An out-going radial null ray is given by
 	\label{3}
 \end{equation}
 where $r_e$ and $t_e$ are the starting point of this null ray.
-A second null ray which reaches some asymptotic $r=r_0\gg M$ at a later time is simply
+A second null ray which reaches some asymptotic $r_0\gg M$ at a later time is simply
 \begin{equation}
 	t - (t_e + T) = r - r_e + 2M \ln \left( \frac{r - 2M}{r_e - 2M}  \right)~.
 \end{equation}
-Clearly, they have the same coordinate time separation $\Delta t = T$ everywhere, we illustrate in the lower part of Figure \ref{fig-setup}.
+Clearly, they have the same coordinate time separation $\Delta t = T$ everywhere, and we illustrate in the lower part of Figure \ref{fig-setup}.
 
-%We can convert $\delta\bar{t_0}$ to proper time
-%
-%\begin{equation}
-%	\delta \bar{\tau_0} = \left( 1 -\frac{2M}{r_0} \right)^\frac{1}{2} \delta \bar{t_0}
-%\end{equation}
-%
-%and in the limit that the observer is very far away $\delta \bar{\tau_0} \approx \delta \bar{t_0}$. 
-
-\subsection{Perturbed spacetime - double shell}
-
-Now we introduce two shells of matter with equal and opposite ADM mass, $\Delta M$ and $-\Delta M$ where $|\Delta M| \ll M$, at a distance of $r_1$ and $r_2$ respectively as shown in the top part of figure \ref{fig-setup}. We model these shells as infinitesimally thin and therefore use the Israel Junction Conditions (IJC) \cite{Isr66} with a delta function shell to analyze the effects of the shells. 
-
-
-In this case the particle's move through two different spacetime regions. Region $I$ is defined by the black hole of mass $M$ and region $II$ is defined by a Schwarzschild metric of mass $M' \equiv M+\Delta M$ as shown in the top part of figure \ref{fig-setup}. The metric in region II is given by 
-
+Next we introduce two shells of matter with equal and opposite ADM mass, $\Delta M$ and $-\Delta M$ where $|\Delta M| \ll M$, at distances $r_1 < r_2$ as shown in the top part of figure \ref{fig-setup}. 
+We model these shells as infinitesimally thin and therefore use the Israel Junction Conditions (IJC) \cite{Isr66} with a delta function shell to analyze the effects of the shells. 
+The metric remains the same as Eq.~(\ref{eq-metric}), except for the region between the two shells, which is given by
 \begin{equation}
-	ds^2 = - \left( 1 - \frac{2M'}{r} \right) d t^2 + \left( 1 - \frac{2M'}{r} \right)^{-1} dr^2 + r^2 d \Omega_2^2	\label{2}.
+	ds^2 = - \left( 1 - \frac{2M'}{r} \right) d t'^2 + \left( 1 - \frac{2M'}{r} \right)^{-1} dr^2 + r^2 d \Omega_2^2~.	\label{2}
 \end{equation}
+Here $M' = M + \Delta M$. 
+Due to spherical symmetry, we can demand that the angular and radial coordinates to be the same as the background metric. 
+But the time coordinate will be different, so we denote that as $t'$.
 
-Note that the time coordinate is different from the one in Eq (\ref{1}). The radial coordinate is however the same as the shell connecting the two spacetimes is a physical surface with a fixed radius $r$. As explained in the previous section, the proper time interval between two particles emitted at $r_e$, $\delta \bar{t_e}$, is the same as the coordinate time interval at $r_1$, $\delta \bar{t_1}$. Now we need to find the corresponding coordinate time interval in region $II$, $\delta t_1$. To do this we simply note that the corresponding proper time at $r_1$, $\delta \bar{\tau_1}$ must be the same in both regions of spacetime - this is a simple consequence of the IJC. The coordinate time intervals at $r_1$, in the two different regions, are therefore related by
-
-\begin{equation}
-	\delta \bar{t_1} = \delta \bar{t_e} = \left( \frac{1 - \frac{2(M + \Delta M)}{r_1}}{1 - \frac{2M}{r_1}} \right)^\frac{1}{2} \delta t_1.
-\end{equation}
-
-We can propagate the particles through region $II$ from $r_1$ to $r_2$ and we know $\delta t_1 = \delta t_2$. From the fact that the proper time corresponding to the coordinate time intervals will be the same, we can relate $\delta t_2$ back to $\delta \bar{t_2}$ in region $I$, 
-
-\begin{equation}
-	\delta t_2 = \delta t_1= \left( \frac{1 - \frac{2M}{r_2}}{1 - \frac{2(M + \Delta M)}{r_2}} \right) \delta \bar{t_2}.	\label{7}
-\end{equation}
-
-Since $\delta \bar{t_2}$ is equal to the time interval observed by the observer at $r_0$, $\delta \bar{t_0}$, we can find the proper time observed by the observer, $\delta {\tau_0}  = \delta {\bar{t_e}} \left( \left( \frac{r_2 - 2M}{r_1 - 2M} \right) \left( \frac{r_1 - 2(M+\Delta M)}{r_2 - 2(M + \Delta M)} \right) \right)^\frac{1}{2}$. Where we have dropped the $\left( 1 - \frac{2M}{r_0} \right)^\frac{1}{2}$ term since we assume the observer is very far away. $\delta {\bar{t_e}} = \delta {\bar{\tau_0}}$ when the observer is far away therefore we can define a dimensionless quantity that quantifies the change in proper time intervals for consecutive photons in perturbed spacetime case and the unperturbed case, 
-
-\begin{equation}
-	 \frac{\delta \tau_0 - \delta \bar{\tau_0}}{\delta \bar{\tau_0}} = \left( \left( \frac{r_2 - 2M}{r_1 - 2M} \right)^\frac{1}{2} \left( \frac{r_1 - 2(M+\Delta M)}{r_2 - 2(M+\Delta M)} \right)^\frac{1}{2} - 1\right).	\label{10}
-\end{equation}
-
-This shows that when there are no shells, $\Delta M = 0$, there is no change in proper time intervals which is what one would expect. By assuming $r_1>> \Delta r \equiv r_2 - r_1$ and $r_1>> \Delta M$ we can expand Eq (\ref{eq-result}), to leading order in small quantities,
-
+At the two junctions, the proper time on both sides should be identical, which is the zeroth-order IJC---continuity of spacetime.
+That means
 \begin{eqnarray}
-	\frac{\delta t_0 - \bar{\delta t_0}}{\delta \bar{t_0}} & = & 
+	\sqrt{1-\frac{2M}{r_1}} \delta t_1 &=& \sqrt{1-\frac{2M'}{r_1}} \delta t'_1~, \\
+         \sqrt{1-\frac{2M}{r_2}} \delta t_2 &=& \sqrt{1-\frac{2M'}{r_2}} \delta t'_2~.
+\end{eqnarray}
+
+Therefore, the two null rays starting with a separation $T$ at $r_e<r_1$, going through this geometric uncertainty, will end up having a different separation given by
+\begin{equation}
+T+\Delta T = \sqrt{\frac{r_2-2M}{r_1-2M}} \sqrt{\frac{r_1-2(M+\Delta M)}{r_2-2(M+\Delta M)}}~.
+\end{equation}
+This clearly leads to Eq.~(\ref{eq-result}):
+\begin{equation}
+	\frac{\Delta T}{T} 
+	= \left( \left( \frac{r_2 - 2M}{r_1 - 2M} \right)^\frac{1}{2} \left( \frac{r_1 - 2(M+\Delta M)}{r_2 - 2(M+\Delta M)} \right)^\frac{1}{2} - 1\right).	\label{10}
+\end{equation}
+
+Assuming $r_1$, $r_2$, $M$, $r_1-2M$ are all much larger than $\Delta M$ and $\Delta r=(r_2-r_1)$, we can expand Eq (\ref{eq-result}) to leading order of these two small quantities.
+\begin{eqnarray}
+	\frac{\Delta T}{T} & = & 
 	\left( \left( 1+ \frac{\Delta r}{r_1 - 2M} \right)^\frac{1}{2} \left( 1 + \frac{2\Delta M}{r_1 - 2M} \right)^\frac{1}{2} \left( 1 + \frac{\Delta r + 2 \Delta M}{r_1 - 2M} \right)^{-\frac{1}{2}} - 1 \right)	\nonumber	\\
 	%& = & \left( 1 + \frac{1}{2} \frac{\Delta r}{r_1 - 2M} - \frac{1}{8} \left( \frac{\Delta r}{r_1 - 2M} \right)^2 \right) \left( 1 + \frac{\Delta M}{r_1 - 2M} - \frac{1}{2} \left(\frac{\Delta M}{r_1 - 2M} \right)^2 \right) \left( 1 - \frac{1}{2} \frac{\Delta r+ 2 \Delta M}{r_1 - 2M} + \frac{3}{8} \frac{(\Delta r + 2 \Delta M)^2}{(r_1 - 2M)^2} \right) - 1	\nonumber	\\
 	%& = & \left( 1 + \frac{1}{2} \frac{\Delta r + 2 \Delta M}{r_1 - 2M} - \frac{1}{8} \left( \frac{\Delta r}{r_1 - 2M} \right)^2 + \frac{1}{2} \frac{\Delta r \Delta M}{(r_1 - 2M)^2} - \frac{1}{2} \left( \frac{\Delta M}{r_1 - 2M} \right)^2 \right) \left( 1 - \frac{1}{2} \frac{\Delta r + 2\Delta M}{r_1 - 2M} + \frac{3}{8} \frac{(\Delta r + 2 \Delta M)^2}{(r_1 - 2M)^2} \right) -1 \nonumber	\\
@@ -598,75 +585,66 @@ This shows that when there are no shells, $\Delta M = 0$, there is no change in 
 \section{Local physical quantities}
 \label{finalEq}
 
-The first step in this derivation is write down the physical, local, quantities needed to replace $\Delta M, r_1$ and $\Delta r$. The natural thing to replace $\Delta M$ is the surface stress energy, $\sigma$, of the shell. This is given by the $tt$ component of the surface stress energy tensor $S_{ab}$ given by the IJC.
-
+Here we will translate the coordinate quantities, $\Delta M, r_1$ and $\Delta r$, into the local physical quantities: $\sigma$ as the co-dimension-one energy density of the shell, $l$ as the physical distance from the horizon, and $\Delta l$ as the physical distance between the two shells.
+This is given by the Israel Junction Condition.
 \begin{equation}
-	S^a_b = [K^a_b] - [K]h^a_b,
+	S^a_b = [K^a_b] - [K]h^a_b~.
 \end{equation}
+Here $K_{ab}$ is the extrinsic curvature corresponding to the induced metric.
+$K = K_{ab} h^{ab}$ is the trace of the extrinsic curvature.
+The middle brackets ``[ ]'' means we are calculating the extrinsic curvature from both sides of the junction and take their difference.
 
-where $K_{ab}$ is the extrinsic curvature corresponding to the induced metric, $h_{ab}$, we are using. $K = K_{ab} h^{ab}$ is the trace of the extrinsic curvature.
-We can define the induced metrics for constant $r$ values; for region $I$ it is 
-
+The induced metrics for the junction at $r_1$, expressed in the coordinate of region $I$ in Fig.\ref{fig-setup}, is the following.
 \begin{equation}
-	ds_{3M}^2 = - \left( 1 - \frac{2M}{r} \right)^{-1} dt^2 + r^2 d \Omega_2^2.	\label{13}
+	ds_{\rm induced, \ region \ I}^2 = - \left( 1 - \frac{2M}{r} \right)^{-1} dt^2 + r^2 d \Omega_2^2.	\label{13}
 \end{equation}
-
-Analogously we have the metric corresponding to mass $M' = M+ \Delta M$ in region $II$
-
+The extrinsic curvature from this side will simply be the $r$ derivative.
+Analogously we have the same induced metric written in the coordinate of region $II$,
 \begin{equation}
-	ds_{3M'}^2 = - \left( 1 - \frac{2M'}{r} \right)^{-1} dt'^2 + r^2 d \Omega_2^2.	\label{14}
+	ds_{\rm induced, \ region \ II}^2 = - \left( 1 - \frac{2M'}{r} \right)^{-1} dt'^2 + r^2 d \Omega_2^2.	\label{14}
 \end{equation}
-
-We could rewrite Eq (\ref{13}) and (\ref{14}) in Gaussian normal coordinates (where the coefficient in front of the time component is 1), however the first order junction condition is that the induced metric on both sides of the shell must be the same. Therefore it is easy to find a relation between the two time coordinates
-
+Similarly taking the $r$ derivative here leads to the extrinsic curvature from this side.
+Combine with the continuity condition that relates $t$ to $t'$, 
 \begin{equation}
-	dt'^2 = \left( \frac{1 - \frac{2M'}{r_1}}{ 1- \frac{2M}{r_1}} \right) dt^2.
+	dt'^2 = \left( \frac{1 - \frac{2M'}{r_1}}{ 1- \frac{2M}{r_1}} \right) dt^2~,
 \end{equation}
-
-Using this, we calculate the extrinsic curvature components
-
+we can calculate the extrinsic curvature components.
 \begin{eqnarray}
-	(K^t_t)^{(M)} & = & \frac{M}{r_1^2} \left( 1 - \frac{2M}{r_1} \right)^{-\frac{1}{2}} 	\nonumber	\\
-	(K^\theta_\theta)^{(M)} & = & \frac{1}{r_1} \left( 1 - \frac{2M}{r_1} \right)^\frac{1}{2} 
-	= (K^\phi_\phi)^{(M)}	\label{16}
+	(K^t_t)^{I} & = & \frac{M}{r_1^2} \left( 1 - \frac{2M}{r_1} \right)^{-\frac{1}{2}} ~.	\nonumber	\\
+	(K^\theta_\theta)^{I} & = & \frac{1}{r_1} \left( 1 - \frac{2M}{r_1} \right)^\frac{1}{2} 
+	= (K^\phi_\phi)^{I}~.	\label{16}
 \end{eqnarray}
+It is obvious that for region II, we simply replace $M$ by $M'$.
 
-where the superscript of $M$ denotes the quantities evaluated in the metric of mass $M$. Analogous expressions hold for the extrinsic curvature components calculated in the metric of mass $M'$ by just replacing $M$ by $M'$ in Eq (\ref{16}).
- The time component of the surface stress energy tensor $S^0_0$ is 
-
+The time component $S^0_0$ is the surface energy density.
 \begin{equation}
 	\sigma = S^0_0 = \frac{1}{4 \pi r_1} \left( \left( 1 - \frac{2M}{r_1} \right)^\frac{1}{2} - \left( 1 - \frac{2(M+\Delta M)}{r_1} \right)^\frac{1}{2} \right).
 \end{equation}
-
-This expression represents a small change in the mass and thus can be written as
-
+When $2\Delta M \ll (r_1-2M)$, this is approximately given by 
 \begin{eqnarray}
-	\sigma & = & \frac{1}{4 \pi r_1} \left[ \partial_X \left( 1 - \frac{2X}{r_1} \right)^\frac{1}{2} \right]_{X = M} \Delta M. \nonumber	\\
-	& = &  \frac{\Delta M}{4 \pi r_1^2} g_{tt}^{-\frac{1}{2}}	\label{sig-Dm}
+	\sigma  =  \frac{1}{4 \pi r_1} \left[ \partial_X \left( 1 - \frac{2X}{r_1} \right)^\frac{1}{2} \right]_{X = M} \Delta M
+	 =  \frac{\Delta M}{4 \pi r_1^2} g_{tt}^{-\frac{1}{2}}	\label{sig-Dm}
 \end{eqnarray}
-
 Next we need to replace the coordinate distance $\Delta r$ with the proper distance $\Delta l$ and the relation between them is given by
-
 \begin{equation}
 	\Delta l = \left( 1 - \frac{2M}{r_1} \right)^{-\frac{1}{2}} \Delta r = g_{tt}^{-\frac{1}{2}} \Delta r.	\label{Dl-Dr}
 \end{equation}
+These equations allow us to replacing $\Delta M$ by $\sigma$ and $\Delta r$ by $\Delta l$ in Eq.~(\ref{eq-result}) to get Eq.~(\ref{eq-inv}).
 
-This can be integrated to give the proper distance, $l$, between the inner shell and the horizon
-
+Finally, Eq.~(\ref{Dl-Dr}) can be integrated to give the proper distance $l$ between the inner shell and the horizon.
 \begin{eqnarray}
 	l & = & \int^{r_1}_{2M} \left( 1 - \frac{2M}{r} \right)^{-\frac{1}{2}} dr	\nonumber	\\
-	& = & \sqrt{(r_1 - 2M)r_1} + M \log \left( \frac{ r_1 - M + \sqrt{(r_1 - 2M)r_1}}{M} \right)	\label{l-r}
+	& = & \sqrt{(r_1 - 2M)r_1} + M \log \left( \frac{ r_1 - M + \sqrt{(r_1 - 2M)r_1}}{M} \right)	~.
+	\label{l-r}
 \end{eqnarray}
-
-We will be interested in three limits of $M=0$, $M \ll l$ and $M \gg l$ and the value of $l$ in these three limits is
-
+We will be interested in two extreme cases: $M \ll l$ and $M \gg l$. The value of $l$ in these cases are given by
 \begin{equation}
-l \begin{cases}
-= r_1	 &\ \ \ \ \ (M = 0)\\
-\approx r_1 - 2M & \ \ \ \ \ (M \ll l)	\\
-\approx \sqrt{8M(r_1 - 2M)} & \ \ \ \ \ (M \gg l).
+l \approx \begin{cases}
+ r_1 - 2M & \ \ \ \ \ (M \ll l)~,	\\
+ \sqrt{8M(r_1 - 2M)} & \ \ \ \ \ (M \gg l)~.
 \end{cases}	
 \end{equation}
+This allows us to evaluate Eq.~(\ref{eq-inv}) and get Eq.~(\ref{fin-result})
 
 %
 %\subsection{Minkowski limit ($M=0$)}
