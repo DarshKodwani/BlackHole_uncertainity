@@ -70,6 +70,13 @@
   (\bibinfo {year} {2013})},\ \Eprint {http://arxiv.org/abs/1207.3123}
   {arXiv:1207.3123 [hep-th]} \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1207.3123;%%
+\bibitem [{\citenamefont {Bousso}(2013)}]{Bou13}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Bousso}},\ }\href@noop {} {\  (\bibinfo {year} {2013})},\ \Eprint
+  {http://arxiv.org/abs/1308.2665} {arXiv:1308.2665 [hep-th]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1308.2665;%%
 \bibitem [{\citenamefont {Bekenstein}(1994)}]{Bek94}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~D.}\ \bibnamefont
@@ -216,12 +223,6 @@
   \bibinfo {pages} {10} (\bibinfo {year} {2016})},\ \Eprint
   {http://arxiv.org/abs/1508.01082} {arXiv:1508.01082 [hep-th]} \BibitemShut
   {NoStop}%
-\bibitem [{\citenamefont {Hawking}(1975)}]{Haw74}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~W.}\ \bibnamefont
-  {Hawking}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
-  {Commun. Math. Phys.}\ }\textbf {\bibinfo {volume} {43}},\ \bibinfo {pages}
-  {199} (\bibinfo {year} {1975})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Israel}(1966)}]{Isr66}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.}~\bibnamefont
