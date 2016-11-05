@@ -23,49 +23,52 @@ Control: production of article title (-1) disabled
 Control: page (0) single
 Control: year (1) truncated
 Control: production of eprint (0) enabled
+Warning--missing journal in Bou13
 Warning--missing journal in MalSus13
+Warning--missing journal in Ho16
+Warning--missing journal in Mat15
 Warning--missing journal in Gid12
 Warning--missing journal in DodSil15
 Warning--missing journal in OsuPag16
-You've used 21 entries,
+You've used 24 entries,
             5847 wiz_defined-function locations,
-            1766 strings with 17733 characters,
-and the built_in function-call counts, 17765 in all, are:
-= -- 1184
-> -- 355
-< -- 137
-+ -- 121
-- -- 95
-* -- 2689
-:= -- 1796
-add.period$ -- 19
-call.type$ -- 21
-change.case$ -- 76
-chr.to.int$ -- 29
-cite$ -- 25
-duplicate$ -- 1741
-empty$ -- 1301
-format.name$ -- 209
-if$ -- 3406
+            1786 strings with 18143 characters,
+and the built_in function-call counts, 20078 in all, are:
+= -- 1330
+> -- 398
+< -- 150
++ -- 137
+- -- 105
+* -- 3037
+:= -- 2049
+add.period$ -- 22
+call.type$ -- 24
+change.case$ -- 88
+chr.to.int$ -- 32
+cite$ -- 31
+duplicate$ -- 1972
+empty$ -- 1486
+format.name$ -- 234
+if$ -- 3837
 int.to.chr$ -- 1
-int.to.str$ -- 28
-missing$ -- 228
-newline$ -- 126
-num.names$ -- 57
-pop$ -- 768
+int.to.str$ -- 31
+missing$ -- 254
+newline$ -- 139
+num.names$ -- 66
+pop$ -- 889
 preamble$ -- 1
-purify$ -- 95
+purify$ -- 110
 quote$ -- 0
-skip$ -- 644
+skip$ -- 720
 stack$ -- 0
-substring$ -- 433
-swap$ -- 1579
-text.length$ -- 38
+substring$ -- 484
+swap$ -- 1772
+text.length$ -- 43
 text.prefix$ -- 0
 top$ -- 10
-type$ -- 259
-warning$ -- 5
-while$ -- 61
+type$ -- 297
+warning$ -- 8
+while$ -- 67
 width$ -- 0
-write$ -- 228
-(There were 5 warnings)
+write$ -- 254
+(There were 8 warnings)
