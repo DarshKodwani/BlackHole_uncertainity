@@ -593,50 +593,77 @@ Assuming $r_1$, $r_2$, $M$, $r_1-2M$ are all much larger than $\Delta M$ and $\D
 Here we will translate the coordinate quantities, $\Delta M, r_1$ and $\Delta r$, into the local physical quantities: $\sigma$ as the co-dimension-one energy density of the shell, $l$ as the physical distance from the horizon, and $\Delta l$ as the physical distance between the two shells.
 This is given by the Israel Junction Condition.
 \begin{equation}
-	S^a_b = [K^a_b] - [K]h^a_b~.
-\end{equation}
+	8 \pi S^a_b = [K^a_b] - [K]h^a_b~.	\label{IJC}
+\end{equation}	
 Here $K_{ab}$ is the extrinsic curvature corresponding to the induced metric.
 $K = K_{ab} h^{ab}$ is the trace of the extrinsic curvature.
 The middle brackets ``[ ]'' means we are calculating the extrinsic curvature from both sides of the junction and take their difference.
 
 The induced metrics for the junction at $r_1$, expressed in the coordinate of region $I$ in Fig.\ref{fig-setup}, is the following.
 \begin{equation}
-	ds_{\rm induced, \ region \ I}^2 = - \left( 1 - \frac{2M}{r} \right)^{-1} dt^2 + r^2 d \Omega_2^2.	\label{13}
+	ds_{\rm induced, \ region \ I}^2 = h_{ab} dy^a dy^b \equiv - \left( 1 - \frac{2M}{r} \right) dt^2 + r^2 d \Omega_2^2.	\label{13}
 \end{equation}
-The extrinsic curvature from this side will simply be the $r$ derivative.
+
 Analogously we have the same induced metric written in the coordinate of region $II$,
 \begin{equation}
-	ds_{\rm induced, \ region \ II}^2 = - \left( 1 - \frac{2M'}{r} \right)^{-1} dt'^2 + r^2 d \Omega_2^2.	\label{14}
+	ds_{\rm induced, \ region \ II}^2 = h'_{ab} dy'^a dy'^b \equiv - \left( 1 - \frac{2M'}{r} \right) dt'^2 + r^2 d \Omega_2^2.	\label{14}
 \end{equation}
-Similarly taking the $r$ derivative here leads to the extrinsic curvature from this side.
-Combine with the continuity condition that relates $t$ to $t'$, 
-\begin{equation}
-	dt'^2 = \left( \frac{1 - \frac{2M'}{r_1}}{ 1- \frac{2M}{r_1}} \right) dt^2~,
-\end{equation}
-we can calculate the extrinsic curvature components.
-\begin{eqnarray}
-	(K^t_t)^{I} & = & \frac{M}{r_1^2} \left( 1 - \frac{2M}{r_1} \right)^{-\frac{1}{2}} ~.	\nonumber	\\
-	(K^\theta_\theta)^{I} & = & \frac{1}{r_1} \left( 1 - \frac{2M}{r_1} \right)^\frac{1}{2} 
-	= (K^\phi_\phi)^{I}~.	\label{16}
-\end{eqnarray}
-It is obvious that for region II, we simply replace $M$ by $M'$.
 
-The time component $S^0_0$ is the surface energy density.
+Matching the induced metrics at a fixed radius $r_1$ imposes the following condition. 
+
 \begin{equation}
-	\sigma = S^0_0 = \frac{1}{4 \pi r_1} \left( \left( 1 - \frac{2M}{r_1} \right)^\frac{1}{2} - \left( 1 - \frac{2(M+\Delta M)}{r_1} \right)^\frac{1}{2} \right).
+	dt'^2 = \left( \frac{1 - \frac{2M}{r_1}}{ 1- \frac{2M'}{r_1}} \right) dt^2~,
 \end{equation}
+
+We can explicitly calculate the extrinsic curvature components.
+
+\begin{equation}
+	K_{ab} = \frac{1}{2} (\mathcal{L}_n g_{\alpha \beta}) e^\alpha_a e^\beta_b, \hspace{5mm} e^\alpha_a \equiv \frac{\partial x^\alpha}{\partial y^a},
+\end{equation}
+where $a,b \in \{t,\theta, \phi \}$ and $\mathcal{L}_n$ is the Lie derivative w.r.t to the normal vector $n_\alpha = g_{rr}^{-\frac{1}{2}} \partial_\alpha r = (0, g_{rr}^{-\frac{1}{2}}, 0 , 0)$. Lets look at the Lie derivative first
+
+\begin{eqnarray}
+	L_n g_{\alpha \beta} & = & n^\mu \partial_\mu g_{\alpha \beta} + \partial_\alpha n^\mu g_{\mu \beta} + \partial_\beta n^\mu g_{\alpha \mu}	\nonumber	\\
+	& = & n^r \partial_r g_{\alpha \beta} + \partial_\alpha n^r g_{r \beta} + \partial_\beta n^r g_{\alpha r}	
+\end{eqnarray}
+
+Now the components of the extrinsic curvature are
+
+\begin{equation}
+	K_{ab} = \frac{1}{2} (n^r \partial_r g_{\alpha \beta} + \partial_\alpha n^r g_{r \beta} + \partial_\beta n^r g_{\alpha r}) e^\alpha_a e^\beta_b	\label{Ecuv}
+\end{equation}
+
+Notice that the since the only variable in the above equation is $r$ only the $\partial_r$ terms will contribute. Since the $a,b$ indices do not run over $r$ only the first term in the expression above will remain. Using this we can calculate the components of the extrinsic curvature. 
+
+\begin{eqnarray}
+	K_{tt} & = & \frac{1}{2} (n^r \partial_r g_{tt}) 	\nonumber	\\
+	& = & \frac{1}{2} \left( 1 - \frac{2M}{r} \right)^\frac{1}{2}  \left( \frac{2M}{r^2} \right)
+\end{eqnarray}
+and we know $(K^t_t)^{I} = g^{tt}K_{tt} = \frac{M}{r^2} \left( 1 - \frac{2M}{r} \right)^{-\frac{1}{2}}$, the $I$ index represents a quantity evaluated in the metric $I$ and similarly for $II$. The other components are 
+
+\begin{equation}
+	(K^\theta_\theta)^{I} = \frac{1}{r_1} \left( 1 - \frac{2M}{r_1} \right)^\frac{1}{2} = (K^\phi_\phi)^{I}.
+\end{equation}
+For the extrinsic curvatures in region II, we simply replace $M$ by $M'$.
+\\
+\\
+The time component $S^t_t$ is the surface energy density can be calculated using Eq (\ref{IJC}).
+
+\begin{eqnarray}
+	\sigma = S^t_t & = & \frac{1}{8 \pi} ((K^\theta_\theta)^{I} + (K^\phi_{\phi})^{I} - (K^\phi_\phi)^{II} - (K^\theta_\theta)^{II})	\nonumber	\\
+	& = & \frac{1}{4 \pi r_1} \left( \left( 1 - \frac{2M}{r_1} \right)^\frac{1}{2} - \left( 1 - \frac{2M'}{r_1} \right)^\frac{1}{2} \right).
+\end{eqnarray}
+
 When $2\Delta M \ll (r_1-2M)$, this is approximately given by 
 \begin{eqnarray}
-	\sigma  =  \frac{-1}{4 \pi r_1} \left[ \partial_X \left( 1 - \frac{2X}{r_1} \right)^\frac{1}{2} \right]_{X = M} \Delta M
+	\sigma  =  -\frac{1}{4 \pi r_1} \left[ \partial_X \left( 1 - \frac{2X}{r_1} \right)^\frac{1}{2} \right]_{X = M} \Delta M
 	 =  \frac{\Delta M}{4 \pi r_1^2} g_{tt}^{-\frac{1}{2}}	\label{sig-Dm}
 \end{eqnarray}
 Next we need to replace the coordinate distance $\Delta r$ with the proper distance $\Delta l$ and the relation between them is given by
 \begin{equation}
 	\Delta l = \left( 1 - \frac{2M}{r_1} \right)^{-\frac{1}{2}} \Delta r = g_{tt}^{-\frac{1}{2}} \Delta r.	\label{Dl-Dr}
 \end{equation}
-These equations allow us to replacing $\Delta M$ by $\sigma$ and $\Delta r$ by $\Delta l$ in Eq.~(\ref{eq-result}) to get Eq.~(\ref{eq-inv}).
-
-Finally, Eq.~(\ref{Dl-Dr}) can be integrated to give the proper distance $l$ between the inner shell and the horizon.
+These equations allow us to replacing $\Delta M$ by $\sigma$ and $\Delta r$ by $\Delta l$ in Eq.~(\ref{eq-result}) to get Eq.~(\ref{eq-inv}). Finally, Eq.~(\ref{Dl-Dr}) can be integrated to give the proper distance $l$ between the inner shell and the horizon.
 \begin{eqnarray}
 	l & = & \int^{r_1}_{2M} \left( 1 - \frac{2M}{r} \right)^{-\frac{1}{2}} dr	\nonumber	\\
 	& = & \sqrt{(r_1 - 2M)r_1} + M \log \left( \frac{ r_1 - M + \sqrt{(r_1 - 2M)r_1}}{M} \right)	~.
