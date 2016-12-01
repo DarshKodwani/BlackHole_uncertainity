@@ -365,7 +365,7 @@ where $(T+\Delta T)$ is the new separation with the geometric uncertainty, $r_1$
 \begin{figure}[tb]
 \begin{center}
 \includegraphics[scale = 0.6]{Propertime.pdf}
-\caption{The two parts of this diagrams describe two different scenarios. The trajectories of the photon are the lines in orange. The trajectory of the observer and the position from which the photons are emitted are represented by solid blue lines. The bottom part is a general case of two Hawking photons coming from a distance $r_e$ from the black hole of mass $M$ and arriving at an observer who is at a distance of $r_0$. The top part shows two Hawking photons coming from the same distance $r_e$ from a black hole of mass $M$. Instead of the photons freely propagating through to an observer at $r_0$, they have to cross two shells, represented by blue dotted line, of equal and opposite mass $\Delta M, -\Delta M$ at $r_{1}, r_{2}$ respectively. The region $I$ represent a metric with mass $M$ and region $II$ represents a metric with mass $M+\Delta M$. The proper distance from the position where the photon is emitted to the position of the first shell is given by $l$ and the proper distance between the shells is given by $\Delta l$. }
+\caption{The two parts of this diagrams describe two different scenarios. The trajectories of the photon are the lines in orange. The trajectory of the observer and the position from which the photons are emitted are represented by solid blue lines. The bottom part is a general case of two Hawking photons coming from a distance $r_e$ from the black hole of mass $M$ and arriving at an observer who is at a distance of $r_0$. The top part shows two Hawking photons coming from the same place very close to the horizon, $r_e\approx2M$, from a black hole of mass $M$. Instead of the photons freely propagating through to an observer at $r_0$, they have to cross two shells, represented by blue dotted line, of equal and opposite mass $\Delta M, -\Delta M$ at $r_{1}, r_{2}$ respectively. The two regions marked by $I$ is described a metric with mass $M$. The region $II$ between the two shells is described by a metric with mass $M+\Delta M$. The proper distance from the shells to the horizon is $l$, and the proper distance between the shells is given by $\Delta l$. }
 \label{fig-setup}
 \end{center}
 \end{figure}
@@ -394,7 +394,14 @@ It is more enlightening to write this expression in terms of local physical quan
 	\label{eq-inv}
 \end{equation}
 Here we can see that the effect is due to the local energy density which the null rays pass through.
-Also, the combination $(\sigma\Delta l)$ is invariant under radial boosts, thus Eq.~(\ref{eq-inv}) does not care about whether the shells are actually at rest, nor in which frame we calculate it.
+Also, the combination $(\sigma\Delta l)$ is invariant under radial boosts, thus Eq.~(\ref{eq-inv}) does not care about whether the shells are actually at rest, nor in which frame we calculate it. \footnote{When the shells are moving, we will reach the same gauge-invariant answer by the following process.
+First we picking an (arbitrary) frame.
+$\Delta l$ is the proper distance between the two shells at the time of the first crossing in this frame.
+$\sigma$ is the energy density measured in this frame.
+The combination $(\sigma\Delta l)$ is again invariant.
+Interesting, if the two shells are not moving in the same velocity, the result will depend on their relative velocity, and we cannot appreciate the physical meaning yet.
+A more general framework to quantify the geometric uncertainty is a goal in future works.
+}
 
 The physical meaning of Eq.~(\ref{eq-inv}) is quite obvious. 
 Geometric uncertainty creates a fixed-size uncertainty in the local proper time where it occurs.
@@ -519,7 +526,10 @@ That would provide a complete picture that the loss of subsystem unitarity is re
 
 \acknowledgments
 
-We thank XXX for discussions. We are supported by XXX.
+We thank Raphael Bousso, Pei-Ming Ho and Robert Jefferson for discussions. 
+This work is supported by the Canadian Government through the Canadian Institute for Advance Research and Industry Canada, 
+and by Province of Ontario through the Ministry of Research and Innovation. 
+The Dunlap Institute is funded through an endowment established by the David Dunlap family and the University of Toronto.
 
 \appendix
 
