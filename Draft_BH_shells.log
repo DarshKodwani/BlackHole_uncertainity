@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  1 DEC 2016 10:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  1 DEC 2016 12:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -461,23 +461,23 @@ Overfull \vbox (3.70758pt too high) has occurred while \output is active []
 [3] <DSe.pdf, id=25, 963.6pt x 542.025pt>
 File: DSe.pdf Graphic file (type pdf)
  <use DSe.pdf>
-Package pdftex.def Info: DSe.pdf used on input line 173.
+Package pdftex.def Info: DSe.pdf used on input line 174.
 (pdftex.def)             Requested size: 481.79883pt x 271.01183pt.
  [4 <./DSe.pdf>]
 [5] <bh_coherence.pdf, id=52, 963.6pt x 542.025pt>
 File: bh_coherence.pdf Graphic file (type pdf)
  <use bh_coherence.pdf>
-Package pdftex.def Info: bh_coherence.pdf used on input line 287.
+Package pdftex.def Info: bh_coherence.pdf used on input line 297.
 (pdftex.def)             Requested size: 481.79883pt x 271.01183pt.
 
 [6] [7 <./bh_coherence.pdf>] <Propertime.pdf, id=83, 963.6pt x 542.025pt>
 File: Propertime.pdf Graphic file (type pdf)
 
 <use Propertime.pdf>
-Package pdftex.def Info: Propertime.pdf used on input line 367.
+Package pdftex.def Info: Propertime.pdf used on input line 377.
 (pdftex.def)             Requested size: 578.16447pt x 325.2175pt.
 
-Overfull \hbox (68.16447pt too wide) in paragraph at lines 367--368
+Overfull \hbox (68.16447pt too wide) in paragraph at lines 377--378
  [] 
  []
 
@@ -486,16 +486,16 @@ Overfull \vbox (1.00793pt too high) has occurred while \output is active []
 
 
 [9 <./Propertime.pdf>] [10] [11] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 656--661
+Underfull \hbox (badness 10000) in paragraph at lines 666--671
 
  []
 
 [13] (./Draft_BH_shells.bbl) [14] (./Draft_BH_shells.aux) ) 
 Here is how much of TeX's memory you used:
- 6129 strings out of 493089
- 85526 string characters out of 6134842
+ 6130 strings out of 493089
+ 85535 string characters out of 6134842
  175791 words of memory out of 5000000
- 9511 multiletter control sequences out of 15000+600000
+ 9512 multiletter control sequences out of 15000+600000
  11896 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,9n,38p,1182b,411s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -523,7 +523,7 @@ fonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmti9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
 /symbols/msbm10.pfb>
-Output written on Draft_BH_shells.pdf (14 pages, 357826 bytes).
+Output written on Draft_BH_shells.pdf (14 pages, 357836 bytes).
 PDF statistics:
  200 PDF objects out of 1000 (max. 8388607)
  145 compressed objects within 2 object streams
