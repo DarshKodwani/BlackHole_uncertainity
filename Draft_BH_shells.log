@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  1 DEC 2016 12:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  5 DEC 2016 17:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -486,7 +486,7 @@ Overfull \vbox (1.00793pt too high) has occurred while \output is active []
 
 
 [9 <./Propertime.pdf>] [10] [11] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 666--671
+Underfull \hbox (badness 10000) in paragraph at lines 667--672
 
  []
 
@@ -523,7 +523,7 @@ fonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmti9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
 /symbols/msbm10.pfb>
-Output written on Draft_BH_shells.pdf (14 pages, 357836 bytes).
+Output written on Draft_BH_shells.pdf (14 pages, 358161 bytes).
 PDF statistics:
  200 PDF objects out of 1000 (max. 8388607)
  145 compressed objects within 2 object streams
