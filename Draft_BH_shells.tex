@@ -465,7 +465,7 @@ In this paper, we proposed a self-consistency check of QFT in curved spacetime g
 We have shown that propagation from the near-horizon region of a large black hole seems to fail such check.
 As explained in Sec.\ref{sec-BlackHole}, checking for consistency requires us to parametrize the uncertainty in the classical geometry.
 We have chosen a particular form of uncertainty in our explicit calculation.
-Our result is gauge invariant and makes physical sense, but there might be a more general way to parametrize such uncertainty to make our approach even more general.
+Our result is gauge invariant and makes physical sense, but there might be a more general way to parametrize such uncertainty.
 
 In hindsight, the physical meaning of our effect, Eq.~(\ref{eq-inv}), is quite clear.
 The geometric uncertainty, parametrized by $(\sigma\Delta l)$, leads to a fixed physical change locally.
@@ -512,6 +512,25 @@ In order for field theory modes from the above region to propagate out and becom
 If we again fix $l$ and increase $M$, our result in Eq.~(\ref{fin-result}) shows that the unitary propagation to asymptotic Hawking quanta becomes less and less trustworthy. 
 Since the dimensionless ratio $(l/M)$ is the only relevant physical parameter that comes into the scaling both effects, there seems to be no middle-ground that can make both unitarity and local-Minkowski-ness arbitrarily reliable.
 We think such competition is a good sign and will take us closer to the solution of information paradox.
+
+Note that our argument will fail if the combination $(\sigma\Delta l)$ is exactly zero instead of a fixed finite number.
+Namely, if there is absolutely no geometric uncertainty, then the geometry is indeed a completely classical system that does not entangle with the quantum field.
+We would like to argue that in the context of QFT in curved spacetime, enforcing $\Delta g_{\mu\nu}=0$ is quite unreasonable.
+After all, we are feeding the expectation value of the stress-tensor-operator, $\langle T_{\mu\nu}\rangle$, to the Einstein equation. 
+As long as we are not in an energy eigenstate of the quantum field, $\langle\Delta T_{\mu\nu}\rangle$ will be nonzero, and there is no reason why this does not lead to an uncertainty in the geometry.
+One can even use the uncertainty in the energy flux of Hawking radiation itself to argue that there has to be an uncertainty in geometry.
+\footnote{Although, if one simply blue shifts the actual out-going Hawking radiation back to the hear-horizon zone, one gets a contribution of $(\sigma\Delta l)$ that depends on $M$.
+That is because the QFT modes escaping the angular-momentum barrier are mostly in $S$-waves.
+This $S$-wave energy flux gets diluted by area, resulting $(\sigma\Delta l)\propto M^{-2}$.
+If this is the only contribution to $(\sigma\Delta l)$, such dependence exactly stops Eq.~(\ref{fin-result}) from diverging in the large black hole limit, which undermines our main argument in this paper.
+Nevertheless, it violates equivalence principle for the local property $(\sigma\Delta l)$ to depend on the size of the black hole.
+It will be interesting to explicitly compute $\langle\Delta T_{\mu\nu}\rangle$ for the actual states of near-horizon QFT modes to see whether they uphold equivalence principle.
+Note that higher angular modes are all excited near the horizon.
+They are trapped by the angular momentum barrier thus do not contribute to the asymptotic flux, but they should still contribute to local quantities.
+That is why the $S$-wave contribution might be a dramatic underestimation, and the actual $(\sigma\Delta l)$ can still respect equivalence principle.
+If that is true, our arguments will hold.
+We will leave that particularly involved QFT calculation to future works.
+ }
 
 Let us assume that indeed the QFT-subsystem unitarity is lost during the propagation of Hawking quanta.
 This alone does not resolve all the problems. 
