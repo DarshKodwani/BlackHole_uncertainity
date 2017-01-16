@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  17 DEC 2016 15:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  16 JAN 2017 16:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -485,20 +485,16 @@ Overfull \hbox (68.16447pt too wide) in paragraph at lines 377--378
 Overfull \vbox (1.00793pt too high) has occurred while \output is active []
 
 
-[9 <./Propertime.pdf>] [10]
-Overfull \vbox (28.34639pt too high) has occurred while \output is active []
-
-
-[11] [12] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 696--701
+[9 <./Propertime.pdf>] [10] [11] [12]
+Underfull \hbox (badness 10000) in paragraph at lines 667--672
 
  []
 
-(./Draft_BH_shells.bbl [14]) [15] (./Draft_BH_shells.aux) ) 
+[13] (./Draft_BH_shells.bbl) [14] (./Draft_BH_shells.aux) ) 
 Here is how much of TeX's memory you used:
  6134 strings out of 493089
  85586 string characters out of 6134842
- 174816 words of memory out of 5000000
+ 175816 words of memory out of 5000000
  9516 multiletter control sequences out of 15000+600000
  11896 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -527,10 +523,10 @@ fonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmti9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
 /symbols/msbm10.pfb>
-Output written on Draft_BH_shells.pdf (15 pages, 365625 bytes).
+Output written on Draft_BH_shells.pdf (14 pages, 358390 bytes).
 PDF statistics:
- 203 PDF objects out of 1000 (max. 8388607)
- 147 compressed objects within 2 object streams
+ 200 PDF objects out of 1000 (max. 8388607)
+ 145 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
