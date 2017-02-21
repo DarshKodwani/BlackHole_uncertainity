@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  16 JAN 2017 16:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  17 JAN 2017 00:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -494,7 +494,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 667--672
 Here is how much of TeX's memory you used:
  6134 strings out of 493089
  85586 string characters out of 6134842
- 175816 words of memory out of 5000000
+ 175817 words of memory out of 5000000
  9516 multiletter control sequences out of 15000+600000
  11896 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -523,7 +523,7 @@ fonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmti9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
 /symbols/msbm10.pfb>
-Output written on Draft_BH_shells.pdf (14 pages, 358390 bytes).
+Output written on Draft_BH_shells.pdf (14 pages, 358398 bytes).
 PDF statistics:
  200 PDF objects out of 1000 (max. 8388607)
  145 compressed objects within 2 object streams
