@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{14}%
+\begin{thebibliography}{23}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -70,6 +70,13 @@
   (\bibinfo {year} {2013})},\ \Eprint {http://arxiv.org/abs/1207.3123}
   {arXiv:1207.3123 [hep-th]} \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1207.3123;%%
+\bibitem [{\citenamefont {Bousso}(2013)}]{Bou13}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Bousso}},\ }\href@noop {} {\  (\bibinfo {year} {2013})},\ \Eprint
+  {http://arxiv.org/abs/1308.2665} {arXiv:1308.2665 [hep-th]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1308.2665;%%
 \bibitem [{\citenamefont {Bekenstein}(1994)}]{Bek94}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~D.}\ \bibnamefont
@@ -99,6 +106,32 @@
   {http://arxiv.org/abs/1306.0533} {arXiv:1306.0533 [hep-th]} \BibitemShut
   {NoStop}%
 %%CITATION = ARXIV:1306.0533;%%
+\bibitem [{\citenamefont {Kawai}\ \emph {et~al.}(2013)\citenamefont {Kawai},
+  \citenamefont {Matsuo},\ and\ \citenamefont {Yokokura}}]{KawMat13}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Kawai}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Matsuo}}, \
+  and\ \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Yokokura}},\ }\href
+  {\doibase 10.1142/S0217751X13500504} {\bibfield  {journal} {\bibinfo
+  {journal} {Int. J. Mod. Phys.}\ }\textbf {\bibinfo {volume} {A28}},\ \bibinfo
+  {pages} {1350050} (\bibinfo {year} {2013})},\ \Eprint
+  {http://arxiv.org/abs/1302.4733} {arXiv:1302.4733 [hep-th]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1302.4733;%%
+\bibitem [{\citenamefont {Ho}(2016)}]{Ho16}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.-M.}\ \bibnamefont
+  {Ho}},\ }\href@noop {} {\  (\bibinfo {year} {2016})},\ \Eprint
+  {http://arxiv.org/abs/1609.05775} {arXiv:1609.05775 [hep-th]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1609.05775;%%
+\bibitem [{\citenamefont {Mathur}(2015)}]{Mat15}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~D.}\ \bibnamefont
+  {Mathur}},\ }\href@noop {} {\  (\bibinfo {year} {2015})},\ \Eprint
+  {http://arxiv.org/abs/1506.04342} {arXiv:1506.04342 [hep-th]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1506.04342;%%
 \bibitem [{\citenamefont {Giddings}(2012)}]{Gid12}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~B.}\ \bibnamefont
@@ -123,19 +156,22 @@
   {http://arxiv.org/abs/1607.04642} {arXiv:1607.04642 [hep-th]} \BibitemShut
   {NoStop}%
 %%CITATION = ARXIV:1607.04642;%%
-\bibitem [{\citenamefont {Hui}\ and\ \citenamefont {Yang}(2013)}]{HuiYan13}%
+\bibitem [{\citenamefont {Hui}\ and\ \citenamefont {Yang}(2014)}]{HuiYan13}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
   {Hui}}\ and\ \bibinfo {author} {\bibfnamefont {I.-S.}\ \bibnamefont {Yang}},\
-  }\href@noop {} {\  (\bibinfo {year} {2013})},\ \Eprint
-  {http://arxiv.org/abs/1308.6268} {arXiv:1308.6268 [hep-th]} \BibitemShut
-  {NoStop}%
+  }\href {\doibase 10.1103/PhysRevD.89.084011} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume} {D89}},\ \bibinfo {pages}
+  {084011} (\bibinfo {year} {2014})},\ \Eprint {http://arxiv.org/abs/1308.6268}
+  {arXiv:1308.6268 [hep-th]} \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1308.6268;%%
-\bibitem [{\citenamefont {Ilgin}\ and\ \citenamefont {Yang}(2013)}]{IlgYan13}%
+\bibitem [{\citenamefont {Ilgin}\ and\ \citenamefont {Yang}(2014)}]{IlgYan13}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {I.}~\bibnamefont
   {Ilgin}}\ and\ \bibinfo {author} {\bibfnamefont {I.-S.}\ \bibnamefont
-  {Yang}},\ }\href@noop {} {\  (\bibinfo {year} {2013})},\ \Eprint
+  {Yang}},\ }\href {\doibase 10.1103/PhysRevD.89.044007} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume} {D89}},\
+  \bibinfo {pages} {044007} (\bibinfo {year} {2014})},\ \Eprint
   {http://arxiv.org/abs/1311.1219} {arXiv:1311.1219 [hep-th]} \BibitemShut
   {NoStop}%
 %%CITATION = ARXIV:1311.1219;%%
@@ -150,6 +186,27 @@
   {http://arxiv.org/abs/1402.4545} {arXiv:1402.4545 [hep-th]} \BibitemShut
   {NoStop}%
 %%CITATION = ARXIV:1402.4545;%%
+\bibitem [{\citenamefont {Harlow}\ and\ \citenamefont {Hayden}(2013)}]{HH}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Harlow}}\ and\ \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Hayden}},\ }\href {\doibase 10.1007/JHEP06(2013)085} {\bibfield  {journal}
+  {\bibinfo  {journal} {JHEP}\ }\textbf {\bibinfo {volume} {1306}},\ \bibinfo
+  {pages} {085} (\bibinfo {year} {2013})},\ \Eprint
+  {http://arxiv.org/abs/1301.4504} {arXiv:1301.4504 [hep-th]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1301.4504;%%
+\bibitem [{\citenamefont {Nomura}\ \emph {et~al.}(2013)\citenamefont {Nomura},
+  \citenamefont {Varela},\ and\ \citenamefont {Weinberg}}]{NomVar12}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Nomura}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Varela}}, \
+  and\ \bibinfo {author} {\bibfnamefont {S.~J.}\ \bibnamefont {Weinberg}},\
+  }\href {\doibase 10.1103/PhysRevD.87.084050} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys.Rev.}\ }\textbf {\bibinfo {volume} {D87}},\ \bibinfo {pages}
+  {084050} (\bibinfo {year} {2013})},\ \Eprint {http://arxiv.org/abs/1210.6348}
+  {arXiv:1210.6348 [hep-th]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1210.6348;%%
 \bibitem [{\citenamefont {Hawking}\ \emph {et~al.}(2016)\citenamefont
   {Hawking}, \citenamefont {Perry},\ and\ \citenamefont
   {Strominger}}]{HawPer16}%
@@ -163,6 +220,27 @@
   {http://arxiv.org/abs/1601.00921} {arXiv:1601.00921 [hep-th]} \BibitemShut
   {NoStop}%
 %%CITATION = ARXIV:1601.00921;%%
+\bibitem [{\citenamefont {Weinberg}(1965)}]{Wei65}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Weinberg}},\ }\href {\doibase 10.1103/PhysRev.140.B516} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume}
+  {140}},\ \bibinfo {pages} {B516} (\bibinfo {year} {1965})}\BibitemShut
+  {NoStop}%
+%%CITATION = PHRVA,140,B516;%%
+\bibitem [{\citenamefont {He}\ \emph {et~al.}(2015)\citenamefont {He},
+  \citenamefont {Lysov}, \citenamefont {Mitra},\ and\ \citenamefont
+  {Strominger}}]{HeLys14}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {He}}, \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont {Lysov}}, \bibinfo
+  {author} {\bibfnamefont {P.}~\bibnamefont {Mitra}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {Strominger}},\ }\href {\doibase
+  10.1007/JHEP05(2015)151} {\bibfield  {journal} {\bibinfo  {journal} {JHEP}\
+  }\textbf {\bibinfo {volume} {05}},\ \bibinfo {pages} {151} (\bibinfo {year}
+  {2015})},\ \Eprint {http://arxiv.org/abs/1401.7026} {arXiv:1401.7026
+  [hep-th]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1401.7026;%%
 \bibitem [{\citenamefont {Maldacena}(2016)}]{Mal15}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
@@ -171,15 +249,18 @@
   \bibinfo {pages} {10} (\bibinfo {year} {2016})},\ \Eprint
   {http://arxiv.org/abs/1508.01082} {arXiv:1508.01082 [hep-th]} \BibitemShut
   {NoStop}%
-\bibitem [{\citenamefont {Nomura}\ \emph {et~al.}(2013)\citenamefont {Nomura},
-  \citenamefont {Varela},\ and\ \citenamefont {Weinberg}}]{NomVar12}%
+\bibitem [{\citenamefont {Unruh}(1976)}]{Unr76}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
-  {Nomura}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Varela}}, \
-  and\ \bibinfo {author} {\bibfnamefont {S.~J.}\ \bibnamefont {Weinberg}},\
-  }\href {\doibase 10.1103/PhysRevD.87.084050} {\bibfield  {journal} {\bibinfo
-  {journal} {Phys.Rev.}\ }\textbf {\bibinfo {volume} {D87}},\ \bibinfo {pages}
-  {084050} (\bibinfo {year} {2013})},\ \Eprint {http://arxiv.org/abs/1210.6348}
-  {arXiv:1210.6348 [hep-th]} \BibitemShut {NoStop}%
-%%CITATION = ARXIV:1210.6348;%%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.~G.}\ \bibnamefont
+  {Unruh}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Phys.
+  Rev. D}\ }\textbf {\bibinfo {volume} {14}},\ \bibinfo {pages} {870} (\bibinfo
+  {year} {1976})}\BibitemShut {NoStop}%
+%%CITATION = PHRVA,D14,870;%%
+\bibitem [{\citenamefont {Israel}(1966)}]{Isr66}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.}~\bibnamefont
+  {Israel}},\ }\href {\doibase 10.1007/BF02730328} {\bibfield  {journal}
+  {\bibinfo  {journal} {Nuovo Cim.}\ }\textbf {\bibinfo {volume} {B44S10}},\
+  \bibinfo {pages} {1} (\bibinfo {year} {1966})}\BibitemShut {NoStop}%
+%%CITATION = NUCIA,B44S10,1;%%
 \end{thebibliography}%
