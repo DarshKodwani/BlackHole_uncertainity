@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  1 MAR 2017 16:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  3 MAR 2017 14:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -464,25 +464,25 @@ File: DSe.pdf Graphic file (type pdf)
 Package pdftex.def Info: DSe.pdf used on input line 174.
 (pdftex.def)             Requested size: 481.79883pt x 271.01183pt.
  [4 <./DSe.pdf>]
-[5] <bh_coherence.pdf, id=52, 963.6pt x 542.025pt>
+[5] <bh_coherence.pdf, id=51, 963.6pt x 542.025pt>
 File: bh_coherence.pdf Graphic file (type pdf)
  <use bh_coherence.pdf>
-Package pdftex.def Info: bh_coherence.pdf used on input line 303.
+Package pdftex.def Info: bh_coherence.pdf used on input line 304.
 (pdftex.def)             Requested size: 481.79883pt x 271.01183pt.
 
-[6] [7 <./bh_coherence.pdf>] <Propertime.pdf, id=83, 963.6pt x 542.025pt>
+[6] [7 <./bh_coherence.pdf>] <Propertime.pdf, id=82, 963.6pt x 542.025pt>
 File: Propertime.pdf Graphic file (type pdf)
 
 <use Propertime.pdf>
-Package pdftex.def Info: Propertime.pdf used on input line 383.
+Package pdftex.def Info: Propertime.pdf used on input line 384.
 (pdftex.def)             Requested size: 578.16447pt x 325.2175pt.
 
-Overfull \hbox (68.16447pt too wide) in paragraph at lines 383--384
+Overfull \hbox (68.16447pt too wide) in paragraph at lines 384--385
  [] 
  []
 
 [8] [9 <./Propertime.pdf>] [10] [11] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 669--674
+Underfull \hbox (badness 10000) in paragraph at lines 670--675
 
  []
 
@@ -517,12 +517,11 @@ ublic/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmti9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/ams
-fonts/symbols/msbm10.pfb>
-Output written on Draft_BH_shells.pdf (15 pages, 359172 bytes).
+msfonts/cm/cmti9.pfb>
+Output written on Draft_BH_shells.pdf (15 pages, 356937 bytes).
 PDF statistics:
- 203 PDF objects out of 1000 (max. 8388607)
- 147 compressed objects within 2 object streams
+ 199 PDF objects out of 1000 (max. 8388607)
+ 144 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
